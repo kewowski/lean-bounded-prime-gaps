@@ -15,6 +15,7 @@ A proof-free specification layer for the key Maynard–Tao inequality:
 Plus lightweight upper bounds to sandwich the sums.
 -/
 
+set_option linter.unnecessarySimpa false
 namespace MaynardTao
 namespace Inequalities
 
@@ -38,18 +39,21 @@ lemma sumPrimeIndicators_nonneg (H : Finset ℤ) (n : ℕ) :
 
 /-- Identify the sum of indicators with the (casted) count of prime shifts. -/
 lemma sumPrimeIndicators_eq_count_cast (H : Finset ℤ) (n : ℕ) :
-    sumPrimeIndicators H n
-      = (PrimeCounts.count H n : ℚ) := by
+    sumPrimeIndicators H n = (PrimeCounts.count H n : ℚ) := by
   classical
+  unfold sumPrimeIndicators
+  -- switch to an `if`-form and move the filter to the set level
+  change
+    (∑ h ∈ H, (if primePred h n then (1 : ℚ) else 0))
+      = (PrimeCounts.count H n : ℚ)
   have hswap :
       ∑ h ∈ H, (if primePred h n then (1 : ℚ) else 0)
-        = ∑ h ∈ H.filter (fun h => primePred h n), (1 : ℚ) := by
-    simpa using
-      (Finset.sum_filter (s := H)
-        (p := fun h => primePred h n)
-        (f := fun _ => (1 : ℚ))).symm
-  unfold sumPrimeIndicators
-  simp [PrimeCounts.count, MaynardTao.indicator, hswap, Finset.sum_const, nsmul_eq_mul]
+        = ∑ h ∈ H.filter (fun h => primePred h n), (1 : ℚ) :=
+    (Finset.sum_filter (s := H)
+      (p := fun h => primePred h n)
+      (f := fun _ => (1 : ℚ))).symm
+  rw [hswap]
+  simp [PrimeCounts.count, Finset.sum_const, nsmul_eq_mul]
 
 /-- Swap the order of summation in `S_prime` and factor the weight. -/
 lemma S_prime_as_sum_n (W : SieveWeight P) (N : ℕ) (H : Finset ℤ) :
@@ -112,20 +116,26 @@ lemma sumPrimeIndicators_ge_r_cIndicator (H : Finset ℤ) (r n : ℕ) :
   have hm : sumPrimeIndicators H n = (m : ℚ) := by
     simpa [m] using sumPrimeIndicators_eq_count_cast H n
   by_cases hr : r ≤ m
-  · have hrq : (r : ℚ) ≤ (m : ℚ) := by exact_mod_cast hr
-    have hind : MaynardTao.cIndicator (r ≤ m) = 1 := by
-      simp [MaynardTao.cIndicator, MaynardTao.indicator, hr]
-    have hgoal : (r : ℚ) * MaynardTao.cIndicator (r ≤ m) ≤ (m : ℚ) := by
-      simpa [hind, mul_one] using hrq
-    simpa [hm] using hgoal
-  · have h0q : 0 ≤ (m : ℚ) := by exact_mod_cast (Nat.zero_le m)
-    have hind : MaynardTao.cIndicator (r ≤ m) = 0 := by
-      simp [MaynardTao.cIndicator, MaynardTao.indicator, hr]
-    have hgoal : (r : ℚ) * MaynardTao.cIndicator (r ≤ m) ≤ (m : ℚ) := by
-      simpa [hind, mul_zero] using h0q
-    simpa [hm] using hgoal
+  · -- case `r ≤ m`: RHS is `(r : ℚ) * 1 = r`, so we need `sumPI ≥ r`
+    refine (ge_iff_le).mpr ?_
+    have hleft : (r : ℚ) * MaynardTao.cIndicator (PrimeCounts.atLeast H r n) ≤ (r : ℚ) := by
+      have htrue : PrimeCounts.atLeast H r n := by
+        dsimp [PrimeCounts.atLeast, m]; exact hr
+      -- LHS rewrites to `r`, so goal is `r ≤ r`
+      simpa [MaynardTao.cIndicator, MaynardTao.indicator, htrue]
+    have hright : (r : ℚ) ≤ sumPrimeIndicators H n := by
+      have hrq : (r : ℚ) ≤ (m : ℚ) := by exact_mod_cast hr
+      simpa [hm] using hrq
+    exact le_trans hleft hright
+  · -- case `¬ r ≤ m`: RHS is `(r : ℚ) * 0 = 0`, so we need `sumPI ≥ 0`
+    refine (ge_iff_le).mpr ?_
+    have hfalse : ¬ PrimeCounts.atLeast H r n := by
+      dsimp [PrimeCounts.atLeast, m]; exact hr
+    have hzero : (r : ℚ) * MaynardTao.cIndicator (PrimeCounts.atLeast H r n) = 0 := by
+      simp [MaynardTao.cIndicator, MaynardTao.indicator, hfalse]
+    have hnonneg : 0 ≤ sumPrimeIndicators H n := sumPrimeIndicators_nonneg H n
+    simpa [hzero] using hnonneg
 
-/-- Aggregate the pointwise bound to obtain the global inequality. -/
 lemma RCrit_all (W : SieveWeight P) (N : ℕ) (H : Finset ℤ) (r : ℕ) :
     RCrit (W := W) N H r := by
   classical
@@ -174,7 +184,9 @@ lemma RCritSpec_all (s : BoundedGaps.Spec) (r : ℕ) :
     RCritSpec s r := by
   classical
   unfold RCritSpec
-  simpa using RCrit_all (W := s.W) s.N s.P.H r
+  have h := RCrit_all (W := s.W) s.N s.P.H r
+  simp [RCrit] at h
+  exact h
 
 /-- Upper bound: for each `n`, the sum of prime indicators is at most `H.card`. -/
 lemma sumPrimeIndicators_le_card (H : Finset ℤ) (n : ℕ) :
@@ -233,3 +245,5 @@ lemma S_prime_le_cardH_S0 (W : SieveWeight P) (N : ℕ) (H : Finset ℤ) :
 
 end Inequalities
 end MaynardTao
+
+
