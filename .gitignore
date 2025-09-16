@@ -1,0 +1,24 @@
+# Lake build outputs
+/.lake/build/
+/.lake/manifest.json
+/.lake/packages/*
+
+# VSCode / Editor junk
+.vscode/
+*.code-workspace
+
+# Lean cache and aux
+*.olean
+*.trace
+*.aux
+*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Poweshell history (just in case)
+*.pshistory
