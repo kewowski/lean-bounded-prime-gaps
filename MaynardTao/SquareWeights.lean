@@ -69,7 +69,7 @@ by
         by exact Finset.mem_range.mpr (Nat.lt_succ_of_le hle)
       -- In-range: membership in S is exactly `w n ≠ 0`.
       have memS : n ∈ S ↔ w n ≠ 0 := by
-        simpa [S, w, hle, hmem_range, Finset.mem_filter]
+        simp [S, w, hle, hmem_range, Finset.mem_filter]
       -- Therefore `w n = 0 ↔ n ∉ S`.
       have notMemS : n ∉ S ↔ w n = 0 := by
         -- take `¬` of both sides in `memS`

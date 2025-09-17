@@ -22,3 +22,5 @@ Thumbs.db
 
 # Poweshell history (just in case)
 *.pshistory
+
+/.lake/
