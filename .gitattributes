@@ -1,0 +1,6 @@
+# Normalize text files; keep Lean sources LF on Windows too
+* text=auto
+*.lean text eol=lf
+*.txt  text eol=lf
+*.md   text eol=lf
+*.json text eol=lf

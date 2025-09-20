@@ -1,0 +1,21 @@
+> C:\Projects\test-lean-modules\Sieve\MaynardWeights.lean:13:structure Weight where
+  C:\Projects\test-lean-modules\Sieve\MaynardWeights.lean:14:  w        : Int → ℝ
+  C:\Projects\test-lean-modules\Sieve\MaynardWeights.lean:15:  support  : Finset Int
+  C:\Projects\test-lean-modules\Sieve\MaynardWeights.lean:16:  nonneg   : ∀ n, 0 ≤ w n
+  C:\Projects\test-lean-modules\Sieve\MaynardWeights.lean:17:  bounded  : ∃ C : ℝ, 0 ≤ C ∧ ∀ n, |w n| ≤ C
+  C:\Projects\test-lean-modules\Sieve\MaynardWeights.lean:18:  -- Normalization hooks (to be refined later)
+  C:\Projects\test-lean-modules\Sieve\MaynardWeights.lean:19:  norm1    : Prop := True
+  C:\Projects\test-lean-modules\Sieve\MaynardWeights.lean:20:  norm2    : Prop := True
+  C:\Projects\test-lean-modules\Sieve\MaynardWeights.lean:21:
+  C:\Projects\test-lean-modules\Sieve\MaynardWeights.lean:22:/-- Targets we want the weight to achieve in MT sieve stages. -/
+  C:\Projects\test-lean-modules\Sieve\MaynardWeights.lean:23:structure WeightTargets where
+  C:\Projects\test-lean-modules\Sieve\MaynardWeights.lean:24:  firstMomentLower  : ℝ := 0
+  C:\Projects\test-lean-modules\Sieve\MaynardWeights.lean:25:  secondMomentUpper : ℝ := 0
+  C:\Projects\test-lean-modules\Sieve\MaynardWeights.lean:26:  dispersionUpper   : ℝ := 0
+  C:\Projects\test-lean-modules\Sieve\MaynardWeights.lean:27:
+  C:\Projects\test-lean-modules\Sieve\MaynardWeights.lean:28:/-- A packaged constructed weight with achieved targets. -/
+  C:\Projects\test-lean-modules\Sieve\MaynardWeights.lean:29:structure BuiltWeight where
+  C:\Projects\test-lean-modules\Sieve\MaynardWeights.lean:30:  base : Weight
+  C:\Projects\test-lean-modules\Sieve\MaynardWeights.lean:31:  hits : WeightTargets
+  C:\Projects\test-lean-modules\Sieve\MaynardWeights.lean:32:
+  C:\Projects\test-lean-modules\Sieve\MaynardWeights.lean:33:end Sieve.MaynardWeights

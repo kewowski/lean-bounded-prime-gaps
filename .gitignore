@@ -1,0 +1,21 @@
+# Lake / Lean build artefacts
+/.lake/
+/build/
+/lake-packages/
+/lean_packages/
+/.elan/
+*.olean
+*.ilean
+*.c
+*.o
+*.d
+*.dynlib
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.code-workspace
+
+/artifacts/
+

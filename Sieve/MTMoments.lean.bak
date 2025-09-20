@@ -1,0 +1,51 @@
+/-
+  Sieve/MTMoments.lean
+  UTF-8 (no BOM), ASCII-only.
+
+  Basic moment definitions for Maynard–Tao weights, with simple nonneg lemmas.
+-/
+import Mathlib
+import Sieve.MaynardWeights
+
+noncomputable section
+open Classical BigOperators
+
+namespace Sieve.MTMoments
+open Sieve.MaynardWeights
+
+/-- First moment `∑ w(n)` over the declared finite support. -/
+def firstMoment (W : Weight) : ℝ :=
+  ∑ n ∈ W.support, W.w n
+
+/-- Second moment `∑ w(n)^2` over the declared finite support. -/
+def secondMoment (W : Weight) : ℝ :=
+  ∑ n ∈ W.support, (W.w n) ^ 2
+
+/-- `firstMoment ≥ 0` since `w(n) ≥ 0`. -/
+lemma firstMoment_nonneg (W : Weight) : 0 ≤ firstMoment W := by
+  classical
+  unfold firstMoment
+  refine Finset.sum_nonneg ?term_nonneg
+  intro n _
+  simpa using W.nonneg n
+
+/-- `secondMoment ≥ 0` since squares are nonnegative in `ℝ`. -/
+lemma secondMoment_nonneg (W : Weight) : 0 ≤ secondMoment W := by
+  classical
+  unfold secondMoment
+  refine Finset.sum_nonneg ?term_nonneg
+  intro n _
+  have : 0 ≤ (W.w n) ^ 2 := by
+    simpa using sq_nonneg (W.w n)
+  simpa using this
+
+end Sieve.MTMoments
+
+namespace Sieve.MTMoments
+
+/-- Representation of the first moment as a sum over the finite support. -/
+@[simp] lemma firstMoment_sum_repr
+  (W : Sieve.MaynardWeights.Weight) :
+  firstMoment W = ∑ n ∈ W.supp, W.w n := rfl
+
+end Sieve.MTMoments

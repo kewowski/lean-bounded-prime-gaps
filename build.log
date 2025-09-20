@@ -1,0 +1,611 @@
+Ô£û [189/1705] Building Batteries.Data.NameSet
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\.lake\packages\batteries\Batteries\Data\NameSet.lean -o C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean\Batteries\Data\NameSet.olean -i C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean\Batteries\Data\NameSet.ilean -c C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\ir\Batteries\Data\NameSet.c --setup C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\ir\Batteries\Data\NameSet.setup.json --json
+error: Batteries/Data/NameSet.lean:6:0: object file 'c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\lib\lean\Lean\Data\NameMap\Basic.olean' of module Lean.Data.NameMap.Basic does not exist
+error: Lean exited with code 1
+Ô£û [190/1705] Building Batteries.Lean.Json
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\.lake\packages\batteries\Batteries\Lean\Json.lean -o C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean\Batteries\Lean\Json.olean -i C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean\Batteries\Lean\Json.ilean -c C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\ir\Batteries\Lean\Json.c --setup C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\ir\Batteries\Lean\Json.setup.json --json
+error: Batteries/Lean/Json.lean:6:0: object file 'c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\lib\lean\Lean\Data\Json\FromToJson\Basic.olean' of module Lean.Data.Json.FromToJson.Basic does not exist
+error: Lean exited with code 1
+Ô£û [191/3582] Building Batteries.Data.Rat.Float
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\.lake\packages\batteries\Batteries\Data\Rat\Float.lean -o C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean\Batteries\Data\Rat\Float.olean -i C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean\Batteries\Data\Rat\Float.ilean -c C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\ir\Batteries\Data\Rat\Float.c --setup C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\ir\Batteries\Data\Rat\Float.setup.json --json
+error: Batteries/Data/Rat/Float.lean:13:43: Invalid field notation: Type is not of the form `C ...` where C is a constant
+  a
+has type
+  Rat
+error: Batteries/Data/Rat/Float.lean:18:4: unknown identifier 'mkRat'
+error: Batteries/Data/Rat/Float.lean:24:69: failed to synthesize
+  OfNat Rat 0
+numerals are polymorphic in Lean, but the numeral `0` cannot be used in a context where the expected type is
+  Rat
+due to the absence of the instance above
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+error: Batteries/Data/Rat/Float.lean:26:29: Invalid field notation: Type is not of the form `C ...` where C is a constant
+  Rat
+has type
+  Sort ?u.256
+error: Batteries/Data/Rat/Float.lean:26:0: instance does not provide concrete values for (semi-)out-params
+  Coe ?Rat Float
+error: Lean exited with code 1
+Ô£û [193/4397] Building Aesop.Rule.Name
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\.lake\packages\aesop\Aesop\Rule\Name.lean -o C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean\Aesop\Rule\Name.olean -i C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean\Aesop\Rule\Name.ilean -c C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\ir\Aesop\Rule\Name.c --setup C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\ir\Aesop\Rule\Name.setup.json --json
+error: Aesop/Rule/Name.lean:25:27: Invalid field `ctorIdx`: The environment does not contain `Aesop.PhaseName.ctorIdx`
+  sÔéü
+has type
+  PhaseName
+error: Aesop/Rule/Name.lean:25:38: Invalid field `ctorIdx`: The environment does not contain `Aesop.PhaseName.ctorIdx`
+  sÔéé
+has type
+  PhaseName
+error: Aesop/Rule/Name.lean:46:27: Invalid field `ctorIdx`: The environment does not contain `Aesop.ScopeName.ctorIdx`
+  sÔéü
+has type
+  ScopeName
+error: Aesop/Rule/Name.lean:46:38: Invalid field `ctorIdx`: The environment does not contain `Aesop.ScopeName.ctorIdx`
+  sÔéé
+has type
+  ScopeName
+error: Aesop/Rule/Name.lean:72:27: Invalid field `ctorIdx`: The environment does not contain `Aesop.BuilderName.ctorIdx`
+  bÔéü
+has type
+  BuilderName
+error: Aesop/Rule/Name.lean:72:38: Invalid field `ctorIdx`: The environment does not contain `Aesop.BuilderName.ctorIdx`
+  bÔéé
+has type
+  BuilderName
+error: Lean exited with code 1
+Ô£û [275/4922] Building ImportGraph.RequiredModules
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\.lake\packages\importGraph\ImportGraph\RequiredModules.lean -o C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean\ImportGraph\RequiredModules.olean -i C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean\ImportGraph\RequiredModules.ilean -c C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\ir\ImportGraph\RequiredModules.c --setup C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\ir\ImportGraph\RequiredModules.setup.json --json
+error: ImportGraph/RequiredModules.lean:52:33: Application type mismatch: In the application
+  RBTree.erase toProcess current
+the argument
+  current
+has type
+  Name ├ù Unit : Type
+but is expected to have type
+  Name : Type
+error: ImportGraph/RequiredModules.lean:53:42: Application type mismatch: In the application
+  usedConstants.insert current
+the argument
+  current
+has type
+  Name ├ù Unit : Type
+but is expected to have type
+  Name : Type
+error: ImportGraph/RequiredModules.lean:54:29: Application type mismatch: In the application
+  getConstInfo current
+the argument
+  current
+has type
+  Name ├ù Unit : Type
+but is expected to have type
+  Name : Type
+error: ImportGraph/RequiredModules.lean:64:36: overloaded, errors 
+  failed to synthesize
+    Singleton Name NameSet
+  
+  Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+  
+  64:37 'n' is not a field of structure 'Subtype'
+error: ImportGraph/RequiredModules.lean:88:38: overloaded, errors 
+  failed to synthesize
+    Singleton Name NameSet
+  
+  Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+  
+  88:39 'n' is not a field of structure 'Subtype'
+error: ImportGraph/RequiredModules.lean:98:3: unknown constant 'Lean.NameSet.ofList'
+error: ImportGraph/RequiredModules.lean:147:4: Invalid field `foldl`: The environment does not contain `Lean.NameSet.foldl`
+  s
+has type
+  NameSet
+error: ImportGraph/RequiredModules.lean:147:4: Invalid field `foldl`: The environment does not contain `Lean.RBTree.foldl`
+  s
+has type
+  RBTree Name Name.quickCmp
+error: ImportGraph/RequiredModules.lean:147:4: Invalid field `foldl`: The environment does not contain `Lean.RBMap.foldl`
+  s
+has type
+  RBMap Name Unit Name.quickCmp
+error: ImportGraph/RequiredModules.lean:147:4: Invalid field `foldl`: The environment does not contain `Subtype.foldl`
+  s
+has type
+  { t // RBNode.WellFormed Name.quickCmp t }
+error: ImportGraph/RequiredModules.lean:138:14: Invalid field `foldl`: The environment does not contain `Lean.NameSet.foldl`
+  used
+has type
+  NameSet
+error: ImportGraph/RequiredModules.lean:138:14: Invalid field `foldl`: The environment does not contain `Lean.RBTree.foldl`
+  used
+has type
+  RBTree Name Name.quickCmp
+error: ImportGraph/RequiredModules.lean:138:14: Invalid field `foldl`: The environment does not contain `Lean.RBMap.foldl`
+  used
+has type
+  RBMap Name Unit Name.quickCmp
+error: ImportGraph/RequiredModules.lean:138:14: Invalid field `foldl`: The environment does not contain `Subtype.foldl`
+  used
+has type
+  { t // RBNode.WellFormed Name.quickCmp t }
+error: ImportGraph/RequiredModules.lean:140:14: Invalid field `foldl`: The environment does not contain `Lean.NameSet.foldl`
+  used
+has type
+  NameSet
+error: ImportGraph/RequiredModules.lean:140:14: Invalid field `foldl`: The environment does not contain `Lean.RBTree.foldl`
+  used
+has type
+  RBTree Name Name.quickCmp
+error: ImportGraph/RequiredModules.lean:140:14: Invalid field `foldl`: The environment does not contain `Lean.RBMap.foldl`
+  used
+has type
+  RBMap Name Unit Name.quickCmp
+error: ImportGraph/RequiredModules.lean:140:14: Invalid field `foldl`: The environment does not contain `Subtype.foldl`
+  used
+has type
+  { t // RBNode.WellFormed Name.quickCmp t }
+error: Lean exited with code 1
+Ô£û [277/5307] Building Batteries.Classes.Order
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\.lake\packages\batteries\Batteries\Classes\Order.lean -o C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean\Batteries\Classes\Order.olean -i C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean\Batteries\Classes\Order.ilean -c C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\ir\Batteries\Classes\Order.c --setup C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\ir\Batteries\Classes\Order.setup.json --json
+error: Batteries/Classes/Order.lean:36:35: invalid binder annotation, type is not a class instance
+  ?m.624
+
+Note: Use the command `set_option checkBinderAnnotations false` to disable the check
+error: Batteries/Classes/Order.lean:38:20: Function expected at
+  cmp
+but this term has type
+  ?m.629
+
+Note: Expected a function because this term is being applied to the argument
+  x
+error: Batteries/Classes/Order.lean:38:30: Invalid dotted identifier notation: The expected type of `.gt` could not be determined
+error: Batteries/Classes/Order.lean:38:36: Function expected at
+  cmp
+but this term has type
+  ?m.629
+
+Note: Expected a function because this term is being applied to the argument
+  y
+error: Batteries/Classes/Order.lean:38:46: Invalid dotted identifier notation: The expected type of `.lt` could not be determined
+error: Batteries/Classes/Order.lean:39:12: unknown identifier 'OrientedCmp.gt_iff_lt'
+error: Batteries/Classes/Order.lean:44:35: invalid binder annotation, type is not a class instance
+  ?m.698
+
+Note: Use the command `set_option checkBinderAnnotations false` to disable the check
+error: Batteries/Classes/Order.lean:46:19: Function expected at
+  cmp
+but this term has type
+  ?m.704
+
+Note: Expected a function because this term is being applied to the argument
+  x
+error: Batteries/Classes/Order.lean:46:29: Invalid dotted identifier notation: The expected type of `.gt` could not be determined
+error: Batteries/Classes/Order.lean:46:35: Function expected at
+  cmp
+but this term has type
+  ?m.704
+
+Note: Expected a function because this term is being applied to the argument
+  y
+error: Batteries/Classes/Order.lean:46:45: Invalid dotted identifier notation: The expected type of `.gt` could not be determined
+error: Batteries/Classes/Order.lean:46:51: Function expected at
+  cmp
+but this term has type
+  ?m.704
+
+Note: Expected a function because this term is being applied to the argument
+  x
+error: Batteries/Classes/Order.lean:46:61: Invalid dotted identifier notation: The expected type of `.gt` could not be determined
+error: Batteries/Classes/Order.lean:47:54: unknown identifier 'isLE_trans'
+warning: Batteries/Classes/Order.lean:47:20: This simp argument is unused:
+  ÔåÉ Ordering.isLE_iff_ne_gt
+
+Hint: Omit it from the simp argument list.
+  simp only [ne_eq,╠Á ╠ÁÔåÉ╠Á ╠ÁO╠Ár╠Ád╠Áe╠Ár╠Ái╠Án╠Ág╠Á.╠Ái╠Ás╠ÁL╠ÁE╠Á_╠Ái╠Áf╠Áf╠Á_╠Án╠Áe╠Á_╠Ág╠Át╠Á]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Batteries/Classes/Order.lean:49:25: Function expected at
+  cmp
+but this term has type
+  ?m.980
+
+Note: Expected a function because this term is being applied to the argument
+  x
+error: Batteries/Classes/Order.lean:49:35: Invalid dotted identifier notation: The expected type of `.lt` could not be determined
+error: Batteries/Classes/Order.lean:49:41: Function expected at
+  cmp
+but this term has type
+  ?m.980
+
+Note: Expected a function because this term is being applied to the argument
+  y
+error: Batteries/Classes/Order.lean:49:51: Invalid dotted identifier notation: The expected type of `.gt` could not be determined
+error: Batteries/Classes/Order.lean:49:57: Function expected at
+  cmp
+but this term has type
+  ?m.980
+
+Note: Expected a function because this term is being applied to the argument
+  x
+error: Batteries/Classes/Order.lean:49:67: Invalid dotted identifier notation: The expected type of `.lt` could not be determined
+error: Batteries/Classes/Order.lean:50:54: unknown identifier 'lt_of_lt_of_isLE'
+warning: Batteries/Classes/Order.lean:50:20: This simp argument is unused:
+  ÔåÉ Ordering.isLE_iff_ne_gt
+
+Hint: Omit it from the simp argument list.
+  simp only [ne_eq,╠Á ╠ÁÔåÉ╠Á ╠ÁO╠Ár╠Ád╠Áe╠Ár╠Ái╠Án╠Ág╠Á.╠Ái╠Ás╠ÁL╠ÁE╠Á_╠Ái╠Áf╠Áf╠Á_╠Án╠Áe╠Á_╠Ág╠Át╠Á]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Batteries/Classes/Order.lean:52:25: Function expected at
+  cmp
+but this term has type
+  ?m.1235
+
+Note: Expected a function because this term is being applied to the argument
+  x
+error: Batteries/Classes/Order.lean:52:35: Invalid dotted identifier notation: The expected type of `.gt` could not be determined
+error: Batteries/Classes/Order.lean:52:41: Function expected at
+  cmp
+but this term has type
+  ?m.1235
+
+Note: Expected a function because this term is being applied to the argument
+  y
+error: Batteries/Classes/Order.lean:52:51: Invalid dotted identifier notation: The expected type of `.lt` could not be determined
+error: Batteries/Classes/Order.lean:52:57: Function expected at
+  cmp
+but this term has type
+  ?m.1235
+
+Note: Expected a function because this term is being applied to the argument
+  x
+error: Batteries/Classes/Order.lean:52:67: Invalid dotted identifier notation: The expected type of `.lt` could not be determined
+error: Batteries/Classes/Order.lean:53:54: unknown identifier 'lt_of_isLE_of_lt'
+warning: Batteries/Classes/Order.lean:53:20: This simp argument is unused:
+  ÔåÉ Ordering.isLE_iff_ne_gt
+
+Hint: Omit it from the simp argument list.
+  simp only [ne_eq,╠Á ╠ÁÔåÉ╠Á ╠ÁO╠Ár╠Ád╠Áe╠Ár╠Ái╠Án╠Ág╠Á.╠Ái╠Ás╠ÁL╠ÁE╠Á_╠Ái╠Áf╠Áf╠Á_╠Án╠Áe╠Á_╠Ág╠Át╠Á]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Batteries/Classes/Order.lean:55:19: Function expected at
+  cmp
+but this term has type
+  ?m.1490
+
+Note: Expected a function because this term is being applied to the argument
+  x
+error: Batteries/Classes/Order.lean:55:29: Invalid dotted identifier notation: The expected type of `.lt` could not be determined
+error: Batteries/Classes/Order.lean:55:35: Function expected at
+  cmp
+but this term has type
+  ?m.1490
+
+Note: Expected a function because this term is being applied to the argument
+  y
+error: Batteries/Classes/Order.lean:55:45: Invalid dotted identifier notation: The expected type of `.lt` could not be determined
+error: Batteries/Classes/Order.lean:55:51: Function expected at
+  cmp
+but this term has type
+  ?m.1490
+
+Note: Expected a function because this term is being applied to the argument
+  x
+error: Batteries/Classes/Order.lean:55:61: Invalid dotted identifier notation: The expected type of `.lt` could not be determined
+error: Batteries/Classes/Order.lean:56:54: unknown identifier 'isGE_trans'
+warning: Batteries/Classes/Order.lean:56:20: This simp argument is unused:
+  ÔåÉ Ordering.isGE_iff_ne_lt
+
+Hint: Omit it from the simp argument list.
+  simp only [ne_eq,╠Á ╠ÁÔåÉ╠Á ╠ÁO╠Ár╠Ád╠Áe╠Ár╠Ái╠Án╠Ág╠Á.╠Ái╠Ás╠ÁG╠ÁE╠Á_╠Ái╠Áf╠Áf╠Á_╠Án╠Áe╠Á_╠Ál╠Át╠Á]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Batteries/Classes/Order.lean:58:25: Function expected at
+  cmp
+but this term has type
+  ?m.1766
+
+Note: Expected a function because this term is being applied to the argument
+  x
+error: Batteries/Classes/Order.lean:58:35: Invalid dotted identifier notation: The expected type of `.gt` could not be determined
+error: Batteries/Classes/Order.lean:58:41: Function expected at
+  cmp
+but this term has type
+  ?m.1766
+
+Note: Expected a function because this term is being applied to the argument
+  y
+error: Batteries/Classes/Order.lean:58:51: Invalid dotted identifier notation: The expected type of `.lt` could not be determined
+error: Batteries/Classes/Order.lean:58:57: Function expected at
+  cmp
+but this term has type
+  ?m.1766
+
+Note: Expected a function because this term is being applied to the argument
+  x
+error: Batteries/Classes/Order.lean:58:67: Invalid dotted identifier notation: The expected type of `.gt` could not be determined
+error: Batteries/Classes/Order.lean:59:54: unknown identifier 'gt_of_gt_of_isGE'
+warning: Batteries/Classes/Order.lean:59:20: This simp argument is unused:
+  ÔåÉ Ordering.isGE_iff_ne_lt
+
+Hint: Omit it from the simp argument list.
+  simp only [ne_eq,╠Á ╠ÁÔåÉ╠Á ╠ÁO╠Ár╠Ád╠Áe╠Ár╠Ái╠Án╠Ág╠Á.╠Ái╠Ás╠ÁG╠ÁE╠Á_╠Ái╠Áf╠Áf╠Á_╠Án╠Áe╠Á_╠Ál╠Át╠Á]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Batteries/Classes/Order.lean:61:25: Function expected at
+  cmp
+but this term has type
+  ?m.2021
+
+Note: Expected a function because this term is being applied to the argument
+  x
+error: Batteries/Classes/Order.lean:61:35: Invalid dotted identifier notation: The expected type of `.lt` could not be determined
+error: Batteries/Classes/Order.lean:61:41: Function expected at
+  cmp
+but this term has type
+  ?m.2021
+
+Note: Expected a function because this term is being applied to the argument
+  y
+error: Batteries/Classes/Order.lean:61:51: Invalid dotted identifier notation: The expected type of `.gt` could not be determined
+error: Batteries/Classes/Order.lean:61:57: Function expected at
+  cmp
+but this term has type
+  ?m.2021
+
+Note: Expected a function because this term is being applied to the argument
+  x
+error: Batteries/Classes/Order.lean:61:67: Invalid dotted identifier notation: The expected type of `.gt` could not be determined
+error: Batteries/Classes/Order.lean:62:54: unknown identifier 'gt_of_isGE_of_gt'
+warning: Batteries/Classes/Order.lean:62:20: This simp argument is unused:
+  ÔåÉ Ordering.isGE_iff_ne_lt
+
+Hint: Omit it from the simp argument list.
+  simp only [ne_eq,╠Á ╠ÁÔåÉ╠Á ╠ÁO╠Ár╠Ád╠Áe╠Ár╠Ái╠Án╠Ág╠Á.╠Ái╠Ás╠ÁG╠ÁE╠Á_╠Ái╠Áf╠Áf╠Á_╠Án╠Áe╠Á_╠Ál╠Át╠Á]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Batteries/Classes/Order.lean:67:65: unknown identifier 'OrientedCmp'
+error: Batteries/Classes/Order.lean:67:65: 'sorryAx' is not a structure
+
+This error is possibly due to a change in the 'structure' syntax. Now the syntax is 'structure S : Type extends P' rather than 'structure S extends P' : Type'.
+
+The purpose of the change is to accommodate 'structure S extends toP : P' syntax for naming parent projections.
+error: Batteries/Classes/Order.lean:71:41: invalid binder annotation, type is not a class instance
+  ?m.2308
+
+Note: Use the command `set_option checkBinderAnnotations false` to disable the check
+error: Batteries/Classes/Order.lean:75:65: unknown identifier 'OrientedCmp'
+error: Batteries/Classes/Order.lean:75:65: 'sorryAx' is not a structure
+
+This error is possibly due to a change in the 'structure' syntax. Now the syntax is 'structure S : Type extends P' rather than 'structure S extends P' : Type'.
+
+The purpose of the change is to accommodate 'structure S extends toP : P' syntax for naming parent projections.
+error: Batteries/Classes/Order.lean:79:40: invalid binder annotation, type is not a class instance
+  ?m.2346
+
+Note: Use the command `set_option checkBinderAnnotations false` to disable the check
+error: Batteries/Classes/Order.lean:82:41: invalid binder annotation, type is not a class instance
+  ?m.2363
+
+Note: Use the command `set_option checkBinderAnnotations false` to disable the check
+error: Batteries/Classes/Order.lean:85:41: invalid binder annotation, type is not a class instance
+  ?m.2380
+
+Note: Use the command `set_option checkBinderAnnotations false` to disable the check
+error: Batteries/Classes/Order.lean:91:2: unknown identifier 'TransCmp'
+error: Batteries/Classes/Order.lean:91:2: 'sorryAx' is not a structure
+
+This error is possibly due to a change in the 'structure' syntax. Now the syntax is 'structure S : Type extends P' rather than 'structure S extends P' : Type'.
+
+The purpose of the change is to accommodate 'structure S extends toP : P' syntax for naming parent projections.
+error: Batteries/Classes/Order.lean:96:2: unknown identifier 'TransCmp'
+error: Batteries/Classes/Order.lean:96:2: 'sorryAx' is not a structure
+
+This error is possibly due to a change in the 'structure' syntax. Now the syntax is 'structure S : Type extends P' rather than 'structure S extends P' : Type'.
+
+The purpose of the change is to accommodate 'structure S extends toP : P' syntax for naming parent projections.
+error: Batteries/Classes/Order.lean:99:41: unknown identifier 'LawfulLTCmp'
+error: Batteries/Classes/Order.lean:102:41: unknown identifier 'LawfulLECmp'
+error: Batteries/Classes/Order.lean:105:55: unknown identifier 'LawfulBCmp'
+error: Batteries/Classes/Order.lean:108:46: unknown identifier 'LawfulCmp'
+error: Batteries/Classes/Order.lean:110:17: unknown identifier 'Std.OrientedCmp'
+error: Batteries/Classes/Order.lean:113:17: unknown identifier 'Std.TransCmp'
+error: Batteries/Classes/Order.lean:116:47: unknown identifier 'Std.OrientedCmp'
+error: Batteries/Classes/Order.lean:120:47: unknown identifier 'Std.TransCmp'
+error: Batteries/Classes/Order.lean:124:18: invalid binder annotation, type is not a class instance
+  ?m.2589
+
+Note: Use the command `set_option checkBinderAnnotations false` to disable the check
+error: Batteries/Classes/Order.lean:127:18: invalid binder annotation, type is not a class instance
+  ?m.2595
+
+Note: Use the command `set_option checkBinderAnnotations false` to disable the check
+error: Batteries/Classes/Order.lean:130:18: invalid binder annotation, type is not a class instance
+  ?m.2612
+
+Note: Use the command `set_option checkBinderAnnotations false` to disable the check
+error: Batteries/Classes/Order.lean:132:18: invalid binder annotation, type is not a class instance
+  ?m.2629
+
+Note: Use the command `set_option checkBinderAnnotations false` to disable the check
+error: Batteries/Classes/Order.lean:134:42: invalid binder annotation, type is not a class instance
+  ?m.2646
+
+Note: Use the command `set_option checkBinderAnnotations false` to disable the check
+error: Batteries/Classes/Order.lean:137:39: invalid binder annotation, type is not a class instance
+  ?m.2663
+
+Note: Use the command `set_option checkBinderAnnotations false` to disable the check
+error: Batteries/Classes/Order.lean:140:53: invalid binder annotation, type is not a class instance
+  ?m.2686
+
+Note: Use the command `set_option checkBinderAnnotations false` to disable the check
+error: Batteries/Classes/Order.lean:144:50: invalid binder annotation, type is not a class instance
+  ?m.2709
+
+Note: Use the command `set_option checkBinderAnnotations false` to disable the check
+error: Batteries/Classes/Order.lean:149:28: invalid binder annotation, type is not a class instance
+  ?m.2744
+
+Note: Use the command `set_option checkBinderAnnotations false` to disable the check
+error: Batteries/Classes/Order.lean:162:12: invalid argument name '╬▒' for function
+error: Batteries/Classes/Order.lean:168:17: invalid argument name '╬▒' for function
+error: Batteries/Classes/Order.lean:180:13: invalid argument name '╬▒' for function
+error: Batteries/Classes/Order.lean:181:2: unknown identifier 'TransOrd.compareOfLessAndEq_of_lt_trans_of_lt_iff'
+error: Batteries/Classes/Order.lean:202:13: invalid argument name '╬▒' for function
+error: Batteries/Classes/Order.lean:212:16: invalid argument name '╬▒' for function
+error: Batteries/Classes/Order.lean:213:2: 'sorryAx' is not a structure
+error: Batteries/Classes/Order.lean:224:16: invalid argument name '╬▒' for function
+error: Batteries/Classes/Order.lean:225:2: 'sorryAx' is not a structure
+error: Batteries/Classes/Order.lean:236:16: invalid argument name '╬▒' for function
+error: Batteries/Classes/Order.lean:239:2: 'sorryAx' is not a structure
+error: Batteries/Classes/Order.lean:252:14: invalid argument name '╬▒' for function
+error: Batteries/Classes/Order.lean:261:4: 'sorryAx' is not a structure
+error: Batteries/Classes/Order.lean:265:11: Function expected at
+  LawfulOrd
+but this term has type
+  ?m.4369
+
+Note: Expected a function because this term is being applied to the argument
+  Nat
+error: Batteries/Classes/Order.lean:269:11: Function expected at
+  LawfulOrd
+but this term has type
+  ?m.4684
+
+Note: Expected a function because this term is being applied to the argument
+  Int
+error: Batteries/Classes/Order.lean:273:11: Function expected at
+  LawfulOrd
+but this term has type
+  ?m.4999
+
+Note: Expected a function because this term is being applied to the argument
+  Bool
+error: Batteries/Classes/Order.lean:274:8: unknown identifier 'LawfulCmp.mk'
+error: Batteries/Classes/Order.lean:276:11: Function expected at
+  LawfulOrd
+but this term has type
+  ?m.5058
+
+Note: Expected a function because this term is being applied to the argument
+  (Fin n)
+error: Lean exited with code 1
+Ô£û [279/5307] Building Batteries.Tactic.Lint.Basic
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\.lake\packages\batteries\Batteries\Tactic\Lint\Basic.lean -o C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean\Batteries\Tactic\Lint\Basic.olean -i C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean\Batteries\Tactic\Lint\Basic.ilean -c C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\ir\Batteries\Tactic\Lint\Basic.c --setup C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\ir\Batteries\Tactic\Lint\Basic.setup.json --json
+error: Batteries/Tactic/Lint/Basic.lean:87:33: Invalid field `foldl`: The environment does not contain `Lean.NameMap.foldl`
+  es
+has type
+  NameMap (Name ├ù Bool)
+error: Batteries/Tactic/Lint/Basic.lean:87:33: Invalid field `foldl`: The environment does not contain `Lean.RBMap.foldl`
+  es
+has type
+  RBMap Name (Name ├ù Bool) Name.quickCmp
+error: Batteries/Tactic/Lint/Basic.lean:87:33: Invalid field `foldl`: The environment does not contain `Subtype.foldl`
+  es
+has type
+  { t // RBNode.WellFormed Name.quickCmp t }
+error: Lean exited with code 1
+Ô£û [312/5638] Building Batteries.Classes.RatCast
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\.lake\packages\batteries\Batteries\Classes\RatCast.lean -o C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean\Batteries\Classes\RatCast.olean -i C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean\Batteries\Classes\RatCast.ilean -c C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\ir\Batteries\Classes\RatCast.c --setup C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\ir\Batteries\Classes\RatCast.setup.json --json
+error: Batteries/Classes/RatCast.lean:12:42: type mismatch
+  n
+has type
+  RatÔ£Ø : Sort ?u.118
+but is expected to have type
+  Rat : Type ?u.115
+error: Batteries/Classes/RatCast.lean:20:50: Invalid field notation: Type is not of the form `C ...` where C is a constant
+  Rat
+has type
+  Sort ?u.366
+error: Batteries/Classes/RatCast.lean:20:0: instance does not provide concrete values for (semi-)out-params
+  CoeTail ?Rat K
+error: Batteries/Classes/RatCast.lean:23:50: Invalid field notation: Type is not of the form `C ...` where C is a constant
+  Rat
+has type
+  Sort ?u.425
+error: Lean exited with code 1
+Ô£û [313/5638] Building Batteries.Tactic.PrintDependents
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\.lake\packages\batteries\Batteries\Tactic\PrintDependents.lean -o C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean\Batteries\Tactic\PrintDependents.olean -i C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean\Batteries\Tactic\PrintDependents.ilean -c C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\ir\Batteries\Tactic\PrintDependents.c --setup C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\ir\Batteries\Tactic\PrintDependents.setup.json --json
+error: Batteries/Tactic/PrintDependents.lean:113:15: unknown identifier 'Std.TreeSet.ofArray'
+error: Batteries/Tactic/PrintDependents.lean:113:6: failed to construct 'ForIn' instance for collection
+  ?m.6697
+and monad
+  ReaderT Context (StateRefT' IO.RealWorld State (EIO Exception))
+error: Lean exited with code 1
+Ô£û [314/6020] Building Batteries.CodeAction.Attr
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\.lake\packages\batteries\Batteries\CodeAction\Attr.lean -o C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean\Batteries\CodeAction\Attr.olean -i C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean\Batteries\CodeAction\Attr.ilean -c C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\ir\Batteries\CodeAction\Attr.c --setup C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\ir\Batteries\CodeAction\Attr.setup.json --json
+error: Batteries/CodeAction/Attr.lean:66:21: Invalid field `getD`: The environment does not contain `Lean.NameMap.getD`
+  m
+has type
+  NameMap (Array TacticCodeAction)
+error: Batteries/CodeAction/Attr.lean:66:21: Invalid field `getD`: The environment does not contain `Lean.RBMap.getD`
+  m
+has type
+  RBMap Name (Array TacticCodeAction) Name.quickCmp
+error: Batteries/CodeAction/Attr.lean:66:21: Invalid field `getD`: The environment does not contain `Subtype.getD`
+  m
+has type
+  { t // RBNode.WellFormed Name.quickCmp t }
+error: Lean exited with code 1
+Ô£û [317/6722] Building Mathlib.Tactic.Linter.Header
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\.lake\packages\mathlib\Mathlib\Tactic\Linter\Header.lean -o C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean\Mathlib\Tactic\Linter\Header.olean -i C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean\Mathlib\Tactic\Linter\Header.ilean -c C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\ir\Mathlib\Tactic\Linter\Header.c --setup C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\ir\Mathlib\Tactic\Linter\Header.setup.json --json
+error: Mathlib/Tactic/Linter/Header.lean:330:40: 'inputString' is not a field of structure 'Parser.InputContext'
+error: Mathlib/Tactic/Linter/Header.lean:330:38: fields missing: 'input'
+error: Lean exited with code 1
+Ô£û [543/7227] Building Batteries.Tactic.Alias
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\.lake\packages\batteries\Batteries\Tactic\Alias.lean -o C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean\Batteries\Tactic\Alias.olean -i C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean\Batteries\Tactic\Alias.ilean -c C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\ir\Batteries\Tactic\Alias.c --setup C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\ir\Batteries\Tactic\Alias.setup.json --json
+error: Batteries/Tactic/Alias.lean:122:28: Unknown identifier `Option.missing`
+
+Note: Inferred this identifier from the expected type of `.missing`:
+  Option (TSyntax `Lean.Parser.Command.docComment)
+error: Batteries/Tactic/Alias.lean:158:14: Application type mismatch: In the application
+  some (doc, isVerso)
+the argument
+  (doc, isVerso)
+has type
+  ?m.11026 ├ù ?m.11029 : Type (max ?u.11035 ?u.11034)
+but is expected to have type
+  TSyntax `Lean.Parser.Command.docComment : Type
+error: Lean exited with code 1
+Ô£û [1259/7227] Building Batteries.Tactic.HelpCmd
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\.lake\packages\batteries\Batteries\Tactic\HelpCmd.lean -o C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean\Batteries\Tactic\HelpCmd.olean -i C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean\Batteries\Tactic\HelpCmd.ilean -c C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\ir\Batteries\Tactic\HelpCmd.c --setup C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\ir\Batteries\Tactic\HelpCmd.setup.json --json
+error: Batteries/Tactic/HelpCmd.lean:52:18: unknown identifier 'Std.TreeMap'
+error: Batteries/Tactic/HelpCmd.lean:99:18: unknown identifier 'Std.TreeMap'
+error: Batteries/Tactic/HelpCmd.lean:182:18: unknown identifier 'Std.TreeMap'
+error: Batteries/Tactic/HelpCmd.lean:224:18: unknown identifier 'Std.TreeMap'
+error: Batteries/Tactic/HelpCmd.lean:225:17: unknown identifier 'Std.TreeMap'
+error: Lean exited with code 1
+Ô£û [1261/7227] Building ProofWidgets.Data.Html
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\.lake\packages\proofwidgets\ProofWidgets\Data\Html.lean -o C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean\ProofWidgets\Data\Html.olean -i C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean\ProofWidgets\Data\Html.ilean -c C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\ir\ProofWidgets\Data\Html.c --setup C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\ir\ProofWidgets\Data\Html.setup.json --json
+error: ProofWidgets/Data/Html.lean:66:53: Application type mismatch: In the application
+  mkNodeToken `ProofWidgets.Jsx.jsxText startPos true
+the argument
+  true
+has type
+  Bool : Type
+but is expected to have type
+  ParserContext : Type
+error: ProofWidgets/Data/Html.lean:81:0: cannot evaluate code because 'ProofWidgets.Jsx.jsxText._lam_2' uses 'sorry' and/or contains errors
+error: ProofWidgets/Data/Html.lean:110:17: unexpected token '$'; expected 'jsxChild', 'jsxElement' or jsxElement
+error: ProofWidgets/Data/Html.lean:247:30: unexpected token '$'; expected 'jsxChild', 'jsxElement' or jsxElement
+error: ProofWidgets/Data/Html.lean:262:0: Missing name after `end`: Expected the current scope name `delaborator`
+
+Hint: To end the current scope `delaborator`, specify its name:
+  end ╠▓d╠▓e╠▓l╠▓a╠▓b╠▓o╠▓r╠▓a╠▓t╠▓o╠▓r╠▓
+error: Lean exited with code 1
+Some required builds logged failures:
+- Batteries.Data.NameSet
+- Batteries.Lean.Json
+- Batteries.Data.Rat.Float
+- Aesop.Rule.Name
+- ImportGraph.RequiredModules
+- Batteries.Classes.Order
+- Batteries.Tactic.Lint.Basic
+- Batteries.Classes.RatCast
+- Batteries.Tactic.PrintDependents
+- Batteries.CodeAction.Attr
+- Mathlib.Tactic.Linter.Header
+- Batteries.Tactic.Alias
+- Batteries.Tactic.HelpCmd
+- ProofWidgets.Data.Html
+error: build failed

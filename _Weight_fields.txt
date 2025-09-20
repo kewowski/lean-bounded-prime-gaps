@@ -1,0 +1,11 @@
+base
+bounded
+dispersionUpper
+firstMomentLower
+hits
+nonneg
+norm1
+norm2
+secondMomentUpper
+support
+w

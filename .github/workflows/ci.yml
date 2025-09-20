@@ -1,0 +1,46 @@
+name: Lean CI (green + lint)
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Elan (Lean toolchain manager)
+        shell: pwsh
+        run: |
+          $ProgressPreference = 'SilentlyContinue'
+          Invoke-WebRequest -UseBasicParsing `
+            https://raw.githubusercontent.com/leanprover/elan/master/elan-init.ps1 `
+            -OutFile elan-init.ps1
+          .\elan-init.ps1 -y
+
+      - name: Use repo toolchain
+        shell: pwsh
+        run: |
+          $toolchain = Get-Content -Raw -Encoding UTF8 .\lean-toolchain
+          elan toolchain install $toolchain
+          elan default $toolchain
+          elan show
+
+      - name: Restore Lake deps cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            .lake/packages
+            .lake/build
+            _target
+          key: ${{ runner.os }}-lake-${{ hashFiles('lakefile.lean', 'lake-manifest.json', 'lean-toolchain') }}
+
+      - name: Build (lake)
+        shell: pwsh
+        run: lake build
+
+      - name: CI lint gate (scripts/ci.ps1)
+        shell: pwsh
+        run: powershell -ExecutionPolicy Bypass -File .\scripts\ci.ps1 -VerboseOutput
