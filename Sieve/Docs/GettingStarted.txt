@@ -1,0 +1,27 @@
+Getting Started (lean-bounded-prime-gaps)
+
+• Build: lake build
+• One-stop import in examples: import Sieve.AllExports
+• Demos to peek at:
+  - Sieve/RunTwinAnalyticMockDemo.lean
+  - Sieve/RunKPrimesAnalyticMockDemo.lean
+  - Sieve/RunStage2ThresholdsSecondDemo.lean
+  - Sieve/RunStage3WindowDemo.lean
+
+Core modules:
+  Stage 2 hub:    Sieve/Stage2Exports.lean
+  Stage 3 hub:    Sieve/Stage3Exports.lean
+  Analytic API:   Sieve/AnalyticInputs.lean (AvgWindowHitLB)
+  Bridge & mocks: Sieve/AnalyticBridge.lean, Sieve/AnalyticMocks.lean
+
+Typical flow:
+  1) Prove an average lower bound as an AvgWindowHitLB (fill `lower` + `le_avg`).
+  2) Apply wrappers:
+     - exists_prime_in_window_of_AI_ge_one_from_avg
+     - exists_atLeast_k_primes_in_window_of_AI_ge_k_from_avg
+     - twin-window specializations available.
+
+House rules:
+  - Keep repo green (no sorry, no broken imports).
+  - Prefer stable Finset/ℝ inequalities (avoid brittle sum_filter on LHS).
+  - Avoid norm_num/#find for speed.
