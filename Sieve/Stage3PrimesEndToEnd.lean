@@ -5,7 +5,6 @@
 import Mathlib
 import Sieve.MTCore
 import Sieve.Stage3EndToEnd
-set_option linter.unnecessarySimpa false
 noncomputable section
 open Classical BigOperators
 
@@ -33,7 +32,7 @@ theorem exists_prime_in_window_of_AI_ge_one_from_avg
     ∃ n ∈ Sieve.MTCore.heavySet W τ, ∃ h ∈ H, isPrimeZ (n + h) := by
   classical
   -- delegate to the generic end-to-end wrapper with HS := primeHS cfg
-  simpa [primeHS] using
+  simp [primeHS] using
     Sieve.Stage3.exists_hit_of_AI_ge_one_from_avg
       (AI := AI) (W := W) (τ := τ) (H := H) (HS := primeHS cfg)
       (hpos := hpos) (hτleavg := hτleavg) (h1 := h1)
@@ -59,7 +58,7 @@ theorem exists_atLeast_k_primes_in_window_of_AI_ge_k_from_avg
       k ≤ (H.filter (fun h => isPrimeZ (n + h))).card := by
   classical
   -- specialize the generic integer-threshold wrapper with HS := primeHS cfg
-  simpa [primeHS] using
+  simp [primeHS] using
     Sieve.Stage3.exists_atLeast_k_hits_of_AI_ge_k_from_avg
       (AI := AI) (W := W) (τ := τ) (H := H) (HS := primeHS cfg)
       (hpos := hpos) (hτleavg := hτleavg) (k := k) (hk := hk)
@@ -124,12 +123,12 @@ namespace Stage3
 @[simp] theorem isPrimeZ_add_zero (n : ℤ) :
   isPrimeZ (n + 0) ↔ isPrimeZ n := by
   -- `n + 0 = n`, so both sides reduce to the same proposition.
-  simpa [isPrimeZ]
+  simp [isPrimeZ]
 
 @[simp] theorem isPrimeZ_zero_add (n : ℤ) :
   isPrimeZ (0 + n) ↔ isPrimeZ n := by
   -- `0 + n = n`, so both sides reduce to the same proposition.
-  simpa [isPrimeZ]
+  simp [isPrimeZ]
 
 end Stage3
 end Sieve

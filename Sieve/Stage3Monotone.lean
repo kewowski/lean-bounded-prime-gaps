@@ -5,7 +5,6 @@
 import Mathlib
 import Sieve.MTCore
 
-set_option linter.unnecessarySimpa false
 
 noncomputable section
 open Classical BigOperators

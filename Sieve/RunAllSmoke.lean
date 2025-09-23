@@ -1,10 +1,17 @@
-/- Sieve/RunAllSmoke.lean -/
-import Sieve.AllExports
+/-
+  Sieve/RunAllSmoke.lean
+  Aggregates all Stage-3 demo files so they’re exercised together in CI/builds.
+-/
+import Mathlib
+import Sieve.RunStage3TwinGapDemo
+import Sieve.RunStage3TwinGapTwinPrimesDemo
+import Sieve.RunAnalyticBVTemplateDemo
+import Sieve.RunBVSketchTwinDemo
+import Sieve.RunBVSketchParamsTwinDemo
+import Sieve.RunBVMainStatementDemo
 
 noncomputable section
 open Classical
 
-#check Sieve.Stage3.heavyDensity_le_one
-#check Sieve.Stage3.exists_prime_in_window_of_AI_ge_one_from_avg
-#check Sieve.Stage2.heavy_count_le_of_secondMoment
-#check Sieve.AnalyticInputs.avgAsLower
+-- Trivial token so the file isn’t empty.
+def Sieve.runAllSmoke_ok : True := True.intro

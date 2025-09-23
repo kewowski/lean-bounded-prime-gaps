@@ -1,0 +1,55 @@
+# House Rules — lean-bounded-prime-gaps (Maynard–Tao, Stage-2/3 & Analytic Bridge)
+# UTF-8 (no BOM)
+
+Prime Directive
+- Keep the repo green at all times.
+- No `sorry`, no new axioms, no broken imports, fast builds.
+
+Copy/Paste Discipline
+- Always use the TOP copy button for commands.
+- Here-strings must be flush-left:
+    @'
+    ... Lean code ...
+    '@ | Set-Content 'PATH\TO\File.lean' -Encoding utf8NoBOM
+- Do not type or paste anything after the closing `'@` except the pipe to Set-Content.
+- Avoid smart punctuation (en dashes, curly quotes, zero-width spaces).
+
+One PowerShell Command Per Turn
+- Every edit must be a single fenced block that writes the full file and then builds.
+
+Command Template (baked-in)
+- We no longer call `lean --make` directly to avoid help/usage spam.
+- Use this pattern:
+    @'
+    -- full file contents here
+    '@ | Set-Content 'C:\Projects\test-lean-modules\PATH\TO\File.lean' -Encoding utf8NoBOM; `
+    Set-Location 'C:\Projects\test-lean-modules'; `
+    lake build Module.Name; `
+    lake build
+
+Import Hygiene
+- Analytic modules are leaf modules — do NOT import export hubs into them.
+- Demos may import the one-line Stage-3 hub.
+
+Linter Playbook (fix-on-sight)
+- Replace deprecated: `∑ x in s, f x`  →  `∑ x ∈ s, f x`.
+- Prefer `simp` when the goal matches; otherwise `rw`/`exact`/short `calc`.
+- Remove unused simp args (e.g., linter warns: “This simp argument is unused”).
+- Avoid heavy/slow tactics; keep proofs tiny and local.
+
+Per-File Build Check
+- For any edited file, always:
+    lake build Module.Name
+    lake build
+- This ensures both the file and whole project stay green without invoking `lean --make`.
+
+Analytic Bridge Scope (today’s session)
+- Keep additions tiny, type-only where possible, and proof-light.
+- Maintain leaf-module discipline and fast compile times.
+
+Troubleshooting
+- If Lean prints a giant `--help`, it’s almost always a malformed `--make` (we do not use it).
+- If a file suddenly shows “unexpected token '\'”, the here-string likely captured pipeline text.
+  Re-write the file with a clean, flush-left here-string and rebuild.
+
+— End of House Rules —

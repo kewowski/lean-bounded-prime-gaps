@@ -1,40 +1,19 @@
-/-
-  Sieve/Stage3Exports.lean
-  One-stop Stage-3 entry points (no heavy analysis).
--/
-import Sieve.MTCore
-import Sieve.AnalyticInputs
-import Sieve.Stage3Extraction
-import Sieve.Stage3Report
+import Mathlib
 import Sieve.Stage3Window
-import Sieve.Stage3MinBounds
 import Sieve.Stage3PrimeFacade
-import Sieve.Stage3PrimeFacade
-import Sieve.Stage3PrimeCounts
-
-import Sieve.Stage3Monotone
-
-
-import Sieve.Stage3Monotone
-
-
-import Sieve.Stage3WindowMono
-
-
-import Sieve.Stage3WindowBounds
-
-
-import Sieve.Stage3HeavySetMonotone
-
-
-import Sieve.Stage3EndToEnd
-
-
 import Sieve.Stage3PrimesEndToEnd
-
-
-import Sieve.Stage3DensityBounds
-
-
+import Sieve.Stage3DensityZero
+import Sieve.Stage3Monotone
 import Sieve.Stage3SecondMomentEmptiness
+import Sieve.Stage3AvgConst
+import Sieve.Stage3TwinGap
 
+/-!
+  Sieve/Stage3Exports.lean
+  UTF-8 (no BOM), ASCII-only.
+
+  Canonical export hub for Stage-3 modules.
+  NOTE: We import `Sieve.Stage3Monotone` (canonical) instead of the deprecated
+  `Sieve.Stage3DensityMonotone` to avoid duplicate lemma names such as
+  `Sieve.Stage3.heavyDensity_antitone_in_tau`.
+-/

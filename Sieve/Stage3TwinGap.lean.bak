@@ -1,0 +1,326 @@
+import Mathlib
+import Sieve.Compat.FinsetCard
+import Sieve.Stage3PrimeFacade
+import Sieve.Stage3PrimesEndToEnd
+import Sieve.AnalyticBridge
+
+/-
+  Sieve/Stage3TwinGap.lean
+  Clean rewrite: twin-window ({0,2}) utilities, card/indicator bridge,
+  and the AI→witness step. One equality lemma, one bridge lemma, no duplicates.
+-/
+
+noncomputable section
+open Classical
+open Finset
+open scoped BigOperators
+
+namespace Sieve.Stage3TwinGap
+
+-- === Stage3TwinGap local helpers (minimal surface area) ===
+private lemma ST3TG_sum_indicator_eq_card_filter
+  (HS : Sieve.Stage3.HitSystem) (H : Finset ℤ) (n : ℤ) :
+  ∑ h ∈ H, Sieve.Stage3.hitIndicator HS (n + h)
+    = (({h ∈ H | HS.isHit (n + h)}).card : ℝ) := by
+  classical
+  let P : ℤ → Prop := fun h => HS.isHit (n + h)
+  haveI : DecidablePred P := Classical.decPred _
+  -- Sum(ite) over H → sum of 1 over H.filter P → card (H.filter P)
+  have hfilter :
+      ∑ h ∈ H, (if P h then (1 : ℝ) else 0)
+        = ∑ h ∈ H.filter P, (1 : ℝ) := by
+    simpa [P] using
+      (Finset.sum_filter (s := H) (p := P) (f := fun _ => (1 : ℝ))).symm
+  have hconst :
+      ∑ h ∈ H.filter P, (1 : ℝ)
+        = ((H.filter P).card : ℝ) := by
+    simp [Finset.sum_const]
+  have hmain :
+      ∑ h ∈ H, (if P h then (1 : ℝ) else 0)
+        = ((H.filter P).card : ℝ) := hfilter.trans hconst
+  calc
+    ∑ h ∈ H, Sieve.Stage3.hitIndicator HS (n + h)
+        = ∑ h ∈ H, (if P h then (1 : ℝ) else 0) := by
+          simp [Sieve.Stage3.hitIndicator, P]
+    _   = ((H.filter P).card : ℝ) := hmain
+    _   = (({h ∈ H | P h}).card : ℝ) := by rfl
+
+private lemma ST3TG_windowHitCount_eq_card_filter
+'
+
+$new = [regex]::Replace($src, $pattern, $replacement, 'Singleline')
+$new | Set-Content -Encoding utf8NoBOM $path
+
+@
+# Step 1: rewrite ONLY the body of ST3TG_sum_indicator_eq_card_filter
+$path = "Sieve/Stage3TwinGap.lean"
+$src  = Get-Content -Raw $path -Encoding utf8
+
+$pattern = '(?s)private\s+lemma\s+ST3TG_sum_indicator_eq_card_filter\s*\(HS\s*:\s*Sieve\.Stage3\.HitSystem\)\s*\(H\s*:\s*Finset\s*ℤ\)\s*\(n\s*:\s*ℤ\)\s*:\s*[\s\S]*?:=\s*by[\s\S]*?private\s+lemma\s+ST3TG_windowHitCount_eq_card_filter'
+$replacement = @'
+private lemma ST3TG_sum_indicator_eq_card_filter
+  (HS : Sieve.Stage3.HitSystem) (H : Finset ℤ) (n : ℤ) :
+  ∑ h ∈ H, Sieve.Stage3.hitIndicator HS (n + h)
+    = (({h ∈ H | HS.isHit (n + h)}).card : ℝ) := by
+  classical
+  let P : ℤ → Prop := fun h => HS.isHit (n + h)
+  haveI : DecidablePred P := Classical.decPred _
+  -- Sum(ite) over H → sum of 1 over H.filter P → card (H.filter P)
+  have hfilter :
+      ∑ h ∈ H, (if P h then (1 : ℝ) else 0)
+        = ∑ h ∈ H.filter P, (1 : ℝ) := by
+    simpa [P] using
+      (Finset.sum_filter (s := H) (p := P) (f := fun _ => (1 : ℝ))).symm
+  have hconst :
+      ∑ h ∈ H.filter P, (1 : ℝ)
+        = ((H.filter P).card : ℝ) := by
+    simp [Finset.sum_const]
+  have hmain :
+      ∑ h ∈ H, (if P h then (1 : ℝ) else 0)
+        = ((H.filter P).card : ℝ) := hfilter.trans hconst
+  calc
+    ∑ h ∈ H, Sieve.Stage3.hitIndicator HS (n + h)
+        = ∑ h ∈ H, (if P h then (1 : ℝ) else 0) := by
+          simp [Sieve.Stage3.hitIndicator, P]
+    _   = ((H.filter P).card : ℝ) := hmain
+    _   = (({h ∈ H | P h}).card : ℝ) := by rfl
+
+private lemma ST3TG_windowHitCount_eq_card_filter
+  (HS : Sieve.Stage3.HitSystem) (H : Finset ℤ) (n : ℤ) :
+  Sieve.Stage3.windowHitCount H HS n
+    = (({x ∈ H | HS.isHit (n + x)}).card : ℝ) := by
+  classical
+  -- windowHitCount = sum of indicators; then use the previous lemma
+  have := ST3TG_sum_indicator_eq_card_filter (HS := HS) (H := H) (n := n)
+  -- unfold windowHitCount on the LHS and close
+  have : (∑ x ∈ H, Sieve.Stage3.hitIndicator HS (n + x))
+          = (({x ∈ H | HS.isHit (n + x)}).card : ℝ) := this
+  simpa [Sieve.Stage3.windowHitCount, Sieve.Stage3.windowSum] using this
+
+private lemma ST3TG_card_to_count
+  (cfg : Sieve.MTCore.TupleConfig) (n : ℤ) :
+  (2 : ℕ)
+    ≤ {h ∈ (([0, 2] : List ℤ).toFinset : Finset ℤ) | Sieve.Stage3.isPrimeZ (n + h)}.card
+  → (2 : ℝ)
+    ≤ Sieve.Stage3.windowHitCount (([0, 2] : List ℤ).toFinset) (Sieve.Stage3.primeHS cfg) n := by
+  classical
+  let H : Finset ℤ := (([0, 2] : List ℤ).toFinset)
+  intro hk
+  -- For the prime façade, isHit ↔ isPrimeZ
+  have hcount :
+    Sieve.Stage3.windowHitCount H (Sieve.Stage3.primeHS cfg) n
+      = ((H.filter (fun h => Sieve.Stage3.isPrimeZ (n + h))).card : ℝ) := by
+    simpa [Sieve.Stage3.primeHS] using
+      ST3TG_windowHitCount_eq_card_filter (HS := Sieve.Stage3.primeHS cfg) (H := H) (n := n)
+  -- coerce the ℕ bound to ℝ, then rewrite back via hcount
+  have hk' : (2 : ℕ) ≤ (H.filter (fun h => Sieve.Stage3.isPrimeZ (n + h))).card := by
+    simpa [H] using hk
+  have hkR : (2 : ℝ) ≤ ((H.filter (fun h => Sieve.Stage3.isPrimeZ (n + h))).card : ℝ) := by
+    exact_mod_cast hk'
+  have : (2 : ℝ) ≤ Sieve.Stage3.windowHitCount H (Sieve.Stage3.primeHS cfg) n := by
+    simpa [hcount] using hkR
+  simpa [H] using this
+-- === end local helpers ===
+
+/-- The twin-gap offsets `{0,2}` as a `Finset ℤ`. -/
+@[simp] def twinOffsets : Finset ℤ := ({0, 2} : Finset ℤ)
+
+@[simp] theorem mem_twinOffsets {z : ℤ} :
+  z ∈ twinOffsets ↔ z = 0 ∨ z = 2 := by
+  simp [twinOffsets]
+
+@[simp] theorem card_twinOffsets : twinOffsets.card = 2 := by
+  simp [twinOffsets]
+
+@[simp] theorem twinOffsets_eq_list_toFinset :
+  twinOffsets = (([0, 2] : List ℤ).toFinset) := by
+  simp [twinOffsets]
+
+/-! ## Sum/Count bridge for arbitrary hit systems -/
+
+/-- For any hit system, `windowHitCount` equals the (real) cardinality of the hits in `H`. -/
+lemma windowHitCount_eq_card_filter
+    (HS : Sieve.Stage3.HitSystem) (H : Finset ℤ) (n : ℤ) :
+    Sieve.Stage3.windowHitCount H HS n
+      = (({h ∈ H | HS.isHit (n + h)}).card : ℝ) := by
+  classical
+  -- Delegate to the local helper we just normalized to set-builder form
+  simpa [Sieve.Stage3.windowHitCount, Sieve.Stage3.windowSum] using
+    ST3TG_windowHitCount_eq_card_filter (HS := HS) (H := H) (n := n)
+
+/-! ## Twin-window: card = 2 ↔ both primes -/
+
+/-- On the twin window `{0,2}`, having exactly two prime hits is equivalent
+to `n` and `n+2` both being prime. -/
+theorem twin_window_card_eq_two_iff_twin_primes
+    (n : ℤ) :
+    ((([0, 2] : List ℤ).toFinset).filter (fun h => Sieve.Stage3.isPrimeZ (n + h))).card = 2
+    ↔ (Sieve.Stage3.isPrimeZ n ∧ Sieve.Stage3.isPrimeZ (n + 2)) := by
+  classical
+  let H : Finset ℤ := (([0, 2] : List ℤ).toFinset)
+  haveI : DecidablePred (fun h : ℤ => Sieve.Stage3.isPrimeZ (n + h)) := Classical.decPred _
+  constructor
+  · -- (→) Show both 0 and 2 are in the filter; extract the two primes.
+    intro hEq
+    have hScard : (H.filter (fun h => Sieve.Stage3.isPrimeZ (n + h))).card = 2 := by
+      simpa [H] using hEq
+    have SsubH : {h ∈ H | Sieve.Stage3.isPrimeZ (n + h)} ⊆ H := by
+      simpa using (Finset.filter_subset (s := H) (p := fun h => Sieve.Stage3.isPrimeZ (n + h)))
+    -- 0 ∈ filter (otherwise the filter ⊆ {2} so card ≤ 1)
+    have h0in : 0 ∈ H.filter (fun h => Sieve.Stage3.isPrimeZ (n + h)) := by
+      by_contra h0
+      have hSub2 : {h ∈ H | Sieve.Stage3.isPrimeZ (n + h)} ⊆ ({2} : Finset ℤ) := by
+        intro x hxS
+        have hxH : x ∈ H := SsubH hxS
+        have hx0or2 : x = 0 ∨ x = 2 := by simpa [H] using hxH
+        cases hx0or2 with
+        | inl hx0 => exact (False.elim (h0 (by simpa [hx0] using hxS)))
+        | inr hx2 => simpa [hx2]
+      have : (H.filter (fun h => Sieve.Stage3.isPrimeZ (n + h))).card ≤ ({2} : Finset ℤ).card :=
+        Finset.card_le_of_subset hSub2
+      have : (2 : ℕ) ≤ 1 := by simpa [hScard] using this
+      exact (by decide : ¬ (2 ≤ 1)) this
+    -- 2 ∈ filter (symmetric)
+    have h2in : 2 ∈ H.filter (fun h => Sieve.Stage3.isPrimeZ (n + h)) := by
+      by_contra h2not
+      have hSub0 : {h ∈ H | Sieve.Stage3.isPrimeZ (n + h)} ⊆ ({0} : Finset ℤ) := by
+        intro x hxS
+        have hxH : x ∈ H := SsubH hxS
+        have hx0or2 : x = 0 ∨ x = 2 := by simpa [H] using hxH
+        cases hx0or2 with
+        | inl hx0 => simpa [hx0]
+        | inr hx2 => exact (False.elim (h2not (by simpa [hx2] using hxS)))
+      have : (H.filter (fun h => Sieve.Stage3.isPrimeZ (n + h))).card ≤ ({0} : Finset ℤ).card :=
+        Finset.card_le_of_subset hSub0
+      have : (2 : ℕ) ≤ 1 := by simpa [hScard] using this
+      exact (by decide : ¬ (2 ≤ 1)) this
+    -- Extract primes
+    have hp0 : Sieve.Stage3.isPrimeZ (n + 0) := (Finset.mem_filter.mp h0in).2
+    have hp2 : Sieve.Stage3.isPrimeZ (n + 2) := (Finset.mem_filter.mp h2in).2
+    exact ⟨by simpa using hp0, hp2⟩
+  · -- (←) If both slots are prime then the filter is exactly {0,2}, so card = 2.
+    rintro ⟨hp0, hp2⟩
+    haveI : DecidablePred (fun h : ℤ => Sieve.Stage3.isPrimeZ (n + h)) := Classical.decPred _
+    let S : Finset ℤ := H.filter (fun h => Sieve.Stage3.isPrimeZ (n + h))
+    have hSsubset : S ⊆ ({0, 2} : Finset ℤ) := by
+      intro x hxS
+      have hxH : x ∈ H := (Finset.mem_filter.mp hxS).1
+      simpa [H] using hxH
+    have h0in : 0 ∈ S := by
+      have : 0 ∈ H := by simp [H]
+      exact Finset.mem_filter.mpr ⟨this, by simpa using hp0⟩
+    have h2in : 2 ∈ S := by
+      have : 2 ∈ H := by simp [H]
+      exact Finset.mem_filter.mpr ⟨this, by simpa using hp2⟩
+    have hsubset' : ({0, 2} : Finset ℤ) ⊆ S := by
+      intro x hx
+      have hx0or2 : x = 0 ∨ x = 2 := by
+        simpa [Finset.mem_insert, Finset.mem_singleton] using hx
+      cases hx0or2 with
+      | inl hx0 => simpa [S, H, hx0] using h0in
+      | inr hx2 => simpa [S, H, hx2] using h2in
+    have S_eq : S = ({0, 2} : Finset ℤ) :=
+      Finset.Subset.antisymm hSsubset hsubset'
+    -- cardinality on `{h ∈ {0,2} | …}` is exactly 2
+    have : S.card = 2 := by simpa [S_eq]
+    simpa [S, H] using this
+
+/-! ## From Nat-card ≥ 2 to Real windowHitCount ≥ 2 (prime façade) -/
+
+/-- Convert a *natural* `card ≥ 2` on the twin window to a *real* `windowHitCount ≥ 2`
+    for the prime façade. -/
+lemma twinWindow_natCard_ge_two_implies_windowCount_ge_two
+  (cfg : Sieve.MTCore.TupleConfig) (n : ℤ) :
+  (2 : ℕ) ≤ ((([0, 2] : List ℤ).toFinset).filter (fun h => Sieve.Stage3.isPrimeZ (n + h))).card →
+  (2 : ℝ) ≤
+    Sieve.Stage3.windowHitCount (([0, 2] : List ℤ).toFinset) (Sieve.Stage3.primeHS cfg) n := by
+  classical
+  haveI : DecidablePred (fun h : ℤ => Sieve.Stage3.isPrimeZ (n + h)) := Classical.decPred _
+  let H : Finset ℤ := (([0, 2] : List ℤ).toFinset)
+  intro hk
+  have hcount0 :=
+    windowHitCount_eq_card_filter (HS := Sieve.Stage3.primeHS cfg) (H := H) (n := n)
+  -- rewrite `.isHit` to `isPrimeZ`
+  have hcount :
+    Sieve.Stage3.windowHitCount H (Sieve.Stage3.primeHS cfg) n
+      = ((H.filter (fun h => Sieve.Stage3.isPrimeZ (n + h))).card : ℝ) := by
+    simpa [Sieve.Stage3.primeHS] using hcount0
+  have hk' : (2 : ℕ) ≤ ((H.filter (fun h => Sieve.Stage3.isPrimeZ (n + h))).card) := by
+    simpa [H] using hk
+  have : (2 : ℝ) ≤ ((H.filter (fun h => Sieve.Stage3.isPrimeZ (n + h))).card : ℝ) := by
+    exact_mod_cast hk'
+  simpa [hcount] using this
+
+/-! ## AI lower bound ⇒ witness with twin-window count ≥ 2 -/
+
+/-- From an analytic lower bound `AI.lower ≥ 2` for the twin window and the prime façade,
+together with `avg ≥ τ` (to witness heavy-set nonemptiness), produce `n` where the twin
+window count is at least `2`. -/
+theorem exists_twin_window_with_two_primes_of_AI_ge_two_from_avg
+    (AI : Sieve.Analytic.AvgWindowHitLB)
+    (W  : Sieve.MaynardWeights.Weight) (τ : ℝ)
+    (cfg : Sieve.MTCore.TupleConfig)
+    (hpos   : 0 < W.support.card)
+    (hτleavg : τ ≤ (∑ m ∈ W.support, W.w m) / (W.support.card : ℝ))
+    (h2  :
+      (2 : ℝ) ≤
+        AI.lower W τ (([0, 2] : List ℤ).toFinset) (Sieve.Stage3.primeHS cfg)
+          (Sieve.Stage3.heavySet_nonempty_of_avg_ge (W := W) (τ := τ) hpos hτleavg)) :
+    ∃ n : ℤ,
+      2 ≤
+        Sieve.Stage3.windowHitCount (([0, 2] : List ℤ).toFinset)
+          (Sieve.Stage3.primeHS cfg) n := by
+  classical
+  obtain ⟨n, _hne, hk⟩ :=
+    Sieve.Stage3.exists_atLeast_k_primes_in_twin_window_of_AI_ge_k_from_avg
+      (AI := AI) (W := W) (τ := τ) (cfg := cfg)
+      (hpos := hpos) (hτleavg := hτleavg) (k := 2) (hk := h2)
+  -- bridge Nat-card ≥ 2 → Real count ≥ 2 on the twin window
+  have hk_real :
+    (2 : ℝ) ≤
+      Sieve.Stage3.windowHitCount (([0, 2] : List ℤ).toFinset)
+        (Sieve.Stage3.primeHS cfg) n :=
+    ST3TG_card_to_count (cfg := cfg) (n := n) (by simpa using hk)
+  exact ⟨n, hk_real⟩
+
+/-! ## Local extraction: Nat-card ≥ 2 ⇒ a twin-prime pair -/
+
+/-- If the filtered twin window at `n` has card ≥ 2, then `n` and `n+2` are both prime. -/
+theorem twin_window_card_ge_two_imp_twin_primes
+    (n : ℤ)
+    (h :
+      2 ≤ ((([0, 2] : List ℤ).toFinset).filter (fun h => Sieve.Stage3.isPrimeZ (n + h))).card) :
+    ∃ p : ℤ, Sieve.Stage3.isPrimeZ p ∧ Sieve.Stage3.isPrimeZ (p + 2) := by
+  classical
+  let H : Finset ℤ := (([0, 2] : List ℤ).toFinset)
+  haveI : DecidablePred (fun h : ℤ => Sieve.Stage3.isPrimeZ (n + h)) := Classical.decPred _
+  let S : Finset ℤ := H.filter (fun h => Sieve.Stage3.isPrimeZ (n + h))
+  -- Since S ⊆ H and card H = 2, we have card S ≤ 2; together with h : 2 ≤ card S ⇒ card S = 2.
+  have SsubH : S ⊆ H := by
+    simpa [S] using (Finset.filter_subset (s := H) (p := fun h => Sieve.Stage3.isPrimeZ (n + h)))
+  have S_le_two : S.card ≤ 2 := by
+    have := Finset.card_le_of_subset SsubH
+    simpa [H] using this
+  have hEq2 : S.card = 2 := Nat.le_antisymm S_le_two (by simpa [S, H] using h)
+  -- Use the equivalence to extract the primes
+  have twinPair :
+      (Sieve.Stage3.isPrimeZ n ∧ Sieve.Stage3.isPrimeZ (n + 2)) :=
+    (twin_window_card_eq_two_iff_twin_primes n).mp (by simpa [H, S] using hEq2)
+  exact ⟨n, twinPair.1, twinPair.2⟩
+
+end Sieve.Stage3TwinGap
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
