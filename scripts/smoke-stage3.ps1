@@ -13,6 +13,7 @@ $targets = @(
   "Sieve.Analytic.RunTwinWindowFromBVMain",
   "Sieve.EndToEndTwinWindowDemo",
   "Sieve.Tests.Stage3TwinWindowSmoke"
+  "Sieve.Analytic.ToyWeightDemo"
 )
 
 Write-Host "Building: $($targets -join ', ')"

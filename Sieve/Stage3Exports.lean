@@ -10,6 +10,8 @@ import Sieve.Stage3TwinGap
 import Sieve.Analytic.BVMainStatement
 import Sieve.Analytic.BVMainStatementWrapper
 import Sieve.Analytic.BVMainStatementWire
+import Sieve.Stage3HeavySetMonotone
+
 
 
 /-!
