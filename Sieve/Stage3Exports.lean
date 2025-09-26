@@ -7,6 +7,10 @@ import Sieve.Stage3Monotone
 import Sieve.Stage3SecondMomentEmptiness
 import Sieve.Stage3AvgConst
 import Sieve.Stage3TwinGap
+import Sieve.Analytic.BVMainStatement
+import Sieve.Analytic.BVMainStatementWrapper
+import Sieve.Analytic.BVMainStatementWire
+
 
 /-!
   Sieve/Stage3Exports.lean
