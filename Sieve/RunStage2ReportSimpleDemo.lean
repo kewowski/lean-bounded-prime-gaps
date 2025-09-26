@@ -1,3 +1,4 @@
+import Sieve.Stage2Report
 /-
   Sieve/RunStage2ReportSimpleDemo.lean
   Demo: twins + constant weight + simple (non-zero) Gallagher → compact Stage-2 Report.
@@ -21,7 +22,7 @@ def window (M : ℕ) : Finset ℤ :=
 /-- Compact Stage-2 report using the **simple** Gallagher contract on `[-M,M]`
     with absolute cap `Mabs`, for a constant weight of height `c ≥ 0`. -/
 def report (M : ℕ) (Mabs c : ℝ) (hc : 0 ≤ c) :
-    Sieve.Stage2.Report
+    Sieve.Stage2Report.Report
       (Sieve.ConfigBuilders.simple (window M) Mabs
          Sieve.AdmissibleTwin.twin Sieve.AdmissibleTwin.admissible_twin)
       (Sieve.ConstWeight.const (window M) c hc) :=
@@ -30,7 +31,7 @@ def report (M : ℕ) (Mabs c : ℝ) (hc : 0 ≤ c) :
   let supp := window M
   let W    := Sieve.ConstWeight.const supp c hc
   let out  := Sieve.OutcomeBuilders.outcome_const_with_cfg cfg supp c hc
-  Sieve.Stage2.report_of_outcome cfg W out
+  Sieve.Stage2Report.report_of_outcome cfg W out
 
 /-- Sanity: `B ≥ 0`. -/
 example (M : ℕ) (Mabs c : ℝ) (hc : 0 ≤ c) :
@@ -56,3 +57,5 @@ example (M : ℕ) (Mabs c : ℝ) (hc : 0 ≤ c) :
   (report M Mabs c hc).first_hit_sq_le
 
 end Sieve.RunStage2ReportSimpleDemo
+
+

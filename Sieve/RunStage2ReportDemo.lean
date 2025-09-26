@@ -1,3 +1,4 @@
+import Sieve.Stage2Report
 /-
   Sieve/RunStage2ReportDemo.lean
   Demo: twins + constant weight → Outcome → compact Stage-2 Report.
@@ -18,13 +19,13 @@ def window (M : ℕ) : Finset ℤ :=
 
 /-- Build the compact Stage-2 report for twins + constant weight. -/
 def report (M : ℕ) (c : ℝ) (hc : 0 ≤ c) :
-    Sieve.Stage2.Report Sieve.AdmissibleTwin.twinConfig
+    Sieve.Stage2Report.Report Sieve.AdmissibleTwin.twinConfig
       (Sieve.ConstWeight.const (window M) c hc) :=
   let supp := window M
   let W    := Sieve.ConstWeight.const supp c hc
   let out  := Sieve.OutcomeBuilders.outcome_const_with_cfg
                 Sieve.AdmissibleTwin.twinConfig supp c hc
-  Sieve.Stage2.report_of_outcome Sieve.AdmissibleTwin.twinConfig W out
+  Sieve.Stage2Report.report_of_outcome Sieve.AdmissibleTwin.twinConfig W out
 
 /-- Sanity checks. -/
 example (M : ℕ) (c : ℝ) (hc : 0 ≤ c) : 0 ≤ (report M c hc).B :=
@@ -43,3 +44,5 @@ example (M : ℕ) (c : ℝ) (hc : 0 ≤ c) :
   (report M c hc).first_hit_sq_le
 
 end Sieve.RunStage2ReportDemo
+
+

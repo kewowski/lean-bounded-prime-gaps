@@ -1,11 +1,11 @@
-/-
-  Sieve/ConstWeightSimp.lean
-  `[simp]` lemmas for sums over a constant weight's support (c and c^2 cases).
--/
 import Mathlib
 import Sieve.ConstWeight
 import Sieve.ConstWeightLemmas
 import Sieve.MTMoments
+/-
+  Sieve/ConstWeightSimp.lean
+  `[simp]` lemmas for sums over a constant weight's support (c and c^2 cases).
+-/
 
 noncomputable section
 open Classical
@@ -30,10 +30,6 @@ end Sieve.ConstWeight
 /-
   Extra c = 1 simp lemmas so `Sieve.Run` closes goals automatically.
 -/
-import Mathlib
-import Sieve.ConstWeight
-import Sieve.ConstWeightLemmas
-import Sieve.MTMoments
 
 noncomputable section
 open Classical
@@ -59,10 +55,6 @@ end Sieve.ConstWeight
 /-
   Extra c = 1 moment simp lemmas so `Sieve.Run` closes goals automatically.
 -/
-import Mathlib
-import Sieve.ConstWeight
-import Sieve.ConstWeightLemmas
-import Sieve.MTMoments
 
 noncomputable section
 open Classical
@@ -83,3 +75,4 @@ namespace Sieve.ConstWeight
     (Sieve.ConstWeight.secondMoment_const supp 1 hc)
 
 end Sieve.ConstWeight
+

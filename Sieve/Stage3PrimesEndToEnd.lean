@@ -32,7 +32,7 @@ theorem exists_prime_in_window_of_AI_ge_one_from_avg
     ∃ n ∈ Sieve.MTCore.heavySet W τ, ∃ h ∈ H, isPrimeZ (n + h) := by
   classical
   -- delegate to the generic end-to-end wrapper with HS := primeHS cfg
-  simp [primeHS] using
+  simpa using
     Sieve.Stage3.exists_hit_of_AI_ge_one_from_avg
       (AI := AI) (W := W) (τ := τ) (H := H) (HS := primeHS cfg)
       (hpos := hpos) (hτleavg := hτleavg) (h1 := h1)
@@ -58,7 +58,7 @@ theorem exists_atLeast_k_primes_in_window_of_AI_ge_k_from_avg
       k ≤ (H.filter (fun h => isPrimeZ (n + h))).card := by
   classical
   -- specialize the generic integer-threshold wrapper with HS := primeHS cfg
-  simp [primeHS] using
+  simpa using
     Sieve.Stage3.exists_atLeast_k_hits_of_AI_ge_k_from_avg
       (AI := AI) (W := W) (τ := τ) (H := H) (HS := primeHS cfg)
       (hpos := hpos) (hτleavg := hτleavg) (k := k) (hk := hk)
@@ -132,6 +132,7 @@ namespace Stage3
 
 end Stage3
 end Sieve
+
 
 
 

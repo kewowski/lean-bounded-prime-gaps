@@ -1,1 +1,2711 @@
+===== OK :: Sieve.AbsMomentBounds =====
+Ô£ö [6994/6998] Built Sieve.MaynardWeights
+Ô£ö [6995/6998] Built Sieve.SumBounds
+Ô£ö [6996/6998] Built Sieve.MTMoments
+Ô£ö [6997/6998] Built Sieve.MTMomentBounds
+Ô£ö [6998/6998] Built Sieve.AbsMomentBounds
 Build completed successfully.
+
+===== OK :: Sieve.AddOneCancel =====
+Ô£ö [6994/6994] Built Sieve.AddOneCancel
+Build completed successfully.
+
+===== OK :: Sieve.AdmissiblePairEven =====
+Ô£ö [6994/6995] Built Sieve.AdmissibleTuples
+ÔÜá [6995/6995] Built Sieve.AdmissiblePairEven
+warning: Sieve/AdmissiblePairEven.lean:39:38: try 'simp at this' instead of 'simpa using this'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: Sieve/AdmissiblePairEven.lean:49:49: try 'simp at this' instead of 'simpa using this'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+Build completed successfully.
+
+===== OK :: Sieve.AdmissibleTuples =====
+Build completed successfully.
+
+===== OK :: Sieve.AdmissibleTwin =====
+Ô£ö [6998/7002] Built Sieve.LinearSieveBounds
+Ô£ö [6999/7002] Built Sieve.GallagherConservative
+Ô£ö [7000/7002] Built Sieve.Pipeline
+Ô£ö [7001/7002] Built Sieve.GallagherHook
+Ô£ö [7002/7002] Built Sieve.AdmissibleTwin
+Build completed successfully.
+
+===== FAIL :: Sieve.AllExports =====
+Ô£ö [7005/7053] Built Sieve.PipelineSimp
+Ô£ö [7006/7053] Built Sieve.Stage2Weight
+Ô£ö [7007/7053] Built Sieve.MTCore
+Ô£ö [7008/7053] Built Sieve.Stage2AvgNonneg
+Ô£ö [7009/7053] Built Sieve.MomentBounds
+Ô£ö [7010/7053] Built Sieve.Stage2Max
+Ô£ö [7011/7053] Built Sieve.ConstWeight
+Ô£ö [7012/7053] Built Sieve.Stage2MonotoneThresholds
+Ô£ö [7013/7053] Built Sieve.Stage2Squared
+Ô£ö [7014/7053] Built Sieve.Stage3Extraction
+Ô£ö [7015/7053] Built Sieve.Compat.FinsetCard
+Ô£ö [7016/7053] Built Sieve.Stage2SecondMoment
+Ô£ö [7017/7053] Built Sieve.Stage2Thresholds
+Ô£ö [7018/7053] Built Sieve.Stage2BoundsFromEq
+Ô£ö [7019/7053] Built Sieve.Stage2
+Ô£ö [7020/7053] Built Sieve.ConstWeightLemmas
+Ô£ö [7021/7053] Built Sieve.Stage2SecondMomentExtras
+Ô£ö [7022/7053] Built Sieve.Stage2DensitySecond
+Ô£ö [7023/7053] Built Sieve.Stage3DensityZero
+ÔÜá [7024/7053] Built Sieve.Stage3Monotone
+warning: Sieve/Stage3Monotone.lean:45:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: Sieve/Stage3Monotone.lean:49:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+Ô£ö [7025/7053] Built Sieve.Stage2FirstMomentExtras
+Ô£ö [7026/7053] Built Sieve.Stage3Window
+Ô£ö [7027/7053] Built Sieve.Stage2Density
+Ô£ö [7028/7053] Built Sieve.Stage2Glue
+Ô£ö [7029/7053] Built Sieve.ConstWeightAverage
+Ô£ö [7030/7053] Built Sieve.Stage3AvgConst
+Ô£ö [7031/7053] Built Sieve.Stage3PrimeFacade
+Ô£ö [7032/7053] Built Sieve.Stage2Report
+Ô£ö [7033/7053] Built Sieve.Stage2MinBounds
+Ô£ö [7034/7053] Built Sieve.Stage2Basic
+Ô£ö [7035/7053] Built Sieve.Stage2Pigeonhole
+Ô£ö [7036/7053] Built Sieve.Stage3PrimeCounts
+Ô£ö [7037/7053] Built Sieve.Stage3HitCard
+Ô£ö [7038/7053] Built Sieve.Stage2Summary
+Ô£ö [7039/7053] Built Sieve.Stage2Average
+Ô£ö [7040/7053] Built Sieve.Stage2Monotone
+Ô£ö [7041/7053] Built Sieve.Stage3PrimeCountsNat
+Ô£ö [7042/7053] Built Sieve.Stage2Toolkit
+Ô£ö [7043/7053] Built Sieve.AnalyticBridge
+Ô£ö [7044/7053] Built Sieve.Stage2Exports
+Ô£ö [7045/7053] Built Sieve.AnalyticInputs
+Ô£ö [7046/7053] Built Sieve.Stage3SecondMomentEmptiness
+Ô£ö [7047/7053] Built Sieve.Stage3Report
+Ô£ö [7048/7053] Built Sieve.AnalyticMocks
+Ô£ö [7049/7053] Built Sieve.Stage3EndToEnd
+Ô£û [7050/7053] Building Sieve.Stage3PrimesEndToEnd
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\Sieve\Stage3PrimesEndToEnd.lean -o C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Stage3PrimesEndToEnd.olean -i C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Stage3PrimesEndToEnd.ilean -c C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Stage3PrimesEndToEnd.c --setup C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Stage3PrimesEndToEnd.setup.json --json
+error: Sieve/Stage3PrimesEndToEnd.lean:32:66: unsolved goals
+AI : Analytic.AvgWindowHitLB
+W : MaynardWeights.Weight
+¤ä : ÔäØ
+H : Finset Ôäñ
+cfg : MTCore.TupleConfig
+hpos : 0 < W.support.card
+h¤äleavg : ¤ä Ôëñ (Ôêæ m Ôêê W.support, W.w m) / ÔåæW.support.card
+h1 : 1 Ôëñ AI.lower W ¤ä H (primeHS cfg) Ôï»
+Ôèó Ôêâ n, (n Ôêê W.support Ôêº ¤ä Ôëñ W.w n) Ôêº Ôêâ h Ôêê H, isPrimeZ (n + h)
+warning: Sieve/Stage3PrimesEndToEnd.lean:35:8: This simp argument is unused:
+  primeHS
+
+Hint: Omit it from the simp argument list.
+  simp ╠Á[╠Áp╠Ár╠Ái╠Ám╠Áe╠ÁH╠ÁS╠Á]╠Á
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Sieve/Stage3PrimesEndToEnd.lean:35:17: unexpected token 'using'; expected command
+error: Sieve/Stage3PrimesEndToEnd.lean:58:57: unsolved goals
+AI : Analytic.AvgWindowHitLB
+W : MaynardWeights.Weight
+¤ä : ÔäØ
+H : Finset Ôäñ
+cfg : MTCore.TupleConfig
+hpos : 0 < W.support.card
+h¤äleavg : ¤ä Ôëñ (Ôêæ m Ôêê W.support, W.w m) / ÔåæW.support.card
+k : Ôäò
+hk : Ôåæk Ôëñ AI.lower W ¤ä H (primeHS cfg) Ôï»
+Ôèó Ôêâ n, (n Ôêê W.support Ôêº ¤ä Ôëñ W.w n) Ôêº k Ôëñ {h Ôêê H | isPrimeZ (n + h)}.card
+warning: Sieve/Stage3PrimesEndToEnd.lean:61:8: This simp argument is unused:
+  primeHS
+
+Hint: Omit it from the simp argument list.
+  simp ╠Á[╠Áp╠Ár╠Ái╠Ám╠Áe╠ÁH╠ÁS╠Á]╠Á
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Sieve/Stage3PrimesEndToEnd.lean:61:17: unexpected token 'using'; expected command
+error: Lean exited with code 1
+Some required builds logged failures:
+- Sieve.Stage3PrimesEndToEnd
+error: build failed
+
+===== OK :: Sieve.AnalyticBridge =====
+Build completed successfully.
+
+===== OK :: Sieve.AnalyticInputs =====
+Build completed successfully.
+
+===== OK :: Sieve.AnalyticMocks =====
+Build completed successfully.
+
+===== FAIL :: Sieve.ConditionalTwin =====
+Ô£û [7043/7044] Building Sieve.Stage3PrimesEndToEnd
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\Sieve\Stage3PrimesEndToEnd.lean -o C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Stage3PrimesEndToEnd.olean -i C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Stage3PrimesEndToEnd.ilean -c C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Stage3PrimesEndToEnd.c --setup C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Stage3PrimesEndToEnd.setup.json --json
+error: Sieve/Stage3PrimesEndToEnd.lean:32:66: unsolved goals
+AI : Analytic.AvgWindowHitLB
+W : MaynardWeights.Weight
+¤ä : ÔäØ
+H : Finset Ôäñ
+cfg : MTCore.TupleConfig
+hpos : 0 < W.support.card
+h¤äleavg : ¤ä Ôëñ (Ôêæ m Ôêê W.support, W.w m) / ÔåæW.support.card
+h1 : 1 Ôëñ AI.lower W ¤ä H (primeHS cfg) Ôï»
+Ôèó Ôêâ n, (n Ôêê W.support Ôêº ¤ä Ôëñ W.w n) Ôêº Ôêâ h Ôêê H, isPrimeZ (n + h)
+warning: Sieve/Stage3PrimesEndToEnd.lean:35:8: This simp argument is unused:
+  primeHS
+
+Hint: Omit it from the simp argument list.
+  simp ╠Á[╠Áp╠Ár╠Ái╠Ám╠Áe╠ÁH╠ÁS╠Á]╠Á
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Sieve/Stage3PrimesEndToEnd.lean:35:17: unexpected token 'using'; expected command
+error: Sieve/Stage3PrimesEndToEnd.lean:58:57: unsolved goals
+AI : Analytic.AvgWindowHitLB
+W : MaynardWeights.Weight
+¤ä : ÔäØ
+H : Finset Ôäñ
+cfg : MTCore.TupleConfig
+hpos : 0 < W.support.card
+h¤äleavg : ¤ä Ôëñ (Ôêæ m Ôêê W.support, W.w m) / ÔåæW.support.card
+k : Ôäò
+hk : Ôåæk Ôëñ AI.lower W ¤ä H (primeHS cfg) Ôï»
+Ôèó Ôêâ n, (n Ôêê W.support Ôêº ¤ä Ôëñ W.w n) Ôêº k Ôëñ {h Ôêê H | isPrimeZ (n + h)}.card
+warning: Sieve/Stage3PrimesEndToEnd.lean:61:8: This simp argument is unused:
+  primeHS
+
+Hint: Omit it from the simp argument list.
+  simp ╠Á[╠Áp╠Ár╠Ái╠Ám╠Áe╠ÁH╠ÁS╠Á]╠Á
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Sieve/Stage3PrimesEndToEnd.lean:61:17: unexpected token 'using'; expected command
+error: Lean exited with code 1
+Some required builds logged failures:
+- Sieve.Stage3PrimesEndToEnd
+error: build failed
+
+===== OK :: Sieve.ConfigBuilders =====
+Ô£ö [7002/7003] Built Sieve.GallagherSimple
+Ô£ö [7003/7003] Built Sieve.ConfigBuilders
+Build completed successfully.
+
+===== OK :: Sieve.ConstTwinOutcome =====
+Ô£ö [7012/7012] Built Sieve.ConstTwinOutcome
+Build completed successfully.
+
+===== OK :: Sieve.ConstWeight =====
+Build completed successfully.
+
+===== OK :: Sieve.ConstWeightAverage =====
+Build completed successfully.
+
+===== OK :: Sieve.ConstWeightLemmas =====
+Build completed successfully.
+
+===== FAIL :: Sieve.ConstWeightSimp =====
+Ô£û [6998/6998] Building Sieve.ConstWeightSimp
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\Sieve\ConstWeightSimp.lean -o C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\ConstWeightSimp.olean -i C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\ConstWeightSimp.ilean -c C:\Projects\test-lean-modules\.lake\build\ir\Sieve\ConstWeightSimp.c --setup C:\Projects\test-lean-modules\.lake\build\ir\Sieve\ConstWeightSimp.setup.json --json
+error: Sieve/ConstWeightSimp.lean:33:0: invalid 'import' command, it must be used in the beginning of the file
+error: Lean exited with code 1
+error: build failed
+Some required builds logged failures:
+- Sieve.ConstWeightSimp
+
+===== OK :: Sieve.Contracts =====
+Ô£ö [6995/6995] Built Sieve.Contracts
+Build completed successfully.
+
+===== FAIL :: Sieve.EndToEnd =====
+Ô£ö [7019/7020] Built Sieve.OutcomeBuilders
+Ô£û [7020/7020] Building Sieve.EndToEnd
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\Sieve\EndToEnd.lean -o C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\EndToEnd.olean -i C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\EndToEnd.ilean -c C:\Projects\test-lean-modules\.lake\build\ir\Sieve\EndToEnd.c --setup C:\Projects\test-lean-modules\.lake\build\ir\Sieve\EndToEnd.setup.json --json
+error: Sieve/EndToEnd.lean:23:4: unknown identifier 'Sieve.Stage2.Report'
+error: Sieve/EndToEnd.lean:32:2: unknown identifier 'Sieve.Stage2.report_of_outcome'
+error: Sieve/EndToEnd.lean:36:4: unknown identifier 'Sieve.Stage2.Report'
+error: Sieve/EndToEnd.lean:45:2: unknown identifier 'Sieve.Stage2.report_of_outcome'
+warning: Sieve/EndToEnd.lean:48:0: declaration uses 'sorry'
+warning: Sieve/EndToEnd.lean:52:0: declaration uses 'sorry'
+error: Lean exited with code 1
+Some required builds logged failures:
+- Sieve.EndToEnd
+error: build failed
+
+===== OK :: Sieve.ErrorControl =====
+Ô£ö [6994/6994] Built Sieve.ErrorControl
+Build completed successfully.
+
+===== OK :: Sieve.Examples =====
+Ô£ö [7001/7002] Built Sieve.NaiveWeight
+Ô£ö [7002/7002] Built Sieve.Examples
+Build completed successfully.
+
+===== OK :: Sieve.GallagherConservative =====
+Build completed successfully.
+
+===== OK :: Sieve.GallagherHook =====
+Build completed successfully.
+
+===== OK :: Sieve.GallagherHookSimple =====
+Ô£ö [6996/6996] Built Sieve.GallagherHookSimple
+Build completed successfully.
+
+===== OK :: Sieve.GallagherSimple =====
+Build completed successfully.
+
+===== OK :: Sieve.LargeSieve =====
+Ô£ö [6994/6994] Built Sieve.LargeSieve
+Build completed successfully.
+
+===== OK :: Sieve.LinearSieveBounds =====
+Build completed successfully.
+
+===== OK :: Sieve.MaynardWeights =====
+Build completed successfully.
+
+===== OK :: Sieve.MomentBounds =====
+Build completed successfully.
+
+===== OK :: Sieve.MTConfig =====
+Ô£ö [7005/7005] Built Sieve.MTConfig
+Build completed successfully.
+
+===== OK :: Sieve.MTCore =====
+Build completed successfully.
+
+===== OK :: Sieve.MTMomentBounds =====
+Build completed successfully.
+
+===== OK :: Sieve.MTMoments =====
+Build completed successfully.
+
+===== OK :: Sieve.NaiveWeight =====
+Build completed successfully.
+
+===== OK :: Sieve.OutcomeBuilders =====
+Build completed successfully.
+
+===== OK :: Sieve.Params =====
+Ô£ö [6995/6995] Built Sieve.Params
+Build completed successfully.
+
+===== OK :: Sieve.Pipeline =====
+Build completed successfully.
+
+===== OK :: Sieve.PipelineSimp =====
+Build completed successfully.
+
+===== OK :: Sieve.Run =====
+Ô£ö [7006/7006] Built Sieve.Run
+Build completed successfully.
+
+===== FAIL :: Sieve.RunAllDemos =====
+Ô£ö [7035/7039] Built Sieve.RunStage2ThresholdsDemo
+Ô£û [7036/7039] Building Sieve.RunStage2DensityDemo
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\Sieve\RunStage2DensityDemo.lean -o C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\RunStage2DensityDemo.olean -i C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\RunStage2DensityDemo.ilean -c C:\Projects\test-lean-modules\.lake\build\ir\Sieve\RunStage2DensityDemo.c --setup C:\Projects\test-lean-modules\.lake\build\ir\Sieve\RunStage2DensityDemo.setup.json --json
+error: Sieve/RunStage2DensityDemo.lean:33:4: unknown identifier 'Sieve.Stage2.heavy_density_le_of_outcome'
+error: Lean exited with code 1
+Ô£ö [7037/7039] Built Sieve.RunStage2AverageDemo
+ÔÜá [7038/7039] Built Sieve.RunStage2AverageConstCheck
+warning: Sieve/RunStage2AverageConstCheck.lean:24:8: unused variable `W`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Some required builds logged failures:
+- Sieve.RunStage2DensityDemo
+error: build failed
+
+===== FAIL :: Sieve.RunAllSmoke =====
+Ô£û [6994/7060] Running Sieve.AnalyticBVTemplate
+error: no such file or directory (error code: 2)
+  file: C:\Projects\test-lean-modules\Sieve\AnalyticBVTemplate.lean
+Ô£û [6995/7060] Running Sieve.RunAnalyticBVTemplateDemo
+error: C:\Projects\test-lean-modules\Sieve\RunAnalyticBVTemplateDemo.lean: bad import 'Sieve.AnalyticBVTemplate'
+Ô£û [6996/7060] Running Sieve.RunAllSmoke
+error: C:\Projects\test-lean-modules\Sieve\RunAllSmoke.lean: bad import 'Sieve.RunAnalyticBVTemplateDemo'
+Ô£û [7049/7060] Building Sieve.Stage3PrimesEndToEnd
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\Sieve\Stage3PrimesEndToEnd.lean -o C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Stage3PrimesEndToEnd.olean -i C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Stage3PrimesEndToEnd.ilean -c C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Stage3PrimesEndToEnd.c --setup C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Stage3PrimesEndToEnd.setup.json --json
+error: Sieve/Stage3PrimesEndToEnd.lean:32:66: unsolved goals
+AI : Analytic.AvgWindowHitLB
+W : MaynardWeights.Weight
+¤ä : ÔäØ
+H : Finset Ôäñ
+cfg : MTCore.TupleConfig
+hpos : 0 < W.support.card
+h¤äleavg : ¤ä Ôëñ (Ôêæ m Ôêê W.support, W.w m) / ÔåæW.support.card
+h1 : 1 Ôëñ AI.lower W ¤ä H (primeHS cfg) Ôï»
+Ôèó Ôêâ n, (n Ôêê W.support Ôêº ¤ä Ôëñ W.w n) Ôêº Ôêâ h Ôêê H, isPrimeZ (n + h)
+warning: Sieve/Stage3PrimesEndToEnd.lean:35:8: This simp argument is unused:
+  primeHS
+
+Hint: Omit it from the simp argument list.
+  simp ╠Á[╠Áp╠Ár╠Ái╠Ám╠Áe╠ÁH╠ÁS╠Á]╠Á
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Sieve/Stage3PrimesEndToEnd.lean:35:17: unexpected token 'using'; expected command
+error: Sieve/Stage3PrimesEndToEnd.lean:58:57: unsolved goals
+AI : Analytic.AvgWindowHitLB
+W : MaynardWeights.Weight
+¤ä : ÔäØ
+H : Finset Ôäñ
+cfg : MTCore.TupleConfig
+hpos : 0 < W.support.card
+h¤äleavg : ¤ä Ôëñ (Ôêæ m Ôêê W.support, W.w m) / ÔåæW.support.card
+k : Ôäò
+hk : Ôåæk Ôëñ AI.lower W ¤ä H (primeHS cfg) Ôï»
+Ôèó Ôêâ n, (n Ôêê W.support Ôêº ¤ä Ôëñ W.w n) Ôêº k Ôëñ {h Ôêê H | isPrimeZ (n + h)}.card
+warning: Sieve/Stage3PrimesEndToEnd.lean:61:8: This simp argument is unused:
+  primeHS
+
+Hint: Omit it from the simp argument list.
+  simp ╠Á[╠Áp╠Ár╠Ái╠Ám╠Áe╠ÁH╠ÁS╠Á]╠Á
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Sieve/Stage3PrimesEndToEnd.lean:61:17: unexpected token 'using'; expected command
+error: Lean exited with code 1
+Ô£ö [7053/7060] Built Sieve.Analytic.LargeSieveCore
+Ô£ö [7054/7060] Built Sieve.Analytic.Constants
+Ô£ö [7055/7060] Built Sieve.Analytic.BVSketch
+Ô£ö [7057/7060] Built Sieve.Analytic.BVSketchParams
+Ô£û [7059/7060] Building Sieve.Analytic.BVMainStatement
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\Sieve\Analytic\BVMainStatement.lean -o C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Analytic\BVMainStatement.olean -i C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Analytic\BVMainStatement.ilean -c C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Analytic\BVMainStatement.c --setup C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Analytic\BVMainStatement.setup.json --json
+error: Sieve/Analytic/BVMainStatement.lean:23:9: unknown identifier 'Sieve.MaynardWeights.Weight'
+error: Sieve/Analytic/BVMainStatement.lean:24:25: unknown identifier 'Sieve.Stage3.HitSystem'
+error: Sieve/Analytic/BVMainStatement.lean:26:4: Function expected at
+  lowerFormulaParams P
+but this term has type
+  ÔäØ
+
+Note: Expected a function because this term is being applied to the argument
+  W
+error: Sieve/Analytic/BVMainStatement.lean:27:8: unknown identifier 'Sieve.Stage3.avgOver'
+error: Sieve/Analytic/BVMainStatement.lean:25:12: unknown identifier 'Sieve.MTCore.heavySet'
+error: Sieve/Analytic/BVMainStatement.lean:34:2: unknown identifier 'bvSketchParams'
+error: Lean exited with code 1
+Some required builds logged failures:
+- Sieve.AnalyticBVTemplate
+- Sieve.RunAnalyticBVTemplateDemo
+- Sieve.RunAllSmoke
+- Sieve.Stage3PrimesEndToEnd
+- Sieve.Analytic.BVMainStatement
+error: build failed
+
+===== FAIL :: Sieve.RunAnalyticBVTemplateDemo =====
+Ô£û [6994/7047] Running Sieve.AnalyticBVTemplate
+error: no such file or directory (error code: 2)
+  file: C:\Projects\test-lean-modules\Sieve\AnalyticBVTemplate.lean
+Ô£û [7045/7047] Running Sieve.RunAnalyticBVTemplateDemo
+error: C:\Projects\test-lean-modules\Sieve\RunAnalyticBVTemplateDemo.lean: bad import 'Sieve.AnalyticBVTemplate'
+Ô£û [7046/7047] Building Sieve.Stage3PrimesEndToEnd
+error: build failed
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\Sieve\Stage3PrimesEndToEnd.lean -o C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Stage3PrimesEndToEnd.olean -i C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Stage3PrimesEndToEnd.ilean -c C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Stage3PrimesEndToEnd.c --setup C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Stage3PrimesEndToEnd.setup.json --json
+error: Sieve/Stage3PrimesEndToEnd.lean:32:66: unsolved goals
+AI : Analytic.AvgWindowHitLB
+W : MaynardWeights.Weight
+¤ä : ÔäØ
+H : Finset Ôäñ
+cfg : MTCore.TupleConfig
+hpos : 0 < W.support.card
+h¤äleavg : ¤ä Ôëñ (Ôêæ m Ôêê W.support, W.w m) / ÔåæW.support.card
+h1 : 1 Ôëñ AI.lower W ¤ä H (primeHS cfg) Ôï»
+Ôèó Ôêâ n, (n Ôêê W.support Ôêº ¤ä Ôëñ W.w n) Ôêº Ôêâ h Ôêê H, isPrimeZ (n + h)
+warning: Sieve/Stage3PrimesEndToEnd.lean:35:8: This simp argument is unused:
+  primeHS
+
+Hint: Omit it from the simp argument list.
+  simp ╠Á[╠Áp╠Ár╠Ái╠Ám╠Áe╠ÁH╠ÁS╠Á]╠Á
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Sieve/Stage3PrimesEndToEnd.lean:35:17: unexpected token 'using'; expected command
+error: Sieve/Stage3PrimesEndToEnd.lean:58:57: unsolved goals
+AI : Analytic.AvgWindowHitLB
+W : MaynardWeights.Weight
+¤ä : ÔäØ
+H : Finset Ôäñ
+cfg : MTCore.TupleConfig
+hpos : 0 < W.support.card
+h¤äleavg : ¤ä Ôëñ (Ôêæ m Ôêê W.support, W.w m) / ÔåæW.support.card
+k : Ôäò
+hk : Ôåæk Ôëñ AI.lower W ¤ä H (primeHS cfg) Ôï»
+Ôèó Ôêâ n, (n Ôêê W.support Ôêº ¤ä Ôëñ W.w n) Ôêº k Ôëñ {h Ôêê H | isPrimeZ (n + h)}.card
+warning: Sieve/Stage3PrimesEndToEnd.lean:61:8: This simp argument is unused:
+  primeHS
+
+Hint: Omit it from the simp argument list.
+  simp ╠Á[╠Áp╠Ár╠Ái╠Ám╠Áe╠ÁH╠ÁS╠Á]╠Á
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Sieve/Stage3PrimesEndToEnd.lean:61:17: unexpected token 'using'; expected command
+error: Lean exited with code 1
+Some required builds logged failures:
+- Sieve.AnalyticBVTemplate
+- Sieve.RunAnalyticBVTemplateDemo
+- Sieve.Stage3PrimesEndToEnd
+
+===== FAIL :: Sieve.RunBVMainStatementDemo =====
+Ô£û [7046/7049] Building Sieve.Analytic.BVMainStatement
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\Sieve\Analytic\BVMainStatement.lean -o C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Analytic\BVMainStatement.olean -i C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Analytic\BVMainStatement.ilean -c C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Analytic\BVMainStatement.c --setup C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Analytic\BVMainStatement.setup.json --json
+error: Sieve/Analytic/BVMainStatement.lean:23:9: unknown identifier 'Sieve.MaynardWeights.Weight'
+error: Sieve/Analytic/BVMainStatement.lean:24:25: unknown identifier 'Sieve.Stage3.HitSystem'
+error: Sieve/Analytic/BVMainStatement.lean:26:4: Function expected at
+  lowerFormulaParams P
+but this term has type
+  ÔäØ
+
+Note: Expected a function because this term is being applied to the argument
+  W
+error: Sieve/Analytic/BVMainStatement.lean:27:8: unknown identifier 'Sieve.Stage3.avgOver'
+error: Sieve/Analytic/BVMainStatement.lean:25:12: unknown identifier 'Sieve.MTCore.heavySet'
+error: Sieve/Analytic/BVMainStatement.lean:34:2: unknown identifier 'bvSketchParams'
+error: Lean exited with code 1
+Ô£û [7047/7049] Building Sieve.Stage3PrimesEndToEnd
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\Sieve\Stage3PrimesEndToEnd.lean -o C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Stage3PrimesEndToEnd.olean -i C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Stage3PrimesEndToEnd.ilean -c C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Stage3PrimesEndToEnd.c --setup C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Stage3PrimesEndToEnd.setup.json --json
+error: Sieve/Stage3PrimesEndToEnd.lean:32:66: unsolved goals
+AI : Analytic.AvgWindowHitLB
+W : MaynardWeights.Weight
+¤ä : ÔäØ
+H : Finset Ôäñ
+cfg : MTCore.TupleConfig
+hpos : 0 < W.support.card
+h¤äleavg : ¤ä Ôëñ (Ôêæ m Ôêê W.support, W.w m) / ÔåæW.support.card
+h1 : 1 Ôëñ AI.lower W ¤ä H (primeHS cfg) Ôï»
+Ôèó Ôêâ n, (n Ôêê W.support Ôêº ¤ä Ôëñ W.w n) Ôêº Ôêâ h Ôêê H, isPrimeZ (n + h)
+warning: Sieve/Stage3PrimesEndToEnd.lean:35:8: This simp argument is unused:
+  primeHS
+
+Hint: Omit it from the simp argument list.
+  simp ╠Á[╠Áp╠Ár╠Ái╠Ám╠Áe╠ÁH╠ÁS╠Á]╠Á
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Sieve/Stage3PrimesEndToEnd.lean:35:17: unexpected token 'using'; expected command
+error: Sieve/Stage3PrimesEndToEnd.lean:58:57: unsolved goals
+AI : Analytic.AvgWindowHitLB
+W : MaynardWeights.Weight
+¤ä : ÔäØ
+H : Finset Ôäñ
+cfg : MTCore.TupleConfig
+hpos : 0 < W.support.card
+h¤äleavg : ¤ä Ôëñ (Ôêæ m Ôêê W.support, W.w m) / ÔåæW.support.card
+k : Ôäò
+hk : Ôåæk Ôëñ AI.lower W ¤ä H (primeHS cfg) Ôï»
+Ôèó Ôêâ n, (n Ôêê W.support Ôêº ¤ä Ôëñ W.w n) Ôêº k Ôëñ {h Ôêê H | isPrimeZ (n + h)}.card
+warning: Sieve/Stage3PrimesEndToEnd.lean:61:8: This simp argument is unused:
+  primeHS
+
+Hint: Omit it from the simp argument list.
+  simp ╠Á[╠Áp╠Ár╠Ái╠Ám╠Áe╠ÁH╠ÁS╠Á]╠Á
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Sieve/Stage3PrimesEndToEnd.lean:61:17: unexpected token 'using'; expected command
+error: Lean exited with code 1
+error: build failed
+Some required builds logged failures:
+- Sieve.Analytic.BVMainStatement
+- Sieve.Stage3PrimesEndToEnd
+
+===== FAIL :: Sieve.RunBVSketchParamsTwinDemo =====
+Ô£û [7046/7048] Building Sieve.Stage3PrimesEndToEnd
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\Sieve\Stage3PrimesEndToEnd.lean -o C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Stage3PrimesEndToEnd.olean -i C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Stage3PrimesEndToEnd.ilean -c C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Stage3PrimesEndToEnd.c --setup C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Stage3PrimesEndToEnd.setup.json --json
+error: Sieve/Stage3PrimesEndToEnd.lean:32:66: unsolved goals
+AI : Analytic.AvgWindowHitLB
+W : MaynardWeights.Weight
+¤ä : ÔäØ
+H : Finset Ôäñ
+cfg : MTCore.TupleConfig
+hpos : 0 < W.support.card
+h¤äleavg : ¤ä Ôëñ (Ôêæ m Ôêê W.support, W.w m) / ÔåæW.support.card
+h1 : 1 Ôëñ AI.lower W ¤ä H (primeHS cfg) Ôï»
+Ôèó Ôêâ n, (n Ôêê W.support Ôêº ¤ä Ôëñ W.w n) Ôêº Ôêâ h Ôêê H, isPrimeZ (n + h)
+warning: Sieve/Stage3PrimesEndToEnd.lean:35:8: This simp argument is unused:
+  primeHS
+
+Hint: Omit it from the simp argument list.
+  simp ╠Á[╠Áp╠Ár╠Ái╠Ám╠Áe╠ÁH╠ÁS╠Á]╠Á
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Sieve/Stage3PrimesEndToEnd.lean:35:17: unexpected token 'using'; expected command
+error: Sieve/Stage3PrimesEndToEnd.lean:58:57: unsolved goals
+AI : Analytic.AvgWindowHitLB
+W : MaynardWeights.Weight
+¤ä : ÔäØ
+H : Finset Ôäñ
+cfg : MTCore.TupleConfig
+hpos : 0 < W.support.card
+h¤äleavg : ¤ä Ôëñ (Ôêæ m Ôêê W.support, W.w m) / ÔåæW.support.card
+k : Ôäò
+hk : Ôåæk Ôëñ AI.lower W ¤ä H (primeHS cfg) Ôï»
+Ôèó Ôêâ n, (n Ôêê W.support Ôêº ¤ä Ôëñ W.w n) Ôêº k Ôëñ {h Ôêê H | isPrimeZ (n + h)}.card
+warning: Sieve/Stage3PrimesEndToEnd.lean:61:8: This simp argument is unused:
+  primeHS
+
+Hint: Omit it from the simp argument list.
+  simp ╠Á[╠Áp╠Ár╠Ái╠Ám╠Áe╠ÁH╠ÁS╠Á]╠Á
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Sieve/Stage3PrimesEndToEnd.lean:61:17: unexpected token 'using'; expected command
+error: Lean exited with code 1
+error: build failed
+Some required builds logged failures:
+- Sieve.Stage3PrimesEndToEnd
+
+===== FAIL :: Sieve.RunBVSketchTwinDemo =====
+Ô£û [7047/7049] Building Sieve.Stage3PrimesEndToEnd
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\Sieve\Stage3PrimesEndToEnd.lean -o C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Stage3PrimesEndToEnd.olean -i C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Stage3PrimesEndToEnd.ilean -c C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Stage3PrimesEndToEnd.c --setup C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Stage3PrimesEndToEnd.setup.json --json
+error: Sieve/Stage3PrimesEndToEnd.lean:32:66: unsolved goals
+AI : Analytic.AvgWindowHitLB
+W : MaynardWeights.Weight
+¤ä : ÔäØ
+H : Finset Ôäñ
+cfg : MTCore.TupleConfig
+hpos : 0 < W.support.card
+h¤äleavg : ¤ä Ôëñ (Ôêæ m Ôêê W.support, W.w m) / ÔåæW.support.card
+h1 : 1 Ôëñ AI.lower W ¤ä H (primeHS cfg) Ôï»
+Ôèó Ôêâ n, (n Ôêê W.support Ôêº ¤ä Ôëñ W.w n) Ôêº Ôêâ h Ôêê H, isPrimeZ (n + h)
+warning: Sieve/Stage3PrimesEndToEnd.lean:35:8: This simp argument is unused:
+  primeHS
+
+Hint: Omit it from the simp argument list.
+  simp ╠Á[╠Áp╠Ár╠Ái╠Ám╠Áe╠ÁH╠ÁS╠Á]╠Á
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Sieve/Stage3PrimesEndToEnd.lean:35:17: unexpected token 'using'; expected command
+error: Sieve/Stage3PrimesEndToEnd.lean:58:57: unsolved goals
+AI : Analytic.AvgWindowHitLB
+W : MaynardWeights.Weight
+¤ä : ÔäØ
+H : Finset Ôäñ
+cfg : MTCore.TupleConfig
+hpos : 0 < W.support.card
+h¤äleavg : ¤ä Ôëñ (Ôêæ m Ôêê W.support, W.w m) / ÔåæW.support.card
+k : Ôäò
+hk : Ôåæk Ôëñ AI.lower W ¤ä H (primeHS cfg) Ôï»
+Ôèó Ôêâ n, (n Ôêê W.support Ôêº ¤ä Ôëñ W.w n) Ôêº k Ôëñ {h Ôêê H | isPrimeZ (n + h)}.card
+warning: Sieve/Stage3PrimesEndToEnd.lean:61:8: This simp argument is unused:
+  primeHS
+
+Hint: Omit it from the simp argument list.
+  simp ╠Á[╠Áp╠Ár╠Ái╠Ám╠Áe╠ÁH╠ÁS╠Á]╠Á
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Sieve/Stage3PrimesEndToEnd.lean:61:17: unexpected token 'using'; expected command
+error: Lean exited with code 1
+Some required builds logged failures:
+- Sieve.Stage3PrimesEndToEnd
+error: build failed
+
+===== FAIL :: Sieve.RunConditionalTwinDemo =====
+Ô£û [7045/7047] Building Sieve.Stage3PrimesEndToEnd
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\Sieve\Stage3PrimesEndToEnd.lean -o C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Stage3PrimesEndToEnd.olean -i C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Stage3PrimesEndToEnd.ilean -c C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Stage3PrimesEndToEnd.c --setup C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Stage3PrimesEndToEnd.setup.json --json
+error: Sieve/Stage3PrimesEndToEnd.lean:32:66: unsolved goals
+AI : Analytic.AvgWindowHitLB
+W : MaynardWeights.Weight
+¤ä : ÔäØ
+H : Finset Ôäñ
+cfg : MTCore.TupleConfig
+hpos : 0 < W.support.card
+h¤äleavg : ¤ä Ôëñ (Ôêæ m Ôêê W.support, W.w m) / ÔåæW.support.card
+h1 : 1 Ôëñ AI.lower W ¤ä H (primeHS cfg) Ôï»
+Ôèó Ôêâ n, (n Ôêê W.support Ôêº ¤ä Ôëñ W.w n) Ôêº Ôêâ h Ôêê H, isPrimeZ (n + h)
+warning: Sieve/Stage3PrimesEndToEnd.lean:35:8: This simp argument is unused:
+  primeHS
+
+Hint: Omit it from the simp argument list.
+  simp ╠Á[╠Áp╠Ár╠Ái╠Ám╠Áe╠ÁH╠ÁS╠Á]╠Á
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Sieve/Stage3PrimesEndToEnd.lean:35:17: unexpected token 'using'; expected command
+error: Sieve/Stage3PrimesEndToEnd.lean:58:57: unsolved goals
+AI : Analytic.AvgWindowHitLB
+W : MaynardWeights.Weight
+¤ä : ÔäØ
+H : Finset Ôäñ
+cfg : MTCore.TupleConfig
+hpos : 0 < W.support.card
+h¤äleavg : ¤ä Ôëñ (Ôêæ m Ôêê W.support, W.w m) / ÔåæW.support.card
+k : Ôäò
+hk : Ôåæk Ôëñ AI.lower W ¤ä H (primeHS cfg) Ôï»
+Ôèó Ôêâ n, (n Ôêê W.support Ôêº ¤ä Ôëñ W.w n) Ôêº k Ôëñ {h Ôêê H | isPrimeZ (n + h)}.card
+warning: Sieve/Stage3PrimesEndToEnd.lean:61:8: This simp argument is unused:
+  primeHS
+
+Hint: Omit it from the simp argument list.
+  simp ╠Á[╠Áp╠Ár╠Ái╠Ám╠Áe╠ÁH╠ÁS╠Á]╠Á
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Sieve/Stage3PrimesEndToEnd.lean:61:17: unexpected token 'using'; expected command
+error: Lean exited with code 1
+Some required builds logged failures:
+- Sieve.Stage3PrimesEndToEnd
+error: build failed
+
+===== OK :: Sieve.RunConfigBuildersDemo =====
+Ô£ö [7008/7008] Built Sieve.RunConfigBuildersDemo
+Build completed successfully.
+
+===== OK :: Sieve.RunGallagherCompare =====
+Ô£ö [7007/7007] Built Sieve.RunGallagherCompare
+Build completed successfully.
+
+===== FAIL :: Sieve.RunKPrimesAnalyticMockDemo =====
+Ô£û [7045/7046] Building Sieve.Stage3PrimesEndToEnd
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\Sieve\Stage3PrimesEndToEnd.lean -o C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Stage3PrimesEndToEnd.olean -i C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Stage3PrimesEndToEnd.ilean -c C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Stage3PrimesEndToEnd.c --setup C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Stage3PrimesEndToEnd.setup.json --json
+error: Sieve/Stage3PrimesEndToEnd.lean:32:66: unsolved goals
+AI : Analytic.AvgWindowHitLB
+W : MaynardWeights.Weight
+¤ä : ÔäØ
+H : Finset Ôäñ
+cfg : MTCore.TupleConfig
+hpos : 0 < W.support.card
+h¤äleavg : ¤ä Ôëñ (Ôêæ m Ôêê W.support, W.w m) / ÔåæW.support.card
+h1 : 1 Ôëñ AI.lower W ¤ä H (primeHS cfg) Ôï»
+Ôèó Ôêâ n, (n Ôêê W.support Ôêº ¤ä Ôëñ W.w n) Ôêº Ôêâ h Ôêê H, isPrimeZ (n + h)
+warning: Sieve/Stage3PrimesEndToEnd.lean:35:8: This simp argument is unused:
+  primeHS
+
+Hint: Omit it from the simp argument list.
+  simp ╠Á[╠Áp╠Ár╠Ái╠Ám╠Áe╠ÁH╠ÁS╠Á]╠Á
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Sieve/Stage3PrimesEndToEnd.lean:35:17: unexpected token 'using'; expected command
+error: Sieve/Stage3PrimesEndToEnd.lean:58:57: unsolved goals
+AI : Analytic.AvgWindowHitLB
+W : MaynardWeights.Weight
+¤ä : ÔäØ
+H : Finset Ôäñ
+cfg : MTCore.TupleConfig
+hpos : 0 < W.support.card
+h¤äleavg : ¤ä Ôëñ (Ôêæ m Ôêê W.support, W.w m) / ÔåæW.support.card
+k : Ôäò
+hk : Ôåæk Ôëñ AI.lower W ¤ä H (primeHS cfg) Ôï»
+Ôèó Ôêâ n, (n Ôêê W.support Ôêº ¤ä Ôëñ W.w n) Ôêº k Ôëñ {h Ôêê H | isPrimeZ (n + h)}.card
+warning: Sieve/Stage3PrimesEndToEnd.lean:61:8: This simp argument is unused:
+  primeHS
+
+Hint: Omit it from the simp argument list.
+  simp ╠Á[╠Áp╠Ár╠Ái╠Ám╠Áe╠ÁH╠ÁS╠Á]╠Á
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Sieve/Stage3PrimesEndToEnd.lean:61:17: unexpected token 'using'; expected command
+error: Lean exited with code 1
+Some required builds logged failures:
+error: build failed
+- Sieve.Stage3PrimesEndToEnd
+
+===== OK :: Sieve.RunStage2AverageConstCheck =====
+ÔÜá [7017/7017] Replayed Sieve.RunStage2AverageConstCheck
+warning: Sieve/RunStage2AverageConstCheck.lean:24:8: unused variable `W`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Build completed successfully.
+
+===== OK :: Sieve.RunStage2AverageDemo =====
+Build completed successfully.
+
+===== OK :: Sieve.RunStage2AverageSimpleDemo =====
+Ô£ö [7018/7018] Built Sieve.RunStage2AverageSimpleDemo
+Build completed successfully.
+
+===== FAIL :: Sieve.RunStage2DensityDemo =====
+Ô£û [7015/7015] Building Sieve.RunStage2DensityDemo
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\Sieve\RunStage2DensityDemo.lean -o C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\RunStage2DensityDemo.olean -i C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\RunStage2DensityDemo.ilean -c C:\Projects\test-lean-modules\.lake\build\ir\Sieve\RunStage2DensityDemo.c --setup C:\Projects\test-lean-modules\.lake\build\ir\Sieve\RunStage2DensityDemo.setup.json --json
+error: Sieve/RunStage2DensityDemo.lean:33:4: unknown identifier 'Sieve.Stage2.heavy_density_le_of_outcome'
+error: Lean exited with code 1
+Some required builds logged failures:
+- Sieve.RunStage2DensityDemo
+error: build failed
+
+===== OK :: Sieve.RunStage2FirstMomentEmptyDemo =====
+Ô£ö [7033/7033] Built Sieve.RunStage2FirstMomentEmptyDemo
+Build completed successfully.
+
+===== FAIL :: Sieve.RunStage2ReportCompare =====
+Ô£û [7020/7020] Building Sieve.RunStage2ReportCompare
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\Sieve\RunStage2ReportCompare.lean -o C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\RunStage2ReportCompare.olean -i C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\RunStage2ReportCompare.ilean -c C:\Projects\test-lean-modules\.lake\build\ir\Sieve\RunStage2ReportCompare.c --setup C:\Projects\test-lean-modules\.lake\build\ir\Sieve\RunStage2ReportCompare.setup.json --json
+error: Sieve/RunStage2ReportCompare.lean:23:4: unknown identifier 'Sieve.Stage2.Report'
+error: Sieve/RunStage2ReportCompare.lean:32:2: unknown identifier 'Sieve.Stage2.report_of_outcome'
+error: Sieve/RunStage2ReportCompare.lean:37:4: unknown identifier 'Sieve.Stage2.Report'
+error: Sieve/RunStage2ReportCompare.lean:46:2: unknown identifier 'Sieve.Stage2.report_of_outcome'
+warning: Sieve/RunStage2ReportCompare.lean:49:0: declaration uses 'sorry'
+warning: Sieve/RunStage2ReportCompare.lean:54:0: declaration uses 'sorry'
+warning: Sieve/RunStage2ReportCompare.lean:59:0: declaration uses 'sorry'
+warning: Sieve/RunStage2ReportCompare.lean:63:0: declaration uses 'sorry'
+error: Lean exited with code 1
+Some required builds logged failures:
+error: build failed
+- Sieve.RunStage2ReportCompare
+
+===== FAIL :: Sieve.RunStage2ReportDemo =====
+Ô£û [7018/7018] Building Sieve.RunStage2ReportDemo
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\Sieve\RunStage2ReportDemo.lean -o C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\RunStage2ReportDemo.olean -i C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\RunStage2ReportDemo.ilean -c C:\Projects\test-lean-modules\.lake\build\ir\Sieve\RunStage2ReportDemo.c --setup C:\Projects\test-lean-modules\.lake\build\ir\Sieve\RunStage2ReportDemo.setup.json --json
+error: Sieve/RunStage2ReportDemo.lean:21:4: unknown identifier 'Sieve.Stage2.Report'
+error: Sieve/RunStage2ReportDemo.lean:27:2: unknown identifier 'Sieve.Stage2.report_of_outcome'
+warning: Sieve/RunStage2ReportDemo.lean:30:0: declaration uses 'sorry'
+warning: Sieve/RunStage2ReportDemo.lean:33:0: declaration uses 'sorry'
+warning: Sieve/RunStage2ReportDemo.lean:39:0: declaration uses 'sorry'
+error: Lean exited with code 1
+Some required builds logged failures:
+- Sieve.RunStage2ReportDemo
+error: build failed
+
+===== FAIL :: Sieve.RunStage2ReportSimpleDemo =====
+Ô£û [7020/7020] Building Sieve.RunStage2ReportSimpleDemo
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\Sieve\RunStage2ReportSimpleDemo.lean -o C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\RunStage2ReportSimpleDemo.olean -i C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\RunStage2ReportSimpleDemo.ilean -c C:\Projects\test-lean-modules\.lake\build\ir\Sieve\RunStage2ReportSimpleDemo.c --setup C:\Projects\test-lean-modules\.lake\build\ir\Sieve\RunStage2ReportSimpleDemo.setup.json --json
+error: Sieve/RunStage2ReportSimpleDemo.lean:24:4: unknown identifier 'Sieve.Stage2.Report'
+error: Sieve/RunStage2ReportSimpleDemo.lean:33:2: unknown identifier 'Sieve.Stage2.report_of_outcome'
+warning: Sieve/RunStage2ReportSimpleDemo.lean:36:0: declaration uses 'sorry'
+warning: Sieve/RunStage2ReportSimpleDemo.lean:41:0: declaration uses 'sorry'
+warning: Sieve/RunStage2ReportSimpleDemo.lean:50:0: declaration uses 'sorry'
+error: Lean exited with code 1
+Some required builds logged failures:
+- Sieve.RunStage2ReportSimpleDemo
+error: build failed
+
+===== OK :: Sieve.RunStage2SquaredDemo =====
+Ô£ö [7033/7033] Built Sieve.RunStage2SquaredDemo
+Build completed successfully.
+
+===== OK :: Sieve.RunStage2SummaryDemo =====
+Ô£ö [7016/7016] Built Sieve.RunStage2SummaryDemo
+Build completed successfully.
+
+===== OK :: Sieve.RunStage2SummarySimpleDemo =====
+Ô£ö [7017/7017] Built Sieve.RunStage2SummarySimpleDemo
+Build completed successfully.
+
+===== OK :: Sieve.RunStage2ThresholdsDemo =====
+Build completed successfully.
+
+===== FAIL :: Sieve.RunStage2ThresholdsSecondDemo =====
+Ô£û [6998/6998] Building Sieve.RunStage2ThresholdsSecondDemo
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\Sieve\RunStage2ThresholdsSecondDemo.lean -o C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\RunStage2ThresholdsSecondDemo.olean -i C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\RunStage2ThresholdsSecondDemo.ilean -c C:\Projects\test-lean-modules\.lake\build\ir\Sieve\RunStage2ThresholdsSecondDemo.c --setup C:\Projects\test-lean-modules\.lake\build\ir\Sieve\RunStage2ThresholdsSecondDemo.setup.json --json
+error: Sieve/RunStage2ThresholdsSecondDemo.lean:23:2: unknown identifier 'Sieve.Stage2.heavy_count_le_of_secondMoment'
+error: Lean exited with code 1
+Some required builds logged failures:
+- Sieve.RunStage2ThresholdsSecondDemo
+error: build failed
+
+===== OK :: Sieve.RunStage2Twin =====
+Ô£ö [7009/7009] Built Sieve.RunStage2Twin
+Build completed successfully.
+
+===== OK :: Sieve.RunStage3EndToEndDemo =====
+Ô£ö [7043/7043] Built Sieve.RunStage3EndToEndDemo
+Build completed successfully.
+
+===== FAIL :: Sieve.RunStage3ExportsAllDemo =====
+ÔÜá [7044/7059] Replayed Sieve.Stage3Monotone
+warning: Sieve/Stage3Monotone.lean:45:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: Sieve/Stage3Monotone.lean:49:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+Ô£û [7048/7059] Running Sieve.AnalyticBVTemplate
+error: no such file or directory (error code: 2)
+  file: C:\Projects\test-lean-modules\Sieve\AnalyticBVTemplate.lean
+Ô£û [7054/7059] Running Sieve.Stage3ExportsAll
+error: C:\Projects\test-lean-modules\Sieve\Stage3ExportsAll.lean: bad import 'Sieve.AnalyticBVTemplate'
+Ô£û [7055/7059] Running Sieve.RunStage3ExportsAllDemo
+error: C:\Projects\test-lean-modules\Sieve\RunStage3ExportsAllDemo.lean: bad import 'Sieve.Stage3ExportsAll'
+Ô£û [7056/7059] Building Sieve.Stage3PrimesEndToEnd
+error: build failed
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\Sieve\Stage3PrimesEndToEnd.lean -o C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Stage3PrimesEndToEnd.olean -i C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Stage3PrimesEndToEnd.ilean -c C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Stage3PrimesEndToEnd.c --setup C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Stage3PrimesEndToEnd.setup.json --json
+error: Sieve/Stage3PrimesEndToEnd.lean:32:66: unsolved goals
+AI : Analytic.AvgWindowHitLB
+W : MaynardWeights.Weight
+¤ä : ÔäØ
+H : Finset Ôäñ
+cfg : MTCore.TupleConfig
+hpos : 0 < W.support.card
+h¤äleavg : ¤ä Ôëñ (Ôêæ m Ôêê W.support, W.w m) / ÔåæW.support.card
+h1 : 1 Ôëñ AI.lower W ¤ä H (primeHS cfg) Ôï»
+Ôèó Ôêâ n, (n Ôêê W.support Ôêº ¤ä Ôëñ W.w n) Ôêº Ôêâ h Ôêê H, isPrimeZ (n + h)
+warning: Sieve/Stage3PrimesEndToEnd.lean:35:8: This simp argument is unused:
+  primeHS
+
+Hint: Omit it from the simp argument list.
+  simp ╠Á[╠Áp╠Ár╠Ái╠Ám╠Áe╠ÁH╠ÁS╠Á]╠Á
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Sieve/Stage3PrimesEndToEnd.lean:35:17: unexpected token 'using'; expected command
+error: Sieve/Stage3PrimesEndToEnd.lean:58:57: unsolved goals
+AI : Analytic.AvgWindowHitLB
+W : MaynardWeights.Weight
+¤ä : ÔäØ
+H : Finset Ôäñ
+cfg : MTCore.TupleConfig
+hpos : 0 < W.support.card
+h¤äleavg : ¤ä Ôëñ (Ôêæ m Ôêê W.support, W.w m) / ÔåæW.support.card
+k : Ôäò
+hk : Ôåæk Ôëñ AI.lower W ¤ä H (primeHS cfg) Ôï»
+Ôèó Ôêâ n, (n Ôêê W.support Ôêº ¤ä Ôëñ W.w n) Ôêº k Ôëñ {h Ôêê H | isPrimeZ (n + h)}.card
+warning: Sieve/Stage3PrimesEndToEnd.lean:61:8: This simp argument is unused:
+  primeHS
+
+Hint: Omit it from the simp argument list.
+  simp ╠Á[╠Áp╠Ár╠Ái╠Ám╠Áe╠ÁH╠ÁS╠Á]╠Á
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Sieve/Stage3PrimesEndToEnd.lean:61:17: unexpected token 'using'; expected command
+error: Lean exited with code 1
+Some required builds logged failures:
+- Sieve.AnalyticBVTemplate
+- Sieve.Stage3ExportsAll
+- Sieve.RunStage3ExportsAllDemo
+- Sieve.Stage3PrimesEndToEnd
+
+===== FAIL :: Sieve.RunStage3MinSmoke =====
+ÔÜá [7044/7051] Replayed Sieve.Stage3Monotone
+warning: Sieve/Stage3Monotone.lean:45:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: Sieve/Stage3Monotone.lean:49:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+Ô£û [7048/7051] Building Sieve.Stage3PrimesEndToEnd
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\Sieve\Stage3PrimesEndToEnd.lean -o C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Stage3PrimesEndToEnd.olean -i C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Stage3PrimesEndToEnd.ilean -c C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Stage3PrimesEndToEnd.c --setup C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Stage3PrimesEndToEnd.setup.json --json
+error: Sieve/Stage3PrimesEndToEnd.lean:32:66: unsolved goals
+AI : Analytic.AvgWindowHitLB
+W : MaynardWeights.Weight
+¤ä : ÔäØ
+H : Finset Ôäñ
+cfg : MTCore.TupleConfig
+hpos : 0 < W.support.card
+h¤äleavg : ¤ä Ôëñ (Ôêæ m Ôêê W.support, W.w m) / ÔåæW.support.card
+h1 : 1 Ôëñ AI.lower W ¤ä H (primeHS cfg) Ôï»
+Ôèó Ôêâ n, (n Ôêê W.support Ôêº ¤ä Ôëñ W.w n) Ôêº Ôêâ h Ôêê H, isPrimeZ (n + h)
+warning: Sieve/Stage3PrimesEndToEnd.lean:35:8: This simp argument is unused:
+  primeHS
+
+Hint: Omit it from the simp argument list.
+  simp ╠Á[╠Áp╠Ár╠Ái╠Ám╠Áe╠ÁH╠ÁS╠Á]╠Á
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Sieve/Stage3PrimesEndToEnd.lean:35:17: unexpected token 'using'; expected command
+error: Sieve/Stage3PrimesEndToEnd.lean:58:57: unsolved goals
+AI : Analytic.AvgWindowHitLB
+W : MaynardWeights.Weight
+¤ä : ÔäØ
+H : Finset Ôäñ
+cfg : MTCore.TupleConfig
+hpos : 0 < W.support.card
+h¤äleavg : ¤ä Ôëñ (Ôêæ m Ôêê W.support, W.w m) / ÔåæW.support.card
+k : Ôäò
+hk : Ôåæk Ôëñ AI.lower W ¤ä H (primeHS cfg) Ôï»
+Ôèó Ôêâ n, (n Ôêê W.support Ôêº ¤ä Ôëñ W.w n) Ôêº k Ôëñ {h Ôêê H | isPrimeZ (n + h)}.card
+warning: Sieve/Stage3PrimesEndToEnd.lean:61:8: This simp argument is unused:
+  primeHS
+
+Hint: Omit it from the simp argument list.
+  simp ╠Á[╠Áp╠Ár╠Ái╠Ám╠Áe╠ÁH╠ÁS╠Á]╠Á
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Sieve/Stage3PrimesEndToEnd.lean:61:17: unexpected token 'using'; expected command
+error: Lean exited with code 1
+Some required builds logged failures:
+- Sieve.Stage3PrimesEndToEnd
+error: build failed
+
+===== FAIL :: Sieve.RunStage3PrimeCountsDemo =====
+ÔÜá [7044/7051] Replayed Sieve.Stage3Monotone
+warning: Sieve/Stage3Monotone.lean:45:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: Sieve/Stage3Monotone.lean:49:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+Ô£û [7048/7051] Building Sieve.Stage3PrimesEndToEnd
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\Sieve\Stage3PrimesEndToEnd.lean -o C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Stage3PrimesEndToEnd.olean -i C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Stage3PrimesEndToEnd.ilean -c C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Stage3PrimesEndToEnd.c --setup C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Stage3PrimesEndToEnd.setup.json --json
+error: Sieve/Stage3PrimesEndToEnd.lean:32:66: unsolved goals
+AI : Analytic.AvgWindowHitLB
+W : MaynardWeights.Weight
+¤ä : ÔäØ
+H : Finset Ôäñ
+cfg : MTCore.TupleConfig
+hpos : 0 < W.support.card
+h¤äleavg : ¤ä Ôëñ (Ôêæ m Ôêê W.support, W.w m) / ÔåæW.support.card
+h1 : 1 Ôëñ AI.lower W ¤ä H (primeHS cfg) Ôï»
+Ôèó Ôêâ n, (n Ôêê W.support Ôêº ¤ä Ôëñ W.w n) Ôêº Ôêâ h Ôêê H, isPrimeZ (n + h)
+warning: Sieve/Stage3PrimesEndToEnd.lean:35:8: This simp argument is unused:
+  primeHS
+
+Hint: Omit it from the simp argument list.
+  simp ╠Á[╠Áp╠Ár╠Ái╠Ám╠Áe╠ÁH╠ÁS╠Á]╠Á
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Sieve/Stage3PrimesEndToEnd.lean:35:17: unexpected token 'using'; expected command
+error: Sieve/Stage3PrimesEndToEnd.lean:58:57: unsolved goals
+AI : Analytic.AvgWindowHitLB
+W : MaynardWeights.Weight
+¤ä : ÔäØ
+H : Finset Ôäñ
+cfg : MTCore.TupleConfig
+hpos : 0 < W.support.card
+h¤äleavg : ¤ä Ôëñ (Ôêæ m Ôêê W.support, W.w m) / ÔåæW.support.card
+k : Ôäò
+hk : Ôåæk Ôëñ AI.lower W ¤ä H (primeHS cfg) Ôï»
+Ôèó Ôêâ n, (n Ôêê W.support Ôêº ¤ä Ôëñ W.w n) Ôêº k Ôëñ {h Ôêê H | isPrimeZ (n + h)}.card
+warning: Sieve/Stage3PrimesEndToEnd.lean:61:8: This simp argument is unused:
+  primeHS
+
+Hint: Omit it from the simp argument list.
+  simp ╠Á[╠Áp╠Ár╠Ái╠Ám╠Áe╠ÁH╠ÁS╠Á]╠Á
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Sieve/Stage3PrimesEndToEnd.lean:61:17: unexpected token 'using'; expected command
+error: Lean exited with code 1
+Some required builds logged failures:
+- Sieve.Stage3PrimesEndToEnd
+error: build failed
+
+===== FAIL :: Sieve.RunStage3PrimeFacadeDemo =====
+ÔÜá [7044/7051] Replayed Sieve.Stage3Monotone
+warning: Sieve/Stage3Monotone.lean:45:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: Sieve/Stage3Monotone.lean:49:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+Ô£û [7048/7051] Building Sieve.Stage3PrimesEndToEnd
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\Sieve\Stage3PrimesEndToEnd.lean -o C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Stage3PrimesEndToEnd.olean -i C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Stage3PrimesEndToEnd.ilean -c C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Stage3PrimesEndToEnd.c --setup C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Stage3PrimesEndToEnd.setup.json --json
+error: Sieve/Stage3PrimesEndToEnd.lean:32:66: unsolved goals
+AI : Analytic.AvgWindowHitLB
+W : MaynardWeights.Weight
+¤ä : ÔäØ
+H : Finset Ôäñ
+cfg : MTCore.TupleConfig
+hpos : 0 < W.support.card
+h¤äleavg : ¤ä Ôëñ (Ôêæ m Ôêê W.support, W.w m) / ÔåæW.support.card
+h1 : 1 Ôëñ AI.lower W ¤ä H (primeHS cfg) Ôï»
+Ôèó Ôêâ n, (n Ôêê W.support Ôêº ¤ä Ôëñ W.w n) Ôêº Ôêâ h Ôêê H, isPrimeZ (n + h)
+warning: Sieve/Stage3PrimesEndToEnd.lean:35:8: This simp argument is unused:
+  primeHS
+
+Hint: Omit it from the simp argument list.
+  simp ╠Á[╠Áp╠Ár╠Ái╠Ám╠Áe╠ÁH╠ÁS╠Á]╠Á
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Sieve/Stage3PrimesEndToEnd.lean:35:17: unexpected token 'using'; expected command
+error: Sieve/Stage3PrimesEndToEnd.lean:58:57: unsolved goals
+AI : Analytic.AvgWindowHitLB
+W : MaynardWeights.Weight
+¤ä : ÔäØ
+H : Finset Ôäñ
+cfg : MTCore.TupleConfig
+hpos : 0 < W.support.card
+h¤äleavg : ¤ä Ôëñ (Ôêæ m Ôêê W.support, W.w m) / ÔåæW.support.card
+k : Ôäò
+hk : Ôåæk Ôëñ AI.lower W ¤ä H (primeHS cfg) Ôï»
+Ôèó Ôêâ n, (n Ôêê W.support Ôêº ¤ä Ôëñ W.w n) Ôêº k Ôëñ {h Ôêê H | isPrimeZ (n + h)}.card
+warning: Sieve/Stage3PrimesEndToEnd.lean:61:8: This simp argument is unused:
+  primeHS
+
+Hint: Omit it from the simp argument list.
+  simp ╠Á[╠Áp╠Ár╠Ái╠Ám╠Áe╠ÁH╠ÁS╠Á]╠Á
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Sieve/Stage3PrimesEndToEnd.lean:61:17: unexpected token 'using'; expected command
+error: Lean exited with code 1
+Some required builds logged failures:
+- Sieve.Stage3PrimesEndToEnd
+error: build failed
+
+===== FAIL :: Sieve.RunStage3Smoke =====
+ÔÜá [7044/7051] Replayed Sieve.Stage3Monotone
+warning: Sieve/Stage3Monotone.lean:45:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: Sieve/Stage3Monotone.lean:49:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+Ô£û [7048/7051] Building Sieve.Stage3PrimesEndToEnd
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\Sieve\Stage3PrimesEndToEnd.lean -o C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Stage3PrimesEndToEnd.olean -i C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Stage3PrimesEndToEnd.ilean -c C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Stage3PrimesEndToEnd.c --setup C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Stage3PrimesEndToEnd.setup.json --json
+error: Sieve/Stage3PrimesEndToEnd.lean:32:66: unsolved goals
+AI : Analytic.AvgWindowHitLB
+W : MaynardWeights.Weight
+¤ä : ÔäØ
+H : Finset Ôäñ
+cfg : MTCore.TupleConfig
+hpos : 0 < W.support.card
+h¤äleavg : ¤ä Ôëñ (Ôêæ m Ôêê W.support, W.w m) / ÔåæW.support.card
+h1 : 1 Ôëñ AI.lower W ¤ä H (primeHS cfg) Ôï»
+Ôèó Ôêâ n, (n Ôêê W.support Ôêº ¤ä Ôëñ W.w n) Ôêº Ôêâ h Ôêê H, isPrimeZ (n + h)
+warning: Sieve/Stage3PrimesEndToEnd.lean:35:8: This simp argument is unused:
+  primeHS
+
+Hint: Omit it from the simp argument list.
+  simp ╠Á[╠Áp╠Ár╠Ái╠Ám╠Áe╠ÁH╠ÁS╠Á]╠Á
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Sieve/Stage3PrimesEndToEnd.lean:35:17: unexpected token 'using'; expected command
+error: Sieve/Stage3PrimesEndToEnd.lean:58:57: unsolved goals
+AI : Analytic.AvgWindowHitLB
+W : MaynardWeights.Weight
+¤ä : ÔäØ
+H : Finset Ôäñ
+cfg : MTCore.TupleConfig
+hpos : 0 < W.support.card
+h¤äleavg : ¤ä Ôëñ (Ôêæ m Ôêê W.support, W.w m) / ÔåæW.support.card
+k : Ôäò
+hk : Ôåæk Ôëñ AI.lower W ¤ä H (primeHS cfg) Ôï»
+Ôèó Ôêâ n, (n Ôêê W.support Ôêº ¤ä Ôëñ W.w n) Ôêº k Ôëñ {h Ôêê H | isPrimeZ (n + h)}.card
+warning: Sieve/Stage3PrimesEndToEnd.lean:61:8: This simp argument is unused:
+  primeHS
+
+Hint: Omit it from the simp argument list.
+  simp ╠Á[╠Áp╠Ár╠Ái╠Ám╠Áe╠ÁH╠ÁS╠Á]╠Á
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Sieve/Stage3PrimesEndToEnd.lean:61:17: unexpected token 'using'; expected command
+error: Lean exited with code 1
+Some required builds logged failures:
+- Sieve.Stage3PrimesEndToEnd
+error: build failed
+
+===== FAIL :: Sieve.RunStage3TwinGapDemo =====
+Ô£û [7046/7048] Building Sieve.Stage3PrimesEndToEnd
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\Sieve\Stage3PrimesEndToEnd.lean -o C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Stage3PrimesEndToEnd.olean -i C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Stage3PrimesEndToEnd.ilean -c C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Stage3PrimesEndToEnd.c --setup C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Stage3PrimesEndToEnd.setup.json --json
+error: Sieve/Stage3PrimesEndToEnd.lean:32:66: unsolved goals
+AI : Analytic.AvgWindowHitLB
+W : MaynardWeights.Weight
+¤ä : ÔäØ
+H : Finset Ôäñ
+cfg : MTCore.TupleConfig
+hpos : 0 < W.support.card
+h¤äleavg : ¤ä Ôëñ (Ôêæ m Ôêê W.support, W.w m) / ÔåæW.support.card
+h1 : 1 Ôëñ AI.lower W ¤ä H (primeHS cfg) Ôï»
+Ôèó Ôêâ n, (n Ôêê W.support Ôêº ¤ä Ôëñ W.w n) Ôêº Ôêâ h Ôêê H, isPrimeZ (n + h)
+warning: Sieve/Stage3PrimesEndToEnd.lean:35:8: This simp argument is unused:
+  primeHS
+
+Hint: Omit it from the simp argument list.
+  simp ╠Á[╠Áp╠Ár╠Ái╠Ám╠Áe╠ÁH╠ÁS╠Á]╠Á
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Sieve/Stage3PrimesEndToEnd.lean:35:17: unexpected token 'using'; expected command
+error: Sieve/Stage3PrimesEndToEnd.lean:58:57: unsolved goals
+AI : Analytic.AvgWindowHitLB
+W : MaynardWeights.Weight
+¤ä : ÔäØ
+H : Finset Ôäñ
+cfg : MTCore.TupleConfig
+hpos : 0 < W.support.card
+h¤äleavg : ¤ä Ôëñ (Ôêæ m Ôêê W.support, W.w m) / ÔåæW.support.card
+k : Ôäò
+hk : Ôåæk Ôëñ AI.lower W ¤ä H (primeHS cfg) Ôï»
+Ôèó Ôêâ n, (n Ôêê W.support Ôêº ¤ä Ôëñ W.w n) Ôêº k Ôëñ {h Ôêê H | isPrimeZ (n + h)}.card
+warning: Sieve/Stage3PrimesEndToEnd.lean:61:8: This simp argument is unused:
+  primeHS
+
+Hint: Omit it from the simp argument list.
+  simp ╠Á[╠Áp╠Ár╠Ái╠Ám╠Áe╠ÁH╠ÁS╠Á]╠Á
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Sieve/Stage3PrimesEndToEnd.lean:61:17: unexpected token 'using'; expected command
+error: Lean exited with code 1
+Some required builds logged failures:
+error: build failed
+- Sieve.Stage3PrimesEndToEnd
+
+===== FAIL :: Sieve.RunStage3TwinGapTwinPrimesDemo =====
+Ô£û [7046/7048] Building Sieve.Stage3PrimesEndToEnd
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\Sieve\Stage3PrimesEndToEnd.lean -o C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Stage3PrimesEndToEnd.olean -i C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Stage3PrimesEndToEnd.ilean -c C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Stage3PrimesEndToEnd.c --setup C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Stage3PrimesEndToEnd.setup.json --json
+error: Sieve/Stage3PrimesEndToEnd.lean:32:66: unsolved goals
+AI : Analytic.AvgWindowHitLB
+W : MaynardWeights.Weight
+¤ä : ÔäØ
+H : Finset Ôäñ
+cfg : MTCore.TupleConfig
+hpos : 0 < W.support.card
+h¤äleavg : ¤ä Ôëñ (Ôêæ m Ôêê W.support, W.w m) / ÔåæW.support.card
+h1 : 1 Ôëñ AI.lower W ¤ä H (primeHS cfg) Ôï»
+Ôèó Ôêâ n, (n Ôêê W.support Ôêº ¤ä Ôëñ W.w n) Ôêº Ôêâ h Ôêê H, isPrimeZ (n + h)
+warning: Sieve/Stage3PrimesEndToEnd.lean:35:8: This simp argument is unused:
+  primeHS
+
+Hint: Omit it from the simp argument list.
+  simp ╠Á[╠Áp╠Ár╠Ái╠Ám╠Áe╠ÁH╠ÁS╠Á]╠Á
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Sieve/Stage3PrimesEndToEnd.lean:35:17: unexpected token 'using'; expected command
+error: Sieve/Stage3PrimesEndToEnd.lean:58:57: unsolved goals
+AI : Analytic.AvgWindowHitLB
+W : MaynardWeights.Weight
+¤ä : ÔäØ
+H : Finset Ôäñ
+cfg : MTCore.TupleConfig
+hpos : 0 < W.support.card
+h¤äleavg : ¤ä Ôëñ (Ôêæ m Ôêê W.support, W.w m) / ÔåæW.support.card
+k : Ôäò
+hk : Ôåæk Ôëñ AI.lower W ¤ä H (primeHS cfg) Ôï»
+Ôèó Ôêâ n, (n Ôêê W.support Ôêº ¤ä Ôëñ W.w n) Ôêº k Ôëñ {h Ôêê H | isPrimeZ (n + h)}.card
+warning: Sieve/Stage3PrimesEndToEnd.lean:61:8: This simp argument is unused:
+  primeHS
+
+Hint: Omit it from the simp argument list.
+  simp ╠Á[╠Áp╠Ár╠Ái╠Ám╠Áe╠ÁH╠ÁS╠Á]╠Á
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Sieve/Stage3PrimesEndToEnd.lean:61:17: unexpected token 'using'; expected command
+error: Lean exited with code 1
+Some required builds logged failures:
+- Sieve.Stage3PrimesEndToEnd
+error: build failed
+
+===== OK :: Sieve.RunStage3WindowDemo =====
+Ô£ö [7000/7000] Built Sieve.RunStage3WindowDemo
+Build completed successfully.
+
+===== FAIL :: Sieve.RunTwinAnalyticMockDemo =====
+Ô£û [7045/7046] Building Sieve.Stage3PrimesEndToEnd
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\Sieve\Stage3PrimesEndToEnd.lean -o C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Stage3PrimesEndToEnd.olean -i C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Stage3PrimesEndToEnd.ilean -c C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Stage3PrimesEndToEnd.c --setup C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Stage3PrimesEndToEnd.setup.json --json
+error: Sieve/Stage3PrimesEndToEnd.lean:32:66: unsolved goals
+AI : Analytic.AvgWindowHitLB
+W : MaynardWeights.Weight
+¤ä : ÔäØ
+H : Finset Ôäñ
+cfg : MTCore.TupleConfig
+hpos : 0 < W.support.card
+h¤äleavg : ¤ä Ôëñ (Ôêæ m Ôêê W.support, W.w m) / ÔåæW.support.card
+h1 : 1 Ôëñ AI.lower W ¤ä H (primeHS cfg) Ôï»
+Ôèó Ôêâ n, (n Ôêê W.support Ôêº ¤ä Ôëñ W.w n) Ôêº Ôêâ h Ôêê H, isPrimeZ (n + h)
+warning: Sieve/Stage3PrimesEndToEnd.lean:35:8: This simp argument is unused:
+  primeHS
+
+Hint: Omit it from the simp argument list.
+  simp ╠Á[╠Áp╠Ár╠Ái╠Ám╠Áe╠ÁH╠ÁS╠Á]╠Á
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Sieve/Stage3PrimesEndToEnd.lean:35:17: unexpected token 'using'; expected command
+error: Sieve/Stage3PrimesEndToEnd.lean:58:57: unsolved goals
+AI : Analytic.AvgWindowHitLB
+W : MaynardWeights.Weight
+¤ä : ÔäØ
+H : Finset Ôäñ
+cfg : MTCore.TupleConfig
+hpos : 0 < W.support.card
+h¤äleavg : ¤ä Ôëñ (Ôêæ m Ôêê W.support, W.w m) / ÔåæW.support.card
+k : Ôäò
+hk : Ôåæk Ôëñ AI.lower W ¤ä H (primeHS cfg) Ôï»
+Ôèó Ôêâ n, (n Ôêê W.support Ôêº ¤ä Ôëñ W.w n) Ôêº k Ôëñ {h Ôêê H | isPrimeZ (n + h)}.card
+warning: Sieve/Stage3PrimesEndToEnd.lean:61:8: This simp argument is unused:
+  primeHS
+
+Hint: Omit it from the simp argument list.
+  simp ╠Á[╠Áp╠Ár╠Ái╠Ám╠Áe╠ÁH╠ÁS╠Á]╠Á
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Sieve/Stage3PrimesEndToEnd.lean:61:17: unexpected token 'using'; expected command
+error: Lean exited with code 1
+Some required builds logged failures:
+- Sieve.Stage3PrimesEndToEnd
+error: build failed
+
+===== FAIL :: Sieve.RunTwinEndToEndDemo =====
+Ô£û [7043/7044] Building Sieve.Stage3PrimesEndToEnd
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\Sieve\Stage3PrimesEndToEnd.lean -o C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Stage3PrimesEndToEnd.olean -i C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Stage3PrimesEndToEnd.ilean -c C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Stage3PrimesEndToEnd.c --setup C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Stage3PrimesEndToEnd.setup.json --json
+error: Sieve/Stage3PrimesEndToEnd.lean:32:66: unsolved goals
+AI : Analytic.AvgWindowHitLB
+W : MaynardWeights.Weight
+¤ä : ÔäØ
+H : Finset Ôäñ
+cfg : MTCore.TupleConfig
+hpos : 0 < W.support.card
+h¤äleavg : ¤ä Ôëñ (Ôêæ m Ôêê W.support, W.w m) / ÔåæW.support.card
+h1 : 1 Ôëñ AI.lower W ¤ä H (primeHS cfg) Ôï»
+Ôèó Ôêâ n, (n Ôêê W.support Ôêº ¤ä Ôëñ W.w n) Ôêº Ôêâ h Ôêê H, isPrimeZ (n + h)
+warning: Sieve/Stage3PrimesEndToEnd.lean:35:8: This simp argument is unused:
+  primeHS
+
+Hint: Omit it from the simp argument list.
+  simp ╠Á[╠Áp╠Ár╠Ái╠Ám╠Áe╠ÁH╠ÁS╠Á]╠Á
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Sieve/Stage3PrimesEndToEnd.lean:35:17: unexpected token 'using'; expected command
+error: Sieve/Stage3PrimesEndToEnd.lean:58:57: unsolved goals
+AI : Analytic.AvgWindowHitLB
+W : MaynardWeights.Weight
+¤ä : ÔäØ
+H : Finset Ôäñ
+cfg : MTCore.TupleConfig
+hpos : 0 < W.support.card
+h¤äleavg : ¤ä Ôëñ (Ôêæ m Ôêê W.support, W.w m) / ÔåæW.support.card
+k : Ôäò
+hk : Ôåæk Ôëñ AI.lower W ¤ä H (primeHS cfg) Ôï»
+Ôèó Ôêâ n, (n Ôêê W.support Ôêº ¤ä Ôëñ W.w n) Ôêº k Ôëñ {h Ôêê H | isPrimeZ (n + h)}.card
+warning: Sieve/Stage3PrimesEndToEnd.lean:61:8: This simp argument is unused:
+  primeHS
+
+Hint: Omit it from the simp argument list.
+  simp ╠Á[╠Áp╠Ár╠Ái╠Ám╠Áe╠ÁH╠ÁS╠Á]╠Á
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Sieve/Stage3PrimesEndToEnd.lean:61:17: unexpected token 'using'; expected command
+error: Lean exited with code 1
+Some required builds logged failures:
+- Sieve.Stage3PrimesEndToEnd
+error: build failed
+
+===== OK :: Sieve.RunTwinSimpleConstDemo =====
+Ô£ö [7014/7014] Built Sieve.RunTwinSimpleConstDemo
+Build completed successfully.
+
+===== OK :: Sieve.SingularSeries =====
+Ô£ö [6994/6994] Built Sieve.SingularSeries
+Build completed successfully.
+
+===== OK :: Sieve.Smoke =====
+Ô£ö [7003/7003] Built Sieve.Smoke
+Build completed successfully.
+
+===== OK :: Sieve.Stage2 =====
+Build completed successfully.
+
+===== OK :: Sieve.Stage2Average =====
+Build completed successfully.
+
+===== OK :: Sieve.Stage2AvgNonneg =====
+Build completed successfully.
+
+===== OK :: Sieve.Stage2Basic =====
+Build completed successfully.
+
+===== OK :: Sieve.Stage2BoundsFromEq =====
+Build completed successfully.
+
+===== OK :: Sieve.Stage2Density =====
+Build completed successfully.
+
+===== OK :: Sieve.Stage2DensitySecond =====
+Build completed successfully.
+
+===== OK :: Sieve.Stage2Exports =====
+Build completed successfully.
+
+===== OK :: Sieve.Stage2FirstMomentExtras =====
+Build completed successfully.
+
+===== OK :: Sieve.Stage2Glue =====
+Build completed successfully.
+
+===== OK :: Sieve.Stage2Max =====
+Build completed successfully.
+
+===== OK :: Sieve.Stage2MinBounds =====
+Build completed successfully.
+
+===== OK :: Sieve.Stage2Monotone =====
+Build completed successfully.
+
+===== OK :: Sieve.Stage2MonotoneThresholds =====
+Build completed successfully.
+
+===== OK :: Sieve.Stage2Pigeonhole =====
+Build completed successfully.
+
+===== OK :: Sieve.Stage2Report =====
+Build completed successfully.
+
+===== OK :: Sieve.Stage2SecondMoment =====
+Build completed successfully.
+
+===== OK :: Sieve.Stage2SecondMomentExtras =====
+Build completed successfully.
+
+===== OK :: Sieve.Stage2Squared =====
+Build completed successfully.
+
+===== OK :: Sieve.Stage2Summary =====
+Build completed successfully.
+
+===== OK :: Sieve.Stage2Thresholds =====
+Build completed successfully.
+
+===== OK :: Sieve.Stage2Toolkit =====
+Build completed successfully.
+
+===== OK :: Sieve.Stage2Weight =====
+Build completed successfully.
+
+===== OK :: Sieve.Stage3 =====
+Ô£ö [7006/7006] Built Sieve.Stage3
+Build completed successfully.
+
+===== OK :: Sieve.Stage3AvgConst =====
+Build completed successfully.
+
+===== OK :: Sieve.Stage3DensityBounds =====
+Ô£ö [6998/6998] Built Sieve.Stage3DensityBounds
+Build completed successfully.
+
+===== OK :: Sieve.Stage3DensityMonotone =====
+Ô£ö [6998/6998] Built Sieve.Stage3DensityMonotone
+Build completed successfully.
+
+===== OK :: Sieve.Stage3DensityZero =====
+Build completed successfully.
+
+===== OK :: Sieve.Stage3EndToEnd =====
+Build completed successfully.
+
+===== FAIL :: Sieve.Stage3Ergonomics =====
+Ô£û [7043/7044] Building Sieve.Stage3PrimesEndToEnd
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\Sieve\Stage3PrimesEndToEnd.lean -o C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Stage3PrimesEndToEnd.olean -i C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Stage3PrimesEndToEnd.ilean -c C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Stage3PrimesEndToEnd.c --setup C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Stage3PrimesEndToEnd.setup.json --json
+error: Sieve/Stage3PrimesEndToEnd.lean:32:66: unsolved goals
+AI : Analytic.AvgWindowHitLB
+W : MaynardWeights.Weight
+¤ä : ÔäØ
+H : Finset Ôäñ
+cfg : MTCore.TupleConfig
+hpos : 0 < W.support.card
+h¤äleavg : ¤ä Ôëñ (Ôêæ m Ôêê W.support, W.w m) / ÔåæW.support.card
+h1 : 1 Ôëñ AI.lower W ¤ä H (primeHS cfg) Ôï»
+Ôèó Ôêâ n, (n Ôêê W.support Ôêº ¤ä Ôëñ W.w n) Ôêº Ôêâ h Ôêê H, isPrimeZ (n + h)
+warning: Sieve/Stage3PrimesEndToEnd.lean:35:8: This simp argument is unused:
+  primeHS
+
+Hint: Omit it from the simp argument list.
+  simp ╠Á[╠Áp╠Ár╠Ái╠Ám╠Áe╠ÁH╠ÁS╠Á]╠Á
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Sieve/Stage3PrimesEndToEnd.lean:35:17: unexpected token 'using'; expected command
+error: Sieve/Stage3PrimesEndToEnd.lean:58:57: unsolved goals
+AI : Analytic.AvgWindowHitLB
+W : MaynardWeights.Weight
+¤ä : ÔäØ
+H : Finset Ôäñ
+cfg : MTCore.TupleConfig
+hpos : 0 < W.support.card
+h¤äleavg : ¤ä Ôëñ (Ôêæ m Ôêê W.support, W.w m) / ÔåæW.support.card
+k : Ôäò
+hk : Ôåæk Ôëñ AI.lower W ¤ä H (primeHS cfg) Ôï»
+Ôèó Ôêâ n, (n Ôêê W.support Ôêº ¤ä Ôëñ W.w n) Ôêº k Ôëñ {h Ôêê H | isPrimeZ (n + h)}.card
+warning: Sieve/Stage3PrimesEndToEnd.lean:61:8: This simp argument is unused:
+  primeHS
+
+Hint: Omit it from the simp argument list.
+  simp ╠Á[╠Áp╠Ár╠Ái╠Ám╠Áe╠ÁH╠ÁS╠Á]╠Á
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Sieve/Stage3PrimesEndToEnd.lean:61:17: unexpected token 'using'; expected command
+error: Lean exited with code 1
+Some required builds logged failures:
+- Sieve.Stage3PrimesEndToEnd
+error: build failed
+
+===== FAIL :: Sieve.Stage3Exports =====
+ÔÜá [7044/7050] Replayed Sieve.Stage3Monotone
+warning: Sieve/Stage3Monotone.lean:45:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: Sieve/Stage3Monotone.lean:49:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+Ô£û [7048/7050] Building Sieve.Stage3PrimesEndToEnd
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\Sieve\Stage3PrimesEndToEnd.lean -o C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Stage3PrimesEndToEnd.olean -i C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Stage3PrimesEndToEnd.ilean -c C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Stage3PrimesEndToEnd.c --setup C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Stage3PrimesEndToEnd.setup.json --json
+error: Sieve/Stage3PrimesEndToEnd.lean:32:66: unsolved goals
+AI : Analytic.AvgWindowHitLB
+W : MaynardWeights.Weight
+¤ä : ÔäØ
+H : Finset Ôäñ
+cfg : MTCore.TupleConfig
+hpos : 0 < W.support.card
+h¤äleavg : ¤ä Ôëñ (Ôêæ m Ôêê W.support, W.w m) / ÔåæW.support.card
+h1 : 1 Ôëñ AI.lower W ¤ä H (primeHS cfg) Ôï»
+Ôèó Ôêâ n, (n Ôêê W.support Ôêº ¤ä Ôëñ W.w n) Ôêº Ôêâ h Ôêê H, isPrimeZ (n + h)
+warning: Sieve/Stage3PrimesEndToEnd.lean:35:8: This simp argument is unused:
+  primeHS
+
+Hint: Omit it from the simp argument list.
+  simp ╠Á[╠Áp╠Ár╠Ái╠Ám╠Áe╠ÁH╠ÁS╠Á]╠Á
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Sieve/Stage3PrimesEndToEnd.lean:35:17: unexpected token 'using'; expected command
+error: Sieve/Stage3PrimesEndToEnd.lean:58:57: unsolved goals
+AI : Analytic.AvgWindowHitLB
+W : MaynardWeights.Weight
+¤ä : ÔäØ
+H : Finset Ôäñ
+cfg : MTCore.TupleConfig
+hpos : 0 < W.support.card
+h¤äleavg : ¤ä Ôëñ (Ôêæ m Ôêê W.support, W.w m) / ÔåæW.support.card
+k : Ôäò
+hk : Ôåæk Ôëñ AI.lower W ¤ä H (primeHS cfg) Ôï»
+Ôèó Ôêâ n, (n Ôêê W.support Ôêº ¤ä Ôëñ W.w n) Ôêº k Ôëñ {h Ôêê H | isPrimeZ (n + h)}.card
+warning: Sieve/Stage3PrimesEndToEnd.lean:61:8: This simp argument is unused:
+  primeHS
+
+Hint: Omit it from the simp argument list.
+  simp ╠Á[╠Áp╠Ár╠Ái╠Ám╠Áe╠ÁH╠ÁS╠Á]╠Á
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Sieve/Stage3PrimesEndToEnd.lean:61:17: unexpected token 'using'; expected command
+error: Lean exited with code 1
+Some required builds logged failures:
+- Sieve.Stage3PrimesEndToEnd
+error: build failed
+
+===== FAIL :: Sieve.Stage3ExportsAll =====
+ÔÜá [7044/7058] Replayed Sieve.Stage3Monotone
+warning: Sieve/Stage3Monotone.lean:45:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: Sieve/Stage3Monotone.lean:49:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+Ô£û [7048/7058] Running Sieve.AnalyticBVTemplate
+error: no such file or directory (error code: 2)
+  file: C:\Projects\test-lean-modules\Sieve\AnalyticBVTemplate.lean
+Ô£û [7054/7058] Running Sieve.Stage3ExportsAll
+error: C:\Projects\test-lean-modules\Sieve\Stage3ExportsAll.lean: bad import 'Sieve.AnalyticBVTemplate'
+Ô£û [7055/7058] Building Sieve.Stage3PrimesEndToEnd
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\Sieve\Stage3PrimesEndToEnd.lean -o C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Stage3PrimesEndToEnd.olean -i C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Stage3PrimesEndToEnd.ilean -c C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Stage3PrimesEndToEnd.c --setup C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Stage3PrimesEndToEnd.setup.json --json
+error: Sieve/Stage3PrimesEndToEnd.lean:32:66: unsolved goals
+AI : Analytic.AvgWindowHitLB
+W : MaynardWeights.Weight
+¤ä : ÔäØ
+H : Finset Ôäñ
+cfg : MTCore.TupleConfig
+hpos : 0 < W.support.card
+h¤äleavg : ¤ä Ôëñ (Ôêæ m Ôêê W.support, W.w m) / ÔåæW.support.card
+h1 : 1 Ôëñ AI.lower W ¤ä H (primeHS cfg) Ôï»
+Ôèó Ôêâ n, (n Ôêê W.support Ôêº ¤ä Ôëñ W.w n) Ôêº Ôêâ h Ôêê H, isPrimeZ (n + h)
+warning: Sieve/Stage3PrimesEndToEnd.lean:35:8: This simp argument is unused:
+  primeHS
+
+Hint: Omit it from the simp argument list.
+  simp ╠Á[╠Áp╠Ár╠Ái╠Ám╠Áe╠ÁH╠ÁS╠Á]╠Á
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Sieve/Stage3PrimesEndToEnd.lean:35:17: unexpected token 'using'; expected command
+error: Sieve/Stage3PrimesEndToEnd.lean:58:57: unsolved goals
+AI : Analytic.AvgWindowHitLB
+W : MaynardWeights.Weight
+¤ä : ÔäØ
+H : Finset Ôäñ
+cfg : MTCore.TupleConfig
+hpos : 0 < W.support.card
+h¤äleavg : ¤ä Ôëñ (Ôêæ m Ôêê W.support, W.w m) / ÔåæW.support.card
+k : Ôäò
+hk : Ôåæk Ôëñ AI.lower W ¤ä H (primeHS cfg) Ôï»
+Ôèó Ôêâ n, (n Ôêê W.support Ôêº ¤ä Ôëñ W.w n) Ôêº k Ôëñ {h Ôêê H | isPrimeZ (n + h)}.card
+warning: Sieve/Stage3PrimesEndToEnd.lean:61:8: This simp argument is unused:
+  primeHS
+
+Hint: Omit it from the simp argument list.
+  simp ╠Á[╠Áp╠Ár╠Ái╠Ám╠Áe╠ÁH╠ÁS╠Á]╠Á
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Sieve/Stage3PrimesEndToEnd.lean:61:17: unexpected token 'using'; expected command
+error: Lean exited with code 1
+error: build failed
+Some required builds logged failures:
+- Sieve.AnalyticBVTemplate
+- Sieve.Stage3ExportsAll
+- Sieve.Stage3PrimesEndToEnd
+
+===== OK :: Sieve.Stage3Extraction =====
+Build completed successfully.
+
+===== OK :: Sieve.Stage3HeavySetMonotone =====
+Ô£ö [6998/6998] Built Sieve.Stage3HeavySetMonotone
+Build completed successfully.
+
+===== OK :: Sieve.Stage3HitCard =====
+Build completed successfully.
+
+===== OK :: Sieve.Stage3HitCardBounds =====
+Ô£ö [7001/7002] Built Sieve.Stage3WindowBounds
+Ô£ö [7002/7002] Built Sieve.Stage3HitCardBounds
+Build completed successfully.
+
+===== OK :: Sieve.Stage3MinBounds =====
+Ô£ö [7034/7034] Built Sieve.Stage3MinBounds
+Build completed successfully.
+
+===== OK :: Sieve.Stage3Monotone =====
+ÔÜá [6998/6998] Replayed Sieve.Stage3Monotone
+warning: Sieve/Stage3Monotone.lean:45:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: Sieve/Stage3Monotone.lean:49:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+Build completed successfully.
+
+===== OK :: Sieve.Stage3PrimeCounts =====
+Build completed successfully.
+
+===== OK :: Sieve.Stage3PrimeCountsNat =====
+Build completed successfully.
+
+===== OK :: Sieve.Stage3PrimeFacade =====
+Build completed successfully.
+
+===== FAIL :: Sieve.Stage3PrimesEndToEnd =====
+Ô£û [7043/7043] Building Sieve.Stage3PrimesEndToEnd
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\Sieve\Stage3PrimesEndToEnd.lean -o C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Stage3PrimesEndToEnd.olean -i C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Stage3PrimesEndToEnd.ilean -c C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Stage3PrimesEndToEnd.c --setup C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Stage3PrimesEndToEnd.setup.json --json
+error: Sieve/Stage3PrimesEndToEnd.lean:32:66: unsolved goals
+AI : Analytic.AvgWindowHitLB
+W : MaynardWeights.Weight
+¤ä : ÔäØ
+H : Finset Ôäñ
+cfg : MTCore.TupleConfig
+hpos : 0 < W.support.card
+h¤äleavg : ¤ä Ôëñ (Ôêæ m Ôêê W.support, W.w m) / ÔåæW.support.card
+h1 : 1 Ôëñ AI.lower W ¤ä H (primeHS cfg) Ôï»
+Ôèó Ôêâ n, (n Ôêê W.support Ôêº ¤ä Ôëñ W.w n) Ôêº Ôêâ h Ôêê H, isPrimeZ (n + h)
+warning: Sieve/Stage3PrimesEndToEnd.lean:35:8: This simp argument is unused:
+  primeHS
+
+Hint: Omit it from the simp argument list.
+  simp ╠Á[╠Áp╠Ár╠Ái╠Ám╠Áe╠ÁH╠ÁS╠Á]╠Á
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Sieve/Stage3PrimesEndToEnd.lean:35:17: unexpected token 'using'; expected command
+error: Sieve/Stage3PrimesEndToEnd.lean:58:57: unsolved goals
+AI : Analytic.AvgWindowHitLB
+W : MaynardWeights.Weight
+¤ä : ÔäØ
+H : Finset Ôäñ
+cfg : MTCore.TupleConfig
+hpos : 0 < W.support.card
+h¤äleavg : ¤ä Ôëñ (Ôêæ m Ôêê W.support, W.w m) / ÔåæW.support.card
+k : Ôäò
+hk : Ôåæk Ôëñ AI.lower W ¤ä H (primeHS cfg) Ôï»
+Ôèó Ôêâ n, (n Ôêê W.support Ôêº ¤ä Ôëñ W.w n) Ôêº k Ôëñ {h Ôêê H | isPrimeZ (n + h)}.card
+warning: Sieve/Stage3PrimesEndToEnd.lean:61:8: This simp argument is unused:
+  primeHS
+
+Hint: Omit it from the simp argument list.
+  simp ╠Á[╠Áp╠Ár╠Ái╠Ám╠Áe╠ÁH╠ÁS╠Á]╠Á
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Sieve/Stage3PrimesEndToEnd.lean:61:17: unexpected token 'using'; expected command
+error: Lean exited with code 1
+Some required builds logged failures:
+- Sieve.Stage3PrimesEndToEnd
+error: build failed
+
+===== OK :: Sieve.Stage3Report =====
+Build completed successfully.
+
+===== OK :: Sieve.Stage3SecondMomentEmptiness =====
+Build completed successfully.
+
+===== FAIL :: Sieve.Stage3TwinGap =====
+Ô£û [7044/7045] Building Sieve.Stage3PrimesEndToEnd
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\Sieve\Stage3PrimesEndToEnd.lean -o C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Stage3PrimesEndToEnd.olean -i C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Stage3PrimesEndToEnd.ilean -c C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Stage3PrimesEndToEnd.c --setup C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Stage3PrimesEndToEnd.setup.json --json
+error: Sieve/Stage3PrimesEndToEnd.lean:32:66: unsolved goals
+AI : Analytic.AvgWindowHitLB
+W : MaynardWeights.Weight
+¤ä : ÔäØ
+H : Finset Ôäñ
+cfg : MTCore.TupleConfig
+hpos : 0 < W.support.card
+h¤äleavg : ¤ä Ôëñ (Ôêæ m Ôêê W.support, W.w m) / ÔåæW.support.card
+h1 : 1 Ôëñ AI.lower W ¤ä H (primeHS cfg) Ôï»
+Ôèó Ôêâ n, (n Ôêê W.support Ôêº ¤ä Ôëñ W.w n) Ôêº Ôêâ h Ôêê H, isPrimeZ (n + h)
+warning: Sieve/Stage3PrimesEndToEnd.lean:35:8: This simp argument is unused:
+  primeHS
+
+Hint: Omit it from the simp argument list.
+  simp ╠Á[╠Áp╠Ár╠Ái╠Ám╠Áe╠ÁH╠ÁS╠Á]╠Á
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Sieve/Stage3PrimesEndToEnd.lean:35:17: unexpected token 'using'; expected command
+error: Sieve/Stage3PrimesEndToEnd.lean:58:57: unsolved goals
+AI : Analytic.AvgWindowHitLB
+W : MaynardWeights.Weight
+¤ä : ÔäØ
+H : Finset Ôäñ
+cfg : MTCore.TupleConfig
+hpos : 0 < W.support.card
+h¤äleavg : ¤ä Ôëñ (Ôêæ m Ôêê W.support, W.w m) / ÔåæW.support.card
+k : Ôäò
+hk : Ôåæk Ôëñ AI.lower W ¤ä H (primeHS cfg) Ôï»
+Ôèó Ôêâ n, (n Ôêê W.support Ôêº ¤ä Ôëñ W.w n) Ôêº k Ôëñ {h Ôêê H | isPrimeZ (n + h)}.card
+warning: Sieve/Stage3PrimesEndToEnd.lean:61:8: This simp argument is unused:
+  primeHS
+
+Hint: Omit it from the simp argument list.
+  simp ╠Á[╠Áp╠Ár╠Ái╠Ám╠Áe╠ÁH╠ÁS╠Á]╠Á
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Sieve/Stage3PrimesEndToEnd.lean:61:17: unexpected token 'using'; expected command
+error: Lean exited with code 1
+Some required builds logged failures:
+- Sieve.Stage3PrimesEndToEnd
+error: build failed
+
+===== OK :: Sieve.Stage3Window =====
+Build completed successfully.
+
+===== OK :: Sieve.Stage3WindowBounds =====
+Build completed successfully.
+
+===== OK :: Sieve.Stage3WindowMono =====
+Ô£ö [7000/7000] Built Sieve.Stage3WindowMono
+Build completed successfully.
+
+===== OK :: Sieve.SumAbsBounds =====
+ÔÜá [6995/6995] Built Sieve.SumAbsBounds
+warning: Sieve/SumAbsBounds.lean:43:6: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+Build completed successfully.
+
+===== OK :: Sieve.SumBounds =====
+Build completed successfully.
+
+===== OK :: Sieve.Weights =====
+Build completed successfully.
+
+===== OK :: Sieve.ZModDemos =====
+Ô£ö [6995/6995] Built Sieve.ZModDemos
+Build completed successfully.
+
+===== FAIL :: Sieve.ZModFacts =====
+Ô£û [6994/6994] Building Sieve.ZModFacts
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\Sieve\ZModFacts.lean -o C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\ZModFacts.olean -i C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\ZModFacts.ilean -c C:\Projects\test-lean-modules\.lake\build\ir\Sieve\ZModFacts.c --setup C:\Projects\test-lean-modules\.lake\build\ir\Sieve\ZModFacts.setup.json --json
+error: Sieve/ZModFacts.lean:16:15: failed to synthesize
+  NeZero 1
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+error: Sieve/ZModFacts.lean:21:15: failed to synthesize
+  NeZero 1
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+error: Lean exited with code 1
+error: build failed
+Some required builds logged failures:
+- Sieve.ZModFacts
+
+===== OK :: Sieve.Analytic.AIConstructors =====
+Ô£ö [7005/7005] Built Sieve.Analytic.AIConstructors
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.AIFromResidue =====
+Ô£ö [7006/7006] Built Sieve.Analytic.AIFromResidue
+Build completed successfully.
+
+===== FAIL :: Sieve.Analytic.All =====
+Ô£ö [6995/7028] Built Sieve.Analytic.ResidueSumBasics
+Ô£ö [6996/7028] Built Sieve.Analytic.IndexCounting
+ÔÜá [6997/7028] Built Sieve.Analytic.LargeSieveConvenience
+warning: Sieve/Analytic/LargeSieveConvenience.lean:36:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+Ô£ö [6998/7028] Built Sieve.Analytic.L1Monotonicity
+Ô£ö [6999/7028] Built Sieve.Analytic.RunDyadicSmoke
+ÔÜá [7000/7028] Built Sieve.Analytic.RunOrthogonalitySmoke
+warning: Sieve/Analytic/RunOrthogonalitySmoke.lean:24:2: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+ÔÜá [7001/7028] Built Sieve.Analytic.ResidueIndicator
+warning: Sieve/Analytic/ResidueIndicator.lean:49:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+Ô£ö [7002/7028] Built Sieve.Analytic.RunLargeSieveSmoke
+Ô£û [7003/7028] Building Sieve.Analytic.BVSketchParamsEps
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\Sieve\Analytic\BVSketchParamsEps.lean -o C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Analytic\BVSketchParamsEps.olean -i C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Analytic\BVSketchParamsEps.ilean -c C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Analytic\BVSketchParamsEps.c --setup C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Analytic\BVSketchParamsEps.setup.json --json
+error: Sieve/Analytic/BVSketchParamsEps.lean:28:9: (kernel) invalid declaration, it uses unsafe declaration 'Real.instRepr'
+error: Sieve/Analytic/BVSketchParamsEps.lean:44:2: type mismatch, term
+  Eq.symm (sub_add P.Cmain P.Cerr P.eps)
+after simplification has type
+  P.Cmain - (P.Cerr - P.eps) = P.Cmain - P.Cerr + P.eps : Prop
+but is expected to have type
+  P.Cmain - P.Cerr - P.eps = P.Cmain - (P.Cerr + P.eps) : Prop
+error: Sieve/Analytic/BVSketchParamsEps.lean:56:2: type mismatch, term
+  this
+after simplification has type
+  P.Cerr + P.eps Ôëñ P.Cmain : Prop
+but is expected to have type
+  P.eps Ôëñ P.Cmain - P.Cerr : Prop
+error: Sieve/Analytic/BVSketchParamsEps.lean:67:45: don't know how to synthesize placeholder for argument 'c'
+context:
+P P' : BVParamsEps
+hC : P.Cmain Ôëñ P'.Cmain
+hE : P.Cerr = P'.Cerr
+h╬Á : P.eps = P'.eps
+Ôèó ÔäØ
+error: Sieve/Analytic/BVSketchParamsEps.lean:85:6: type mismatch, term
+  add_le_add_right hE ?m.12501
+after simplification has type
+  P.Cerr Ôëñ P'.Cerr : Prop
+but is expected to have type
+  P'.Cerr Ôëñ P.Cerr : Prop
+error: Sieve/Analytic/BVSketchParamsEps.lean:89:4: type mismatch, term
+  this
+after simplification has type
+  P.Cmain Ôëñ P.Cmain - (P'.Cerr + P'.eps) + (P.Cerr + P.eps) : Prop
+but is expected to have type
+  P'.Cmain Ôëñ P.Cmain - (P.Cerr + P.eps) + (P'.Cerr + P'.eps) : Prop
+error: Sieve/Analytic/BVSketchParamsEps.lean:90:2: type mismatch, term
+  this
+after simplification has type
+  P'.Cmain Ôëñ P'.Cmain - (P.Cerr + P'.eps) + (P'.Cerr + P'.eps) : Prop
+but is expected to have type
+  P'.Cmain Ôëñ P'.Cmain - P.Cerr + P'.Cerr : Prop
+error: Lean exited with code 1
+Ô£ö [7005/7028] Built Sieve.Analytic.BVToolboxSpec
+Ô£ö [7006/7028] Built Sieve.Analytic.PartialSummationConvenience
+Ô£ö [7007/7028] Built Sieve.Analytic.L1WeightedIccConvenience
+Ô£ö [7008/7028] Built Sieve.Analytic.RunPartialSummationSmoke
+Ô£ö [7009/7028] Built Sieve.Analytic.ResidueSumLinear
+Ô£ö [7010/7028] Built Sieve.Analytic.WeightedResidue
+Ô£ö [7011/7028] Built Sieve.Analytic.DataMassBasics
+ÔÜá [7012/7028] Built Sieve.Analytic.LargeSieveDefs
+warning: Sieve/Analytic/LargeSieveDefs.lean:29:2: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+Ô£û [7013/7028] Building Sieve.Analytic.LargeSieveMonotonicity
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\Sieve\Analytic\LargeSieveMonotonicity.lean -o C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Analytic\LargeSieveMonotonicity.olean -i C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Analytic\LargeSieveMonotonicity.ilean -c C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Analytic\LargeSieveMonotonicity.c --setup C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Analytic\LargeSieveMonotonicity.setup.json --json
+error: Sieve/Analytic/LargeSieveMonotonicity.lean:32:25: typeclass instance problem is stuck, it is often due to metavariables
+  CharZero ?m.10311
+warning: Sieve/Analytic/LargeSieveMonotonicity.lean:39:13: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+error: Sieve/Analytic/LargeSieveMonotonicity.lean:63:4: type mismatch
+  mul_le_mul_of_nonneg_left (mul_le_mul_of_nonneg_right hMid hMass) C_ls_nonneg
+has type
+  BVToolbox.C_ls ?m.10662 * (Ôåæ(N + Q ^ 2) * Ôêæ n Ôêê Finset.Icc 1 N, ÔÇûa nÔÇû ^ 2) Ôëñ
+    BVToolbox.C_ls ?m.10662 * (Ôåæ(N + Q' ^ 2) * Ôêæ n Ôêê Finset.Icc 1 N, ÔÇûa nÔÇû ^ 2) : Prop
+but is expected to have type
+  T.C_ls * (ÔåæN + ÔåæQ ^ 2) * Ôêæ n Ôêê Finset.Icc 1 N, ÔÇûa nÔÇû ^ 2 Ôëñ
+    T.C_ls * (ÔåæN + ÔåæQ' ^ 2) * Ôêæ n Ôêê Finset.Icc 1 N, ÔÇûa nÔÇû ^ 2 : Prop
+error: Sieve/Analytic/LargeSieveMonotonicity.lean:86:4: type mismatch
+  mul_le_mul_of_nonneg_left (mul_le_mul_of_nonneg_right hMid hMass) C_ls_nonneg
+has type
+  BVToolbox.C_ls ?m.13126 * (Ôåæ(N + Q ^ 2) * Ôêæ n Ôêê Finset.Icc 1 N, ÔÇûa nÔÇû ^ 2) Ôëñ
+    BVToolbox.C_ls ?m.13126 * (Ôåæ(N + Q' ^ 2) * Ôêæ n Ôêê Finset.Icc 1 N, ÔÇûa nÔÇû ^ 2) : Prop
+but is expected to have type
+  T.C_ls * (ÔåæN + ÔåæQ ^ 2) * Ôêæ n Ôêê Finset.Icc 1 N, ÔÇûa nÔÇû ^ 2 Ôëñ
+    T.C_ls * (ÔåæN + ÔåæQ' ^ 2) * Ôêæ n Ôêê Finset.Icc 1 N, ÔÇûa nÔÇû ^ 2 : Prop
+error: Sieve/Analytic/LargeSieveMonotonicity.lean:110:4: type mismatch
+  mul_le_mul_of_nonneg_left (mul_le_mul_of_nonneg_right hMid hMass) C_ls_nonneg
+has type
+  BVToolbox.C_ls ?m.15434 * (Ôåæ(N + Q ^ 2) * Ôêæ n Ôêê Finset.Icc 1 N, ÔÇûa nÔÇû ^ 2) Ôëñ
+    BVToolbox.C_ls ?m.15434 * (Ôåæ(N + Q' ^ 2) * Ôêæ n Ôêê Finset.Icc 1 N, ÔÇûa nÔÇû ^ 2) : Prop
+but is expected to have type
+  T.C_ls * (ÔåæN + ÔåæQ ^ 2) * Ôêæ n Ôêê Finset.Icc 1 N, ÔÇûa nÔÇû ^ 2 Ôëñ
+    T.C_ls * (ÔåæN + ÔåæQ' ^ 2) * Ôêæ n Ôêê Finset.Icc 1 N, ÔÇûa nÔÇû ^ 2 : Prop
+error: Sieve/Analytic/LargeSieveMonotonicity.lean:139:4: type mismatch
+  mul_le_mul_of_nonneg_left (mul_le_mul_of_nonneg_right hMid hMass) C_ls_nonneg
+has type
+  BVToolbox.C_ls ?m.28199 * (Ôåæ(N + Q ^ 2) * Ôêæ n Ôêê Finset.Icc 1 N, ÔÇûa nÔÇû ^ 2) Ôëñ
+    BVToolbox.C_ls ?m.28199 * (Ôåæ(N + Q' ^ 2) * Ôêæ n Ôêê Finset.Icc 1 N, ÔÇûa nÔÇû ^ 2) : Prop
+but is expected to have type
+  T.C_ls * (ÔåæN + ÔåæQ ^ 2) * Ôêæ n Ôêê Finset.Icc 1 N, ÔÇûa nÔÇû ^ 2 Ôëñ
+    T.C_ls * (ÔåæN + ÔåæQ' ^ 2) * Ôêæ n Ôêê Finset.Icc 1 N, ÔÇûa nÔÇû ^ 2 : Prop
+warning: Sieve/Analytic/LargeSieveMonotonicity.lean:151:17: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+error: Sieve/Analytic/LargeSieveMonotonicity.lean:188:4: type mismatch
+  mul_le_mul_of_nonneg_left (mul_le_mul_of_nonneg_right hMid hMass) C_ls_nonneg
+has type
+  BVToolbox.C_ls ?m.20252 * (Ôåæ(N + QÔéé ^ 2) * Ôêæ n Ôêê Finset.Icc 1 N, ÔÇûa nÔÇû ^ 2) Ôëñ
+    BVToolbox.C_ls ?m.20252 * (Ôåæ(N + QÔéé' ^ 2) * Ôêæ n Ôêê Finset.Icc 1 N, ÔÇûa nÔÇû ^ 2) : Prop
+but is expected to have type
+  T.C_ls * (ÔåæN + ÔåæQÔéé ^ 2) * Ôêæ n Ôêê Finset.Icc 1 N, ÔÇûa nÔÇû ^ 2 Ôëñ
+    T.C_ls * (ÔåæN + ÔåæQÔéé' ^ 2) * Ôêæ n Ôêê Finset.Icc 1 N, ÔÇûa nÔÇû ^ 2 : Prop
+error: Lean exited with code 1
+Ô£û [7014/7028] Building Sieve.Analytic.L1FromCS
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\Sieve\Analytic\L1FromCS.lean -o C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Analytic\L1FromCS.olean -i C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Analytic\L1FromCS.ilean -c C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Analytic\L1FromCS.c --setup C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Analytic\L1FromCS.setup.json --json
+error: Sieve/Analytic/L1FromCS.lean:41:4: unknown identifier 'sqrt_sum_qsucc_over_range_le_Qsucc'
+warning: Sieve/Analytic/L1FromCS.lean:83:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: Sieve/Analytic/L1FromCS.lean:68:5: unused variable `hB0`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Sieve/Analytic/L1FromCS.lean:126:31: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: Sieve/Analytic/L1FromCS.lean:127:6: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+error: Sieve/Analytic/L1FromCS.lean:128:36: Application type mismatch: In the application
+  mul_nonneg hC hNQ
+the argument
+  hNQ
+has type
+  0 Ôëñ Ôåæ(N + Q ^ 2) : Prop
+but is expected to have type
+  0 Ôëñ ÔåæN + ÔåæQ ^ 2 : Prop
+error: Lean exited with code 1
+Ô£ö [7017/7028] Built Sieve.Analytic.SumSwapResidues
+Ô£ö [7018/7028] Built Sieve.Analytic.ResidueMassTrivialBounds
+Ô£ö [7019/7028] Built Sieve.Analytic.ResidueL1TrivialBounds
+Ô£ö [7020/7028] Built Sieve.Analytic.PerModulusCSConvenience
+Ô£ö [7021/7028] Built Sieve.Analytic.WeightedResidueConst
+Ô£ö [7022/7028] Built Sieve.Analytic.LargeSieveWeightedConvenience
+Ô£û [7023/7028] Building Sieve.Analytic.LargeSieveMassDyadic
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\Sieve\Analytic\LargeSieveMassDyadic.lean -o C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Analytic\LargeSieveMassDyadic.olean -i C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Analytic\LargeSieveMassDyadic.ilean -c C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Analytic\LargeSieveMassDyadic.c --setup C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Analytic\LargeSieveMassDyadic.setup.json --json
+error: Sieve/Analytic/LargeSieveMassDyadic.lean:55:6: type mismatch, term
+  hq0
+after simplification has type
+  0 Ôëñ w q Ôêº w q Ôëñ 1 : Prop
+but is expected to have type
+  (0 Ôëñ if QÔéü Ôëñ q Ôêº q Ôëñ QÔéé then w q else 0) Ôêº (if QÔéü Ôëñ q Ôêº q Ôëñ QÔéé then w q else 0) Ôëñ 1 : Prop
+error: Sieve/Analytic/LargeSieveMassDyadic.lean:56:4: unsolved goals
+case neg
+T : BVToolbox
+a : Ôäò ÔåÆ Ôäé
+w : Ôäò ÔåÆ ÔäØ
+N QÔéü QÔéé : Ôäò
+hw : ÔêÇ (q : Ôäò), 0 Ôëñ w q Ôêº w q Ôëñ 1
+hN : 1 Ôëñ N
+hQ12 : QÔéü Ôëñ QÔéé
+hQ2 : 1 Ôëñ QÔéé
+w' : Ôäò ÔåÆ ÔäØ := fun q => if q Ôêê Finset.Icc QÔéü QÔéé then w q else 0
+q : Ôäò
+hq : q Ôêë Finset.Icc QÔéü QÔéé
+Ôèó (0 Ôëñ if QÔéü Ôëñ q Ôêº q Ôëñ QÔéé then w q else 0) Ôêº (if QÔéü Ôëñ q Ôêº q Ôëñ QÔéé then w q else 0) Ôëñ 1
+error: Sieve/Analytic/LargeSieveMassDyadic.lean:71:69: unsolved goals
+T : BVToolbox
+a : Ôäò ÔåÆ Ôäé
+w : Ôäò ÔåÆ ÔäØ
+N QÔéü QÔéé : Ôäò
+hw : ÔêÇ (q : Ôäò), 0 Ôëñ w q Ôêº w q Ôëñ 1
+hN : 1 Ôëñ N
+hQ12 : QÔéü Ôëñ QÔéé
+hQ2 : 1 Ôëñ QÔéé
+w' : Ôäò ÔåÆ ÔäØ := fun q => if q Ôêê Finset.Icc QÔéü QÔéé then w q else 0
+hw' : ÔêÇ (q : Ôäò), 0 Ôëñ w' q Ôêº w' q Ôëñ 1
+f : Ôäò ÔåÆ ÔäØ := fun q => w' q * residueMass a N q
+f_nonneg : ÔêÇ (q : Ôäò), 0 Ôëñ f q
+hSubset : Finset.Icc QÔéü QÔéé Ôèå Finset.range (QÔéé + 1)
+q : Ôäò
+hq : q Ôêê Finset.Icc QÔéü QÔéé
+Ôèó (QÔéü Ôëñ q ÔåÆ QÔéé < q) ÔåÆ w q = 0 Ôê¿ Ôêæ r, ÔÇûresidueSum a N q rÔÇû ^ 2 = 0
+warning: Sieve/Analytic/LargeSieveMassDyadic.lean:87:16: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: Sieve/Analytic/LargeSieveMassDyadic.lean:56:16: This simp argument is unused:
+  hq
+
+Hint: Omit it from the simp argument list.
+  simp [w', h╠Áq╠Á,╠Á ╠Á(show (0 : ÔäØ) Ôëñ 0 by norm_num)]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Sieve/Analytic/LargeSieveMassDyadic.lean:56:20: This simp argument is unused:
+  (show (0 : ÔäØ) Ôëñ 0 by norm_num)
+
+Hint: Omit it from the simp argument list.
+  simp [w', hq,╠Á ╠Á(╠Ás╠Áh╠Áo╠Áw╠Á ╠Á(╠Á0╠Á ╠Á:╠Á ╠ÁÔäØ╠Á)╠Á ╠ÁÔëñ╠Á ╠Á0╠Á ╠Áb╠Áy╠Á ╠Án╠Áo╠Ár╠Ám╠Á_╠Án╠Áu╠Ám╠Á)╠Á]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Sieve/Analytic/LargeSieveMassDyadic.lean:73:17: This simp argument is unused:
+  hq
+
+Hint: Omit it from the simp argument list.
+  simp [f, w',╠Á ╠Áh╠Áq╠Á]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Lean exited with code 1
+Ô£ö [7024/7028] Built Sieve.Analytic.WeightedResidueL1TrivialBounds
+Ô£ö [7025/7028] Built Sieve.Analytic.L1NMonotonicity
+Ô£ö [7026/7028] Built Sieve.Analytic.L1ConstWeightConvenience
+Ô£ö [7027/7028] Built Sieve.Analytic.RunConstWeightSmoke
+error: build failed
+Some required builds logged failures:
+- Sieve.Analytic.BVSketchParamsEps
+- Sieve.Analytic.LargeSieveMonotonicity
+- Sieve.Analytic.L1FromCS
+- Sieve.Analytic.LargeSieveMassDyadic
+
+===== OK :: Sieve.Analytic.AvgFromFirstMoment =====
+Ô£ö [7007/7007] Built Sieve.Analytic.AvgFromFirstMoment
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.AvgNonneg =====
+Ô£ö [7000/7000] Built Sieve.Analytic.AvgNonneg
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.BridgeHub =====
+Ô£ö [7007/7014] Built Sieve.Analytic.BVMainAssumptions
+Ô£ö [7008/7014] Built Sieve.Analytic.BVToolboxProgressionsSig
+Ô£ö [7009/7014] Built Sieve.Analytic.BVMainRealize
+Ô£ö [7010/7014] Built Sieve.Analytic.ProgressionsCorollaries
+Ô£ö [7011/7014] Built Sieve.Analytic.BVMainIneq
+Ô£ö [7012/7014] Built Sieve.Analytic.BVToolboxAPI
+Ô£ö [7013/7014] Built Sieve.Analytic.BVMainDeriveFromToolbox
+Ô£ö [7014/7014] Built Sieve.Analytic.BridgeHub
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.BVAlgebraLemmas =====
+Ô£ö [6996/6996] Built Sieve.Analytic.BVAlgebraLemmas
+Build completed successfully.
+
+===== FAIL :: Sieve.Analytic.BVConstantsLedger =====
+Ô£û [6994/6995] Building Sieve.Analytic.BVSketchParamsEps
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\Sieve\Analytic\BVSketchParamsEps.lean -o C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Analytic\BVSketchParamsEps.olean -i C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Analytic\BVSketchParamsEps.ilean -c C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Analytic\BVSketchParamsEps.c --setup C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Analytic\BVSketchParamsEps.setup.json --json
+error: Sieve/Analytic/BVSketchParamsEps.lean:28:9: (kernel) invalid declaration, it uses unsafe declaration 'Real.instRepr'
+error: Sieve/Analytic/BVSketchParamsEps.lean:44:2: type mismatch, term
+  Eq.symm (sub_add P.Cmain P.Cerr P.eps)
+after simplification has type
+  P.Cmain - (P.Cerr - P.eps) = P.Cmain - P.Cerr + P.eps : Prop
+but is expected to have type
+  P.Cmain - P.Cerr - P.eps = P.Cmain - (P.Cerr + P.eps) : Prop
+error: Sieve/Analytic/BVSketchParamsEps.lean:56:2: type mismatch, term
+  this
+after simplification has type
+  P.Cerr + P.eps Ôëñ P.Cmain : Prop
+but is expected to have type
+  P.eps Ôëñ P.Cmain - P.Cerr : Prop
+error: Sieve/Analytic/BVSketchParamsEps.lean:67:45: don't know how to synthesize placeholder for argument 'c'
+context:
+P P' : BVParamsEps
+hC : P.Cmain Ôëñ P'.Cmain
+hE : P.Cerr = P'.Cerr
+h╬Á : P.eps = P'.eps
+Ôèó ÔäØ
+error: Sieve/Analytic/BVSketchParamsEps.lean:85:6: type mismatch, term
+  add_le_add_right hE ?m.12501
+after simplification has type
+  P.Cerr Ôëñ P'.Cerr : Prop
+but is expected to have type
+  P'.Cerr Ôëñ P.Cerr : Prop
+error: Sieve/Analytic/BVSketchParamsEps.lean:89:4: type mismatch, term
+  this
+after simplification has type
+  P.Cmain Ôëñ P.Cmain - (P'.Cerr + P'.eps) + (P.Cerr + P.eps) : Prop
+but is expected to have type
+  P'.Cmain Ôëñ P.Cmain - (P.Cerr + P.eps) + (P'.Cerr + P'.eps) : Prop
+error: Sieve/Analytic/BVSketchParamsEps.lean:90:2: type mismatch, term
+  this
+after simplification has type
+  P'.Cmain Ôëñ P'.Cmain - (P.Cerr + P'.eps) + (P'.Cerr + P'.eps) : Prop
+but is expected to have type
+  P'.Cmain Ôëñ P'.Cmain - P.Cerr + P'.Cerr : Prop
+error: Lean exited with code 1
+Some required builds logged failures:
+- Sieve.Analytic.BVSketchParamsEps
+error: build failed
+
+===== OK :: Sieve.Analytic.BVFirstChainBound =====
+Ô£ö [6995/6999] Built Sieve.Analytic.LargeSieveResidueSquares
+Ô£ö [6996/6999] Built Sieve.Analytic.ResiduePartition
+Ô£ö [6997/6999] Built Sieve.Analytic.ResidueFilterIndicator
+Ô£ö [6998/6999] Built Sieve.Analytic.BVFirstIneq
+Ô£ö [6999/6999] Built Sieve.Analytic.BVFirstChainBound
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.BVFirstFromFirstMoment =====
+Ô£ö [7015/7015] Built Sieve.Analytic.BVFirstFromFirstMoment
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.BVFirstIneq =====
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.BVFirstLSQ1 =====
+Ô£ö [6995/6995] Built Sieve.Analytic.BVFirstLSQ1
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.BVFirstPiecesChain =====
+Ô£ö [6995/6995] Built Sieve.Analytic.BVFirstPiecesChain
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.BVFirstRealization =====
+Ô£ö [7012/7012] Built Sieve.Analytic.BVFirstRealization
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.BVFirstRealizationTB =====
+Ô£ö [7014/7014] Built Sieve.Analytic.BVFirstRealizationTB
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.BVMainAssumptions =====
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.BVMainDeriveFromToolbox =====
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.BVMainHelpers =====
+Ô£ö [6997/6997] Built Sieve.Analytic.BVMainHelpers
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.BVMainIneq =====
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.BVMainRealize =====
+Build completed successfully.
+
+===== FAIL :: Sieve.Analytic.BVMainStatement =====
+Ô£û [6996/6996] Building Sieve.Analytic.BVMainStatement
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\Sieve\Analytic\BVMainStatement.lean -o C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Analytic\BVMainStatement.olean -i C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Analytic\BVMainStatement.ilean -c C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Analytic\BVMainStatement.c --setup C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Analytic\BVMainStatement.setup.json --json
+error: Sieve/Analytic/BVMainStatement.lean:23:9: unknown identifier 'Sieve.MaynardWeights.Weight'
+error: Sieve/Analytic/BVMainStatement.lean:24:25: unknown identifier 'Sieve.Stage3.HitSystem'
+error: Sieve/Analytic/BVMainStatement.lean:26:4: Function expected at
+  lowerFormulaParams P
+but this term has type
+  ÔäØ
+
+Note: Expected a function because this term is being applied to the argument
+  W
+error: Sieve/Analytic/BVMainStatement.lean:27:8: unknown identifier 'Sieve.Stage3.avgOver'
+error: Sieve/Analytic/BVMainStatement.lean:25:12: unknown identifier 'Sieve.MTCore.heavySet'
+error: Sieve/Analytic/BVMainStatement.lean:34:2: unknown identifier 'bvSketchParams'
+error: Lean exited with code 1
+Some required builds logged failures:
+- Sieve.Analytic.BVMainStatement
+error: build failed
+
+===== OK :: Sieve.Analytic.BVMainStatementWire =====
+Ô£ö [7008/7008] Built Sieve.Analytic.BVMainStatementWire
+Build completed successfully.
+
+===== FAIL :: Sieve.Analytic.BVMainTheoremSpec =====
+Ô£û [6996/6997] Building Sieve.Analytic.BVMainStatement
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\Sieve\Analytic\BVMainStatement.lean -o C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Analytic\BVMainStatement.olean -i C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Analytic\BVMainStatement.ilean -c C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Analytic\BVMainStatement.c --setup C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Analytic\BVMainStatement.setup.json --json
+error: Sieve/Analytic/BVMainStatement.lean:23:9: unknown identifier 'Sieve.MaynardWeights.Weight'
+error: Sieve/Analytic/BVMainStatement.lean:24:25: unknown identifier 'Sieve.Stage3.HitSystem'
+error: Sieve/Analytic/BVMainStatement.lean:26:4: Function expected at
+  lowerFormulaParams P
+but this term has type
+  ÔäØ
+
+Note: Expected a function because this term is being applied to the argument
+  W
+error: Sieve/Analytic/BVMainStatement.lean:27:8: unknown identifier 'Sieve.Stage3.avgOver'
+error: Sieve/Analytic/BVMainStatement.lean:25:12: unknown identifier 'Sieve.MTCore.heavySet'
+error: Sieve/Analytic/BVMainStatement.lean:34:2: unknown identifier 'bvSketchParams'
+error: Lean exited with code 1
+Some required builds logged failures:
+- Sieve.Analytic.BVMainStatement
+error: build failed
+
+===== OK :: Sieve.Analytic.BVSketch =====
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.BVSketchParams =====
+Build completed successfully.
+
+===== FAIL :: Sieve.Analytic.BVSketchParamsEps =====
+Ô£û [6994/6994] Building Sieve.Analytic.BVSketchParamsEps
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\Sieve\Analytic\BVSketchParamsEps.lean -o C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Analytic\BVSketchParamsEps.olean -i C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Analytic\BVSketchParamsEps.ilean -c C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Analytic\BVSketchParamsEps.c --setup C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Analytic\BVSketchParamsEps.setup.json --json
+error: Sieve/Analytic/BVSketchParamsEps.lean:28:9: (kernel) invalid declaration, it uses unsafe declaration 'Real.instRepr'
+error: Sieve/Analytic/BVSketchParamsEps.lean:44:2: type mismatch, term
+  Eq.symm (sub_add P.Cmain P.Cerr P.eps)
+after simplification has type
+  P.Cmain - (P.Cerr - P.eps) = P.Cmain - P.Cerr + P.eps : Prop
+but is expected to have type
+  P.Cmain - P.Cerr - P.eps = P.Cmain - (P.Cerr + P.eps) : Prop
+error: Sieve/Analytic/BVSketchParamsEps.lean:56:2: type mismatch, term
+  this
+after simplification has type
+  P.Cerr + P.eps Ôëñ P.Cmain : Prop
+but is expected to have type
+  P.eps Ôëñ P.Cmain - P.Cerr : Prop
+error: Sieve/Analytic/BVSketchParamsEps.lean:67:45: don't know how to synthesize placeholder for argument 'c'
+context:
+P P' : BVParamsEps
+hC : P.Cmain Ôëñ P'.Cmain
+hE : P.Cerr = P'.Cerr
+h╬Á : P.eps = P'.eps
+Ôèó ÔäØ
+error: Sieve/Analytic/BVSketchParamsEps.lean:85:6: type mismatch, term
+  add_le_add_right hE ?m.12501
+after simplification has type
+  P.Cerr Ôëñ P'.Cerr : Prop
+but is expected to have type
+  P'.Cerr Ôëñ P.Cerr : Prop
+error: Sieve/Analytic/BVSketchParamsEps.lean:89:4: type mismatch, term
+  this
+after simplification has type
+  P.Cmain Ôëñ P.Cmain - (P'.Cerr + P'.eps) + (P.Cerr + P.eps) : Prop
+but is expected to have type
+  P'.Cmain Ôëñ P.Cmain - (P.Cerr + P.eps) + (P'.Cerr + P'.eps) : Prop
+error: Sieve/Analytic/BVSketchParamsEps.lean:90:2: type mismatch, term
+  this
+after simplification has type
+  P'.Cmain Ôëñ P'.Cmain - (P.Cerr + P'.eps) + (P'.Cerr + P'.eps) : Prop
+but is expected to have type
+  P'.Cmain Ôëñ P'.Cmain - P.Cerr + P'.Cerr : Prop
+error: Lean exited with code 1
+Some required builds logged failures:
+- Sieve.Analytic.BVSketchParamsEps
+error: build failed
+
+===== OK :: Sieve.Analytic.BVToolboxAPI =====
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.BVToolboxOrthoOnly =====
+Ô£ö [6995/6996] Built Sieve.Analytic.OrthogonalityIdentityImpl
+Ô£ö [6996/6996] Built Sieve.Analytic.BVToolboxOrthoOnly
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.BVToolboxProgressionsSig =====
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.BVToolboxProgressionsSmoke =====
+Ô£ö [6995/6995] Built Sieve.Analytic.BVToolboxProgressionsSmoke
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.BVToolboxSpec =====
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.ClipboardProbe =====
+Ô£ö [6994/6994] Built Sieve.Analytic.ClipboardProbe
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.Constants =====
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.ConstantsMakers =====
+Ô£ö [6996/6996] Built Sieve.Analytic.ConstantsMakers
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.DataMassBasics =====
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.DPSAliases =====
+Ô£ö [6995/6995] Built Sieve.Analytic.DPSAliases
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.FirstMomentFromToyDensity =====
+Ô£ö [7009/7010] Built Sieve.Analytic.FirstMomentVar
+Ô£ö [7010/7010] Built Sieve.Analytic.FirstMomentFromToyDensity
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.FirstMomentVar =====
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.FirstRealizationConvenience =====
+Ô£ö [7015/7015] Built Sieve.Analytic.FirstRealizationConvenience
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.HitFromDensity =====
+Ô£ö [7011/7011] Built Sieve.Analytic.HitFromDensity
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.IndexCounting =====
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.IntNatResidueBridge =====
+Ô£ö [6994/6994] Built Sieve.Analytic.IntNatResidueBridge
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.L1Averages =====
+Ô£ö [6996/6996] Built Sieve.Analytic.L1Averages
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.L1ConstWeightConvenience =====
+Build completed successfully.
+
+===== FAIL :: Sieve.Analytic.L1DyadicConvenience =====
+Ô£û [6996/6997] Building Sieve.Analytic.L1FromCS
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\Sieve\Analytic\L1FromCS.lean -o C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Analytic\L1FromCS.olean -i C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Analytic\L1FromCS.ilean -c C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Analytic\L1FromCS.c --setup C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Analytic\L1FromCS.setup.json --json
+error: Sieve/Analytic/L1FromCS.lean:41:4: unknown identifier 'sqrt_sum_qsucc_over_range_le_Qsucc'
+warning: Sieve/Analytic/L1FromCS.lean:83:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: Sieve/Analytic/L1FromCS.lean:68:5: unused variable `hB0`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Sieve/Analytic/L1FromCS.lean:126:31: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: Sieve/Analytic/L1FromCS.lean:127:6: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+error: Sieve/Analytic/L1FromCS.lean:128:36: Application type mismatch: In the application
+  mul_nonneg hC hNQ
+the argument
+  hNQ
+has type
+  0 Ôëñ Ôåæ(N + Q ^ 2) : Prop
+but is expected to have type
+  0 Ôëñ ÔåæN + ÔåæQ ^ 2 : Prop
+error: Lean exited with code 1
+Some required builds logged failures:
+- Sieve.Analytic.L1FromCS
+error: build failed
+
+===== FAIL :: Sieve.Analytic.L1FromCS =====
+Ô£û [6996/6996] Building Sieve.Analytic.L1FromCS
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\Sieve\Analytic\L1FromCS.lean -o C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Analytic\L1FromCS.olean -i C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Analytic\L1FromCS.ilean -c C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Analytic\L1FromCS.c --setup C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Analytic\L1FromCS.setup.json --json
+error: Sieve/Analytic/L1FromCS.lean:41:4: unknown identifier 'sqrt_sum_qsucc_over_range_le_Qsucc'
+warning: Sieve/Analytic/L1FromCS.lean:83:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: Sieve/Analytic/L1FromCS.lean:68:5: unused variable `hB0`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Sieve/Analytic/L1FromCS.lean:126:31: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: Sieve/Analytic/L1FromCS.lean:127:6: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+error: Sieve/Analytic/L1FromCS.lean:128:36: Application type mismatch: In the application
+  mul_nonneg hC hNQ
+the argument
+  hNQ
+has type
+  0 Ôëñ Ôåæ(N + Q ^ 2) : Prop
+but is expected to have type
+  0 Ôëñ ÔåæN + ÔåæQ ^ 2 : Prop
+error: Lean exited with code 1
+error: build failed
+Some required builds logged failures:
+- Sieve.Analytic.L1FromCS
+
+===== FAIL :: Sieve.Analytic.L1IccConvenience =====
+Ô£û [6996/6997] Building Sieve.Analytic.L1FromCS
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\Sieve\Analytic\L1FromCS.lean -o C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Analytic\L1FromCS.olean -i C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Analytic\L1FromCS.ilean -c C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Analytic\L1FromCS.c --setup C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Analytic\L1FromCS.setup.json --json
+error: Sieve/Analytic/L1FromCS.lean:41:4: unknown identifier 'sqrt_sum_qsucc_over_range_le_Qsucc'
+warning: Sieve/Analytic/L1FromCS.lean:83:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: Sieve/Analytic/L1FromCS.lean:68:5: unused variable `hB0`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Sieve/Analytic/L1FromCS.lean:126:31: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: Sieve/Analytic/L1FromCS.lean:127:6: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+error: Sieve/Analytic/L1FromCS.lean:128:36: Application type mismatch: In the application
+  mul_nonneg hC hNQ
+the argument
+  hNQ
+has type
+  0 Ôëñ Ôåæ(N + Q ^ 2) : Prop
+but is expected to have type
+  0 Ôëñ ÔåæN + ÔåæQ ^ 2 : Prop
+error: Lean exited with code 1
+Some required builds logged failures:
+- Sieve.Analytic.L1FromCS
+error: build failed
+
+===== OK :: Sieve.Analytic.L1Monotonicity =====
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.L1NMonotonicity =====
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.L1SupBounds =====
+Ô£ö [6996/6996] Built Sieve.Analytic.L1SupBounds
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.L1WeightedIccConvenience =====
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.LargeSieveConvenience =====
+ÔÜá [6995/6995] Replayed Sieve.Analytic.LargeSieveConvenience
+warning: Sieve/Analytic/LargeSieveConvenience.lean:36:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.LargeSieveCore =====
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.LargeSieveDefs =====
+ÔÜá [6995/6996] Replayed Sieve.Analytic.LargeSieveConvenience
+warning: Sieve/Analytic/LargeSieveConvenience.lean:36:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+ÔÜá [6996/6996] Replayed Sieve.Analytic.LargeSieveDefs
+warning: Sieve/Analytic/LargeSieveDefs.lean:29:2: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+Build completed successfully.
+
+===== FAIL :: Sieve.Analytic.LargeSieveMassDyadic =====
+ÔÜá [6995/6997] Replayed Sieve.Analytic.LargeSieveConvenience
+warning: Sieve/Analytic/LargeSieveConvenience.lean:36:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+ÔÜá [6996/6997] Replayed Sieve.Analytic.LargeSieveDefs
+warning: Sieve/Analytic/LargeSieveDefs.lean:29:2: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+Ô£û [6997/6997] Building Sieve.Analytic.LargeSieveMassDyadic
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\Sieve\Analytic\LargeSieveMassDyadic.lean -o C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Analytic\LargeSieveMassDyadic.olean -i C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Analytic\LargeSieveMassDyadic.ilean -c C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Analytic\LargeSieveMassDyadic.c --setup C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Analytic\LargeSieveMassDyadic.setup.json --json
+error: Sieve/Analytic/LargeSieveMassDyadic.lean:55:6: type mismatch, term
+  hq0
+after simplification has type
+  0 Ôëñ w q Ôêº w q Ôëñ 1 : Prop
+but is expected to have type
+  (0 Ôëñ if QÔéü Ôëñ q Ôêº q Ôëñ QÔéé then w q else 0) Ôêº (if QÔéü Ôëñ q Ôêº q Ôëñ QÔéé then w q else 0) Ôëñ 1 : Prop
+error: Sieve/Analytic/LargeSieveMassDyadic.lean:56:4: unsolved goals
+case neg
+T : BVToolbox
+a : Ôäò ÔåÆ Ôäé
+w : Ôäò ÔåÆ ÔäØ
+N QÔéü QÔéé : Ôäò
+hw : ÔêÇ (q : Ôäò), 0 Ôëñ w q Ôêº w q Ôëñ 1
+hN : 1 Ôëñ N
+hQ12 : QÔéü Ôëñ QÔéé
+hQ2 : 1 Ôëñ QÔéé
+w' : Ôäò ÔåÆ ÔäØ := fun q => if q Ôêê Finset.Icc QÔéü QÔéé then w q else 0
+q : Ôäò
+hq : q Ôêë Finset.Icc QÔéü QÔéé
+Ôèó (0 Ôëñ if QÔéü Ôëñ q Ôêº q Ôëñ QÔéé then w q else 0) Ôêº (if QÔéü Ôëñ q Ôêº q Ôëñ QÔéé then w q else 0) Ôëñ 1
+error: Sieve/Analytic/LargeSieveMassDyadic.lean:71:69: unsolved goals
+T : BVToolbox
+a : Ôäò ÔåÆ Ôäé
+w : Ôäò ÔåÆ ÔäØ
+N QÔéü QÔéé : Ôäò
+hw : ÔêÇ (q : Ôäò), 0 Ôëñ w q Ôêº w q Ôëñ 1
+hN : 1 Ôëñ N
+hQ12 : QÔéü Ôëñ QÔéé
+hQ2 : 1 Ôëñ QÔéé
+w' : Ôäò ÔåÆ ÔäØ := fun q => if q Ôêê Finset.Icc QÔéü QÔéé then w q else 0
+hw' : ÔêÇ (q : Ôäò), 0 Ôëñ w' q Ôêº w' q Ôëñ 1
+f : Ôäò ÔåÆ ÔäØ := fun q => w' q * residueMass a N q
+f_nonneg : ÔêÇ (q : Ôäò), 0 Ôëñ f q
+hSubset : Finset.Icc QÔéü QÔéé Ôèå Finset.range (QÔéé + 1)
+q : Ôäò
+hq : q Ôêê Finset.Icc QÔéü QÔéé
+Ôèó (QÔéü Ôëñ q ÔåÆ QÔéé < q) ÔåÆ w q = 0 Ôê¿ Ôêæ r, ÔÇûresidueSum a N q rÔÇû ^ 2 = 0
+warning: Sieve/Analytic/LargeSieveMassDyadic.lean:87:16: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: Sieve/Analytic/LargeSieveMassDyadic.lean:56:16: This simp argument is unused:
+  hq
+
+Hint: Omit it from the simp argument list.
+  simp [w', h╠Áq╠Á,╠Á ╠Á(show (0 : ÔäØ) Ôëñ 0 by norm_num)]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Sieve/Analytic/LargeSieveMassDyadic.lean:56:20: This simp argument is unused:
+  (show (0 : ÔäØ) Ôëñ 0 by norm_num)
+
+Hint: Omit it from the simp argument list.
+  simp [w', hq,╠Á ╠Á(╠Ás╠Áh╠Áo╠Áw╠Á ╠Á(╠Á0╠Á ╠Á:╠Á ╠ÁÔäØ╠Á)╠Á ╠ÁÔëñ╠Á ╠Á0╠Á ╠Áb╠Áy╠Á ╠Án╠Áo╠Ár╠Ám╠Á_╠Án╠Áu╠Ám╠Á)╠Á]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Sieve/Analytic/LargeSieveMassDyadic.lean:73:17: This simp argument is unused:
+  hq
+
+Hint: Omit it from the simp argument list.
+  simp [f, w',╠Á ╠Áh╠Áq╠Á]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Lean exited with code 1
+Some required builds logged failures:
+- Sieve.Analytic.LargeSieveMassDyadic
+error: build failed
+
+===== FAIL :: Sieve.Analytic.LargeSieveMonotonicity =====
+ÔÜá [6995/6996] Replayed Sieve.Analytic.LargeSieveConvenience
+warning: Sieve/Analytic/LargeSieveConvenience.lean:36:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+Ô£û [6996/6996] Building Sieve.Analytic.LargeSieveMonotonicity
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\Sieve\Analytic\LargeSieveMonotonicity.lean -o C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Analytic\LargeSieveMonotonicity.olean -i C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Analytic\LargeSieveMonotonicity.ilean -c C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Analytic\LargeSieveMonotonicity.c --setup C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Analytic\LargeSieveMonotonicity.setup.json --json
+error: Sieve/Analytic/LargeSieveMonotonicity.lean:32:25: typeclass instance problem is stuck, it is often due to metavariables
+  CharZero ?m.10311
+warning: Sieve/Analytic/LargeSieveMonotonicity.lean:39:13: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+error: Sieve/Analytic/LargeSieveMonotonicity.lean:63:4: type mismatch
+  mul_le_mul_of_nonneg_left (mul_le_mul_of_nonneg_right hMid hMass) C_ls_nonneg
+has type
+  BVToolbox.C_ls ?m.10662 * (Ôåæ(N + Q ^ 2) * Ôêæ n Ôêê Finset.Icc 1 N, ÔÇûa nÔÇû ^ 2) Ôëñ
+    BVToolbox.C_ls ?m.10662 * (Ôåæ(N + Q' ^ 2) * Ôêæ n Ôêê Finset.Icc 1 N, ÔÇûa nÔÇû ^ 2) : Prop
+but is expected to have type
+  T.C_ls * (ÔåæN + ÔåæQ ^ 2) * Ôêæ n Ôêê Finset.Icc 1 N, ÔÇûa nÔÇû ^ 2 Ôëñ
+    T.C_ls * (ÔåæN + ÔåæQ' ^ 2) * Ôêæ n Ôêê Finset.Icc 1 N, ÔÇûa nÔÇû ^ 2 : Prop
+error: Sieve/Analytic/LargeSieveMonotonicity.lean:86:4: type mismatch
+  mul_le_mul_of_nonneg_left (mul_le_mul_of_nonneg_right hMid hMass) C_ls_nonneg
+has type
+  BVToolbox.C_ls ?m.13126 * (Ôåæ(N + Q ^ 2) * Ôêæ n Ôêê Finset.Icc 1 N, ÔÇûa nÔÇû ^ 2) Ôëñ
+    BVToolbox.C_ls ?m.13126 * (Ôåæ(N + Q' ^ 2) * Ôêæ n Ôêê Finset.Icc 1 N, ÔÇûa nÔÇû ^ 2) : Prop
+but is expected to have type
+  T.C_ls * (ÔåæN + ÔåæQ ^ 2) * Ôêæ n Ôêê Finset.Icc 1 N, ÔÇûa nÔÇû ^ 2 Ôëñ
+    T.C_ls * (ÔåæN + ÔåæQ' ^ 2) * Ôêæ n Ôêê Finset.Icc 1 N, ÔÇûa nÔÇû ^ 2 : Prop
+error: Sieve/Analytic/LargeSieveMonotonicity.lean:110:4: type mismatch
+  mul_le_mul_of_nonneg_left (mul_le_mul_of_nonneg_right hMid hMass) C_ls_nonneg
+has type
+  BVToolbox.C_ls ?m.15434 * (Ôåæ(N + Q ^ 2) * Ôêæ n Ôêê Finset.Icc 1 N, ÔÇûa nÔÇû ^ 2) Ôëñ
+    BVToolbox.C_ls ?m.15434 * (Ôåæ(N + Q' ^ 2) * Ôêæ n Ôêê Finset.Icc 1 N, ÔÇûa nÔÇû ^ 2) : Prop
+but is expected to have type
+  T.C_ls * (ÔåæN + ÔåæQ ^ 2) * Ôêæ n Ôêê Finset.Icc 1 N, ÔÇûa nÔÇû ^ 2 Ôëñ
+    T.C_ls * (ÔåæN + ÔåæQ' ^ 2) * Ôêæ n Ôêê Finset.Icc 1 N, ÔÇûa nÔÇû ^ 2 : Prop
+error: Sieve/Analytic/LargeSieveMonotonicity.lean:139:4: type mismatch
+  mul_le_mul_of_nonneg_left (mul_le_mul_of_nonneg_right hMid hMass) C_ls_nonneg
+has type
+  BVToolbox.C_ls ?m.28199 * (Ôåæ(N + Q ^ 2) * Ôêæ n Ôêê Finset.Icc 1 N, ÔÇûa nÔÇû ^ 2) Ôëñ
+    BVToolbox.C_ls ?m.28199 * (Ôåæ(N + Q' ^ 2) * Ôêæ n Ôêê Finset.Icc 1 N, ÔÇûa nÔÇû ^ 2) : Prop
+but is expected to have type
+  T.C_ls * (ÔåæN + ÔåæQ ^ 2) * Ôêæ n Ôêê Finset.Icc 1 N, ÔÇûa nÔÇû ^ 2 Ôëñ
+    T.C_ls * (ÔåæN + ÔåæQ' ^ 2) * Ôêæ n Ôêê Finset.Icc 1 N, ÔÇûa nÔÇû ^ 2 : Prop
+warning: Sieve/Analytic/LargeSieveMonotonicity.lean:151:17: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+error: Sieve/Analytic/LargeSieveMonotonicity.lean:188:4: type mismatch
+  mul_le_mul_of_nonneg_left (mul_le_mul_of_nonneg_right hMid hMass) C_ls_nonneg
+has type
+  BVToolbox.C_ls ?m.20252 * (Ôåæ(N + QÔéé ^ 2) * Ôêæ n Ôêê Finset.Icc 1 N, ÔÇûa nÔÇû ^ 2) Ôëñ
+    BVToolbox.C_ls ?m.20252 * (Ôåæ(N + QÔéé' ^ 2) * Ôêæ n Ôêê Finset.Icc 1 N, ÔÇûa nÔÇû ^ 2) : Prop
+but is expected to have type
+  T.C_ls * (ÔåæN + ÔåæQÔéé ^ 2) * Ôêæ n Ôêê Finset.Icc 1 N, ÔÇûa nÔÇû ^ 2 Ôëñ
+    T.C_ls * (ÔåæN + ÔåæQÔéé' ^ 2) * Ôêæ n Ôêê Finset.Icc 1 N, ÔÇûa nÔÇû ^ 2 : Prop
+error: Lean exited with code 1
+Some required builds logged failures:
+- Sieve.Analytic.LargeSieveMonotonicity
+error: build failed
+
+===== FAIL :: Sieve.Analytic.LargeSieveNMonotonicity =====
+Ô£û [6997/6997] Building Sieve.Analytic.LargeSieveNMonotonicity
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\Sieve\Analytic\LargeSieveNMonotonicity.lean -o C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Analytic\LargeSieveNMonotonicity.olean -i C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Analytic\LargeSieveNMonotonicity.ilean -c C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Analytic\LargeSieveNMonotonicity.c --setup C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Analytic\LargeSieveNMonotonicity.setup.json --json
+error: Sieve/Analytic/LargeSieveNMonotonicity.lean:14:0: import Sieve.Analytic.ResidueSumBasics failed, environment already contains 'Sieve.Analytic.residueSum' from Sieve.Analytic.LargeSieveCore
+error: Lean exited with code 1
+Some required builds logged failures:
+- Sieve.Analytic.LargeSieveNMonotonicity
+error: build failed
+
+===== OK :: Sieve.Analytic.LargeSieveResidueSquares =====
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.LargeSieveWeightedConvenience =====
+ÔÜá [6995/6997] Replayed Sieve.Analytic.LargeSieveConvenience
+warning: Sieve/Analytic/LargeSieveConvenience.lean:36:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+ÔÜá [6996/6997] Replayed Sieve.Analytic.LargeSieveDefs
+warning: Sieve/Analytic/LargeSieveDefs.lean:29:2: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.OrthogonalityConvenience =====
+Ô£ö [6995/6995] Built Sieve.Analytic.OrthogonalityConvenience
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.OrthogonalityIdentityImpl =====
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.PartialSummationConvenience =====
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.PerfHarness =====
+Ô£ö [7013/7013] Built Sieve.Analytic.PerfHarness
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.PerfHarnessFirstRealization =====
+Ô£ö [7015/7015] Built Sieve.Analytic.PerfHarnessFirstRealization
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.PerModulusCSConvenience =====
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.ProgressionsCorollaries =====
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.ResidueAI =====
+Ô£ö [7009/7009] Built Sieve.Analytic.ResidueAI
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.ResidueFilterIndicator =====
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.ResidueIndicator =====
+ÔÜá [6995/6995] Replayed Sieve.Analytic.ResidueIndicator
+warning: Sieve/Analytic/ResidueIndicator.lean:49:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.ResidueL1TrivialBounds =====
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.ResidueMassTrivialBounds =====
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.ResiduePartition =====
+Build completed successfully.
+
+===== FAIL :: Sieve.Analytic.ResiduePickout =====
+Ô£û [6995/6995] Building Sieve.Analytic.ResiduePickout
+trace: .> LEAN_PATH=C:\Projects\test-lean-modules\.lake\packages\Cli\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\batteries\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\Qq\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\aesop\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\importGraph\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\plausible\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\packages\mathlib\.lake\build\lib\lean;C:\Projects\test-lean-modules\.lake\build\lib\lean c:\Users\bobje\.elan\toolchains\leanprover--lean4---v4.22.0-rc4\bin\lean.exe C:\Projects\test-lean-modules\Sieve\Analytic\ResiduePickout.lean -o C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Analytic\ResiduePickout.olean -i C:\Projects\test-lean-modules\.lake\build\lib\lean\Sieve\Analytic\ResiduePickout.ilean -c C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Analytic\ResiduePickout.c --setup C:\Projects\test-lean-modules\.lake\build\ir\Sieve\Analytic\ResiduePickout.setup.json --json
+error: Sieve/Analytic/ResiduePickout.lean:32:11: typeclass instance problem is stuck, it is often due to metavariables
+  AddCommMonoid ?m.1521
+warning: Sieve/Analytic/ResiduePickout.lean:35:2: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: Sieve/Analytic/ResiduePickout.lean:44:2: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: Sieve/Analytic/ResiduePickout.lean:53:2: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+error: Sieve/Analytic/ResiduePickout.lean:64:11: typeclass instance problem is stuck, it is often due to metavariables
+  AddCommMonoid ?m.3522
+warning: Sieve/Analytic/ResiduePickout.lean:67:2: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+error: Lean exited with code 1
+Some required builds logged failures:
+- Sieve.Analytic.ResiduePickout
+error: build failed
+
+===== OK :: Sieve.Analytic.ResiduePigeonhole =====
+Ô£ö [7000/7000] Built Sieve.Analytic.ResiduePigeonhole
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.ResiduePointwise =====
+Ô£ö [6994/6994] Built Sieve.Analytic.ResiduePointwise
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.ResidueScaling =====
+Ô£ö [6995/6995] Built Sieve.Analytic.ResidueScaling
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.ResidueSliceCanonical =====
+Ô£ö [7007/7007] Built Sieve.Analytic.ResidueSliceCanonical
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.ResidueSumBasics =====
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.ResidueSumCanonicalQ1 =====
+Ô£ö [7012/7015] Built Sieve.Analytic.ResidueToDensityFromSum
+Ô£ö [7013/7015] Built Sieve.Analytic.ResidueToPartitionSumConcrete
+Ô£ö [7014/7015] Built Sieve.Analytic.ResidueSumCanonicalZero
+Ô£ö [7015/7015] Built Sieve.Analytic.ResidueSumCanonicalQ1
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.ResidueSumCanonicalZero =====
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.ResidueSumLinear =====
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.ResidueSumToy =====
+Ô£ö [7013/7013] Built Sieve.Analytic.ResidueSumToy
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.ResidueSumVanish =====
+Ô£ö [6995/6995] Built Sieve.Analytic.ResidueSumVanish
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.ResidueToDensityFromPartition =====
+Ô£ö [7011/7011] Built Sieve.Analytic.ResidueToDensityFromPartition
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.ResidueToDensityFromSum =====
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.ResidueToDensityTemplate =====
+Ô£ö [7011/7011] Built Sieve.Analytic.ResidueToDensityTemplate
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.ResidueToPartitionConcrete =====
+Ô£ö [7012/7012] Built Sieve.Analytic.ResidueToPartitionConcrete
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.ResidueToPartitionSumConcrete =====
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.RunAIFromResidueSmoke =====
+Ô£ö [7007/7007] Built Sieve.Analytic.RunAIFromResidueSmoke
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.RunBVBridgeSmoke =====
+Ô£ö [7009/7009] Built Sieve.Analytic.RunBVBridgeSmoke
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.RunBVFirstAverageNonnegDemo =====
+Ô£ö [7013/7013] Built Sieve.Analytic.RunBVFirstAverageNonnegDemo
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.RunBVFirstFromFirstMomentDemo =====
+Ô£ö [7016/7016] Built Sieve.Analytic.RunBVFirstFromFirstMomentDemo
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.RunBVFirstFromFirstMomentVarDemo =====
+Ô£ö [7010/7010] Built Sieve.Analytic.RunBVFirstFromFirstMomentVarDemo
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.RunBVFirstRealizationBridgeHubDemo =====
+Ô£ö [7016/7016] Built Sieve.Analytic.RunBVFirstRealizationBridgeHubDemo
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.RunBVFirstRealizationDemo =====
+Ô£ö [7013/7013] Built Sieve.Analytic.RunBVFirstRealizationDemo
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.RunBVFirstRealizationPerfTouch =====
+Ô£ö [7013/7013] Built Sieve.Analytic.RunBVFirstRealizationPerfTouch
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.RunBVMainIneqDemo =====
+Ô£ö [7010/7010] Built Sieve.Analytic.RunBVMainIneqDemo
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.RunBVParamsPrimeDemo =====
+Ô£ö [7009/7009] Built Sieve.Analytic.RunBVParamsPrimeDemo
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.RunBVPiecesBridgeSmoke =====
+Ô£ö [7012/7012] Built Sieve.Analytic.RunBVPiecesBridgeSmoke
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.RunBVToolboxAPISmoke =====
+Ô£ö [7012/7012] Built Sieve.Analytic.RunBVToolboxAPISmoke
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.RunConstWeightSmoke =====
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.RunDyadicSmoke =====
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.RunFirstRealizationConvenienceDemo =====
+Ô£ö [7016/7016] Built Sieve.Analytic.RunFirstRealizationConvenienceDemo
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.RunLargeSieveSmoke =====
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.RunOrthogonalitySmoke =====
+ÔÜá [6995/6995] Replayed Sieve.Analytic.RunOrthogonalitySmoke
+warning: Sieve/Analytic/RunOrthogonalitySmoke.lean:24:2: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.RunPartialSummationSmoke =====
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.RunPartitionDensityDemo =====
+Ô£ö [7013/7013] Built Sieve.Analytic.RunPartitionDensityDemo
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.RunResidueAIDemo =====
+Ô£ö [7014/7014] Built Sieve.Analytic.RunResidueAIDemo
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.RunResidueDensityDemo =====
+Ô£ö [7013/7013] Built Sieve.Analytic.RunResidueDensityDemo
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.RunResiduePartitionSumDemo =====
+Ô£ö [7014/7014] Built Sieve.Analytic.RunResiduePartitionSumDemo
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.RunResidueSumToyDemo =====
+Ô£ö [7015/7015] Built Sieve.Analytic.RunResidueSumToyDemo
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.RunWeightedTrivialSmoke =====
+Ô£ö [6997/6997] Built Sieve.Analytic.RunWeightedTrivialSmoke
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.SumSwapResidues =====
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.WeightedResidue =====
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.WeightedResidueConst =====
+Build completed successfully.
+
+===== OK :: Sieve.Analytic.WeightedResidueL1TrivialBounds =====
+Build completed successfully.
+
+===== OK :: Sieve.Compat.FinsetCard =====
+Build completed successfully.
+

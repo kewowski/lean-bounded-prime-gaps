@@ -1,3 +1,4 @@
+import Sieve.Stage2Report
 /-
   Sieve/RunStage2ReportCompare.lean
   Side-by-side Stage-2 reports: conservative vs simple Gallagher on twins + const weight.
@@ -20,7 +21,7 @@ def window (M : ℕ) : Finset ℤ :=
 
 /-- Compact Stage-2 report under the **conservative** contract. -/
 def reportConservative (M : ℕ) (c : ℝ) (hc : 0 ≤ c) :
-    Sieve.Stage2.Report
+    Sieve.Stage2Report.Report
       (Sieve.ConfigBuilders.conservative
          Sieve.AdmissibleTwin.twin Sieve.AdmissibleTwin.admissible_twin)
       (Sieve.ConstWeight.const (window M) c hc) :=
@@ -29,12 +30,12 @@ def reportConservative (M : ℕ) (c : ℝ) (hc : 0 ≤ c) :
   let supp := window M
   let W    := Sieve.ConstWeight.const supp c hc
   let out  := Sieve.OutcomeBuilders.outcome_const_with_cfg cfg supp c hc
-  Sieve.Stage2.report_of_outcome cfg W out
+  Sieve.Stage2Report.report_of_outcome cfg W out
 
 /-- Compact Stage-2 report under the **simple** (non-zero) Gallagher contract on `[-M,M]`
     with absolute cap `Mabs`. -/
 def reportSimple (M : ℕ) (Mabs c : ℝ) (hc : 0 ≤ c) :
-    Sieve.Stage2.Report
+    Sieve.Stage2Report.Report
       (Sieve.ConfigBuilders.simple (window M) Mabs
          Sieve.AdmissibleTwin.twin Sieve.AdmissibleTwin.admissible_twin)
       (Sieve.ConstWeight.const (window M) c hc) :=
@@ -43,7 +44,7 @@ def reportSimple (M : ℕ) (Mabs c : ℝ) (hc : 0 ≤ c) :
   let supp := window M
   let W    := Sieve.ConstWeight.const supp c hc
   let out  := Sieve.OutcomeBuilders.outcome_const_with_cfg cfg supp c hc
-  Sieve.Stage2.report_of_outcome cfg W out
+  Sieve.Stage2Report.report_of_outcome cfg W out
 
 /-- Sanity: `B ≥ 0` in the conservative report. -/
 example (M : ℕ) (c : ℝ) (hc : 0 ≤ c) :
@@ -64,3 +65,5 @@ example (M : ℕ) (Mabs c : ℝ) (hc : 0 ≤ c) :
     (reportSimple M Mabs c hc).B = ((window M).card : ℝ)^2 * Mabs^2 := rfl
 
 end Sieve.RunStage2ReportCompare
+
+
