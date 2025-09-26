@@ -1,0 +1,33 @@
+name: lake-smoke
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Lean
+        uses: leanprover/lean-action@v1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          mathlib: false
+
+      - name: Lake build core targets
+        run: |
+          lake build \
+            Sieve.Stage3Exports \
+            Sieve.Stage3TwinGap \
+            Sieve.Stage3PrimesEndToEnd \
+            Sieve.Analytic.BVMainStatement \
+            Sieve.Analytic.BVMainStatementWrapper \
+            Sieve.Analytic.RunTwinWindowFromBVMain \
+            Sieve.EndToEndTwinWindowDemo \
+            Sieve.Analytic.ToyWeightDemo \
+            Sieve.Tests.Stage3TwinWindowSmoke
